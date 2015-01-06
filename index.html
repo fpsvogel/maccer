@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html class="no-js" lang="en">
 
   <head>
     <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta http-equiv="cleartype" content="on">
     <meta name="description" content="maccer : A tool for macronizing Latin text.">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
@@ -24,12 +24,22 @@
 
             <section id="downloads">
               <a class="zip_download_link" href="https://github.com/fps-vogel/maccer/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/fps-vogel/maccer/tarball/master">Download this project as a tar.gz file</a>
             </section>
         </header>
     </div>
+	
+	<nav id="toolbar">
+		<button type="button" data-command="bold" title="Make selection bold">B</button>
+		<button type="button" data-command="italic" title="Make selection italic">I</button>
+		<button type="button" data-command="code" title="Make selection inline code block">&gt;</button>
+
+		<button type="button" data-command="list" title="Make selection a list">–</button>
+	</nav>
+	<div id="epiceditor"></div>
 
     <!-- MAIN CONTENT -->
-		<div id="epiceditor"></div>
+	<div id="epiceditor"></div>
 
     <!-- FOOTER  -->
     <div id="footer_wrap" class="outer">
@@ -40,6 +50,8 @@
     </div>
 
     
-  <script src="js/main.js"></script>
+  	<script src="js/commands.js"></script>
+	<script src="js/toolbar.js"></script>
+	<script src="js/main.js"></script>
   </body>
 </html>
