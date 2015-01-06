@@ -1,1 +1,4 @@
-console.log('This would be the main JS file.');
+(function (window) {
+	"use strict";
+	var editor = new EpicEditor(options).load();
+}(window));
