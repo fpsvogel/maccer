@@ -4,7 +4,7 @@
 // Default content to display to EpicEditor
 
 	var text = [
-		"Enter Latin text here."
+		"Enter Latin text here 22."
 	].join('\n');
 
 
