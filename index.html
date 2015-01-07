@@ -2,16 +2,29 @@
 <html class="no-js" lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>EpicEditor Demos</title>
+		<title>maccer</title>
 		<meta http-equiv="cleartype" content="on">
-		<meta name="description" content="EpicEditor integration demos">
-		<meta name="keywords" content="EpicEditor, Demos">
+		<meta name="description" content="maccer : A tool for macronizing Latin text.">
+		<meta name="keywords" content="Latin, macronizer">
 
-		<link href="css/styles.css" rel="stylesheet" media="screen">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/styless.css">
 		<script src="epiceditor/js/epiceditor.js"></script>
 	</head>
 	<body>
-		<a href="https://github.com/hongymagic/EpicEditor-demos"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a>
+		<!-- HEADER -->
+		<div id="header_wrap" class="outer">
+			<header class="inner">
+			  <a id="forkme_banner" href="https://github.com/fps-vogel/maccer">View on GitHub</a>
+
+			  <h1 id="project_title">maccer</h1>
+			  <h2 id="project_tagline">A tool for macronizing Latin text.</h2>
+
+				<section id="downloads">
+				  <a class="zip_download_link" href="https://github.com/fps-vogel/maccer/zipball/master">Download this project as a .zip file</a>
+				  <a class="tar_download_link" href="https://github.com/fps-vogel/maccer/tarball/master">Download this project as a tar.gz file</a>
+				</section>
+			</header>
+		</div>
 
 		<nav id="toolbar">
 			<button type="button" data-command="bold" title="Make selection bold">B</button>
@@ -20,7 +33,19 @@
 
 			<button type="button" data-command="list" title="Make selection a list">–</button>
 		</nav>
-		<div id="epiceditor"></div>
+		<div id="main_content_wrap" class="outer">
+			<section id="main_content" class="inner">
+				<div id="epiceditor"></div>
+			</section>
+		</div>
+		
+		<!-- FOOTER  -->
+		<div id="footer_wrap" class="outer">
+		  <footer class="inner">
+			<p class="copyright">maccer maintained by <a href="https://github.com/fps-vogel">fps-vogel</a></p>
+			<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+		  </footer>
+		</div>
 
 		<script src="js/commands.js"></script>
 		<script src="js/toolbar.js"></script>
