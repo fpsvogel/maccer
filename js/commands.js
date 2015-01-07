@@ -2,14 +2,19 @@
 	"use strict";
 
 	function runLua(document, selection) {
-		var luacode = "error('prefix-')";
+		var oldtitle = window.name;
+		window.name = selection;
+		window.alert(window.name);
+		var luacode = "local arg = js.global.name\njs.global:alert(arg)\nerror('hi--')";
 		try {
 			L.execute(luacode);
 		} catch(e) {
 			var range = selection.getRangeAt(0);
-			range.insertNode(document.createTextNode(e.toString()));
+			var text = e.toString().substr(26)
+			range.insertNode(document.createTextNode(text));
 			range.collapse(false);
 		}
+		window.name = oldtitle
 	}
 
 	var Commands = Object.create(null);
