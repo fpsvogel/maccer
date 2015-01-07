@@ -22,5 +22,7 @@
 		},
 	};
 	var editor = new EpicEditor(options).load();
+	var commands = window.DefaultCommands;
+	var toolbar = new Toolbar('toolbar', editor, commands);
 
 }(window));
