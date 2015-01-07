@@ -1,11 +1,3 @@
-#epiceditor             { min-height: 500px; }
-#toolbar                { margin: 10px 0; padding: 10px 0; border-bottom: 1px solid #ccc; }
-
-[data-command]          { width: 25px; height: 25px; text-align: center; }
-[data-command="bold"]   { font-weight: bold; }
-[data-command="italic"] { font-style: italic; }
-[data-command="code"]   { }
-
 /*******************************************************************************
 Slate Theme for GitHub Pages
 by Jason Costello, @jsncostello
@@ -432,3 +424,11 @@ Small Device Styles
 
 }
 
+
+#epiceditor             { min-height: 500px; }
+#toolbar                { margin: 10px 0; padding: 10px 0; border-bottom: 1px solid #ccc; }
+
+[data-command]          { width: 25px; height: 25px; text-align: center; }
+[data-command="bold"]   { font-weight: bold; }
+[data-command="italic"] { font-style: italic; }
+[data-command="code"]   { }
