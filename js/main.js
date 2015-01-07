@@ -14,11 +14,11 @@
 			defaultContent: text
 		},
 		theme: {
-			preview: '/themes/preview/github.css',
+			preview: '/themes/preview/bartik.css',
 			editor: '/themes/editor/epic-light.css'
 		},
 		button: {
-			fullscreen: false,
+			fullscreen: false
 		}
 	};
 	var editor = new EpicEditor(options).load();
