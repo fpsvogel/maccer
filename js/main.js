@@ -12,14 +12,14 @@
 		file: {
 			name: 'maccer',
 			defaultContent: text
-		}
+		},
 		theme: {
 			preview: '/themes/preview/preview-light.css',
 			editor: '/themes/editor/epic-light.css'
 		},
 		button: {
 			fullscreen: false,
-		},
+		}
 	};
 	var editor = new EpicEditor(options).load();
 	var commands = window.DefaultCommands;
