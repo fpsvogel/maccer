@@ -14,7 +14,7 @@
 			defaultContent: text
 		},
 		theme: {
-			preview: '/themes/preview/preview-light.css',
+			preview: '/themes/preview/github.css',
 			editor: '/themes/editor/epic-light.css'
 		},
 		button: {
