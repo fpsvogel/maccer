@@ -425,7 +425,7 @@ Small Device Styles
 }
 
 
-#epiceditor             { min-height: 100px; }
+#epiceditor             { min-height: 500px; }
 #toolbar                { margin: 10px 0; padding: 10px 0; border-bottom: 1px solid #ccc; }
 
 [data-command]          { width: 25px; height: 25px; text-align: center; }
