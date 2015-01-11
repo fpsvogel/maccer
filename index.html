@@ -53,23 +53,21 @@
 		<script src="js/main.js"></script> -->
 		<script type="text/javascript">
 			function loadScript(src) {
-				 var element = document.createElement("script");
-				 element.src = src;
-				 document.body.appendChild(element);
+			var element = document.createElement("script");
+			element.src = src;
+			document.body.appendChild(element);
 			}
-			// Add a script element as a child of the body
 			function downloadJSAtOnload() {
-				loadScript("js/commands.js");
-				loadScript("js/toolbar.js");
-				loadScript("js/lua.vm.js");
-				loadScript("js/main.js");
+			loadScript("js/commands.js")
+			loadScript("js/toolbar.js")
+			loadScript("js/lua.vm.js")
+			loadScript("js/main.js")
 			}
-			// Check for browser support of event handling capability
-			 if (window.addEventListener)
-				 window.addEventListener("load", downloadJSAtOnload, false);
-			 else if (window.attachEvent)
-				 window.attachEvent("onload", downloadJSAtOnload);
-			 else window.onload = downloadJSAtOnload;
+			if (window.addEventListener)
+			window.addEventListener("load", downloadJSAtOnload, false);
+			else if (window.attachEvent)
+			window.attachEvent("onload", downloadJSAtOnload);
+			else window.onload = downloadJSAtOnload;
 		</script>
 	</body>
 </html>

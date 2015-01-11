@@ -4,7 +4,6 @@
 	Commands = {
 		macronize: function (editor, selection) {
 			try {
-				window.alert("YO");
 				var rets = L.execute(luamac, editor.exportFile());
 				editor.importFile("mac", rets[0]);
 			} catch(e) { }
