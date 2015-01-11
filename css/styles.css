@@ -449,7 +449,11 @@ Small Device Styles
 	border: 0;
 }
 
-[data-command]:hover { background: #3e3e3e; }
+[data-command="clearflags"] {
+	text-decoration: line-through;
+}
+
+[data-command]:hover { background: #383838; }
 
 [data-command]:active { background: #585858; }
 

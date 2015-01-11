@@ -9,7 +9,6 @@
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 		<script src="epiceditor/js/epiceditor.js"></script>
-		<script src="js/lua.js"></script>
 	</head>
 	<body>
 		<!-- HEADER -->
@@ -32,8 +31,9 @@
 			<section id="main_content" class="inner">
 				<nav id="toolbar">
 					<button type="button" data-command="macronize">MACRONIZE</button>
-					<button type="button" data-command="hyphens">a-/ã- → ā</button>
-					<button type="button" data-command="colors">✖✒✪ → colors</button>
+					<button type="button" data-command="hyphens">a- → ā</button>
+					<button type="button" data-command="clearflags">flags</button>
+					<button type="button" data-command="clearmacs">ā → a</button>
 				</nav>
 				<div id="epiceditor"></div>
 			</section>
@@ -49,7 +49,7 @@
 
 		<script src="js/commands.js"></script>
 		<script src="js/toolbar.js"></script>
-		<script src="lua.vm.js"></script>
+		<script src="js/lua.vm.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
