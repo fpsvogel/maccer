@@ -2,7 +2,6 @@
 	"use strict";
 
 // Default content to display to EpicEditor
-
 	var text = [
 		"Enter Latin text here."
 	].join('\n');

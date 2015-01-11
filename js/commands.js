@@ -2,33 +2,90 @@
 	"use strict";
 	var Commands = Object.create(null);
 	Commands = {
-		macronize: function (editor) {
+		macronize: function (editor, selection) {
 			try {
-				var rets = L.execute(luacode, "macronize", editor.exportFile());
+				window.alert("YO");
+				var rets = L.execute(luamac, editor.exportFile());
 				editor.importFile("mac", rets[0]);
 			} catch(e) { }
 		},
-		hyphens: function (editor) {
+		hyphens: function (editor, selection) {
 			try {
-				var rets = L.execute(luacode, "hyphens", editor.exportFile());
+				var rets = L.execute(luatools, "hyphens", editor.exportFile());
 				editor.importFile("mac", rets[0]);
 			} catch(e) { }
 		},
-		clearflags: function (editor) {
+		clearflags: function (editor, selection) {
 			try {
-				var rets = L.execute(luacode, "clearflags", editor.exportFile());
+				var rets = L.execute(luatools, "clearflags", editor.exportFile());
 				editor.importFile("mac", rets[0]);
 			} catch(e) { }
 		},
-		clearmacs: function (editor) {
+		clearmacs: function (editor, selection) {
 			try {
-				var rets = L.execute(luacode, "clearmacs", editor.exportFile());
+				var rets = L.execute(luatools, "clearmacs", editor.exportFile());
 				editor.importFile("mac", rets[0]);
 			} catch(e) { }
 		}
 	};
 	
-	var luacode = [
+	var luatools = [
+'function utf8replace (s, mapping) \
+   local pos = 1 \
+   local bytes = string.len(s) \
+   local charbytes \
+   local newstr = "" \
+   while pos <= bytes do \
+	print(pos) \
+      charbytes = utf8charbytes(s, pos) \
+      local c = string.sub(s, pos, pos + charbytes - 1) \
+      newstr = newstr .. (mapping[c] or c) \
+      pos = pos + charbytes \
+   end \
+   return newstr \
+end \
+function utf8charbytes (s, i) \
+   i = i or 1 \
+   local c = string.byte(s, i)  \
+   if c > 0 and c <= 127 then \
+      return 1 \
+   elseif c >= 194 and c <= 223 then \
+      local c2 = string.byte(s, i + 1) \
+      return 2 \
+   elseif c >= 224 and c <= 239 then \
+      local c2 = s:byte(i + 1) \
+      local c3 = s:byte(i + 2) \
+      return 3 \
+   elseif c >= 240 and c <= 244 then \
+      local c2 = s:byte(i + 1) \
+      local c3 = s:byte(i + 2) \
+      local c4 = s:byte(i + 3) \
+      return 4 \
+   end \
+end \
+function hyphens(text) \
+	text = text:gsub("a%-","ā"):gsub("e%-","ē"):gsub("i%-","ī"):gsub("o%-","ō"):gsub("u%-","ū"):gsub("y%-","ȳ"):gsub("ã%-","a"):gsub("ẽ%-","ē"):gsub("ĩ%-","ī"):gsub("õ%-","ō"):gsub("ũ%-","ū"):gsub("ỹ%-","ȳ"):gsub("A%-","A"):gsub("E%-","Ē"):gsub("I%-","Ī"):gsub("O%-","O"):gsub("U%-","Ū"):gsub("Y%-","Ȳ"):gsub("Ã%-","Ā"):gsub("Ẽ%-","Ē"):gsub("Ĩ%-","Ī"):gsub("Õ%-","Ō"):gsub("Ũ%-","Ū"):gsub("Ỹ%-","Ȳ") \
+	return text \
+end \
+ \
+function clearflags(text) \
+	local flagstbl =  {["✖"]="", ["✒"]="", ["✪"]="", ["❡"]="", ["☛"]=""} \
+	return utf8replace(text, flagstbl) \
+end \
+ \
+function clearmacs(text) \
+	local asciitbl = { ["Ã"]="A", ["ã"]="a", ["Õ"]="O", ["õ"]="o", ["Ā"]="A", ["ā"]="a", ["Ē"]="E", ["ē"]="e", ["Ĩ"]="I", ["ĩ"]="i", ["Ī"]="I", ["ī"]="i", ["Ō"]="O", ["ō"]="o", ["Ũ"]="U", ["ũ"]="u", ["Ū"]="U", ["ū"]="u", ["Ȳ"]="Y", ["ȳ"]="y", ["Ẽ"]="E", ["ẽ"]="e", ["Ỹ"]="Y", ["ỹ"]="y" } \
+	return utf8replace(text, asciitbl) \
+end \
+ \
+local command, text = ... \
+if command == "hyphens" then text = hyphens(text) \
+elseif command == "clearflags" then text = clearflags(text) \
+elseif command == "clearmacs" then text = clearmacs(text) end \
+return text \ '
+	]
+	
+	var luamac = [
 ' function index(t) \
 	local dt={} for k,v in pairs(t) do dt[v]=k end \
 	return dt \
@@ -458,28 +515,9 @@ function macronize(text) \
 	end \
 	return text \
 end \
- \
-function hyphens(text) \
-	text = text:gsub("a%-","ā"):gsub("e%-","ē"):gsub("i%-","ī"):gsub("o%-","ō"):gsub("u%-","ū"):gsub("y%-","ȳ"):gsub("ã%-","ā"):gsub("ẽ%-","ē"):gsub("ĩ%-","ī"):gsub("õ%-","ō"):gsub("ũ%-","ū"):gsub("ỹ%-","ȳ"):gsub("A%-","Ā"):gsub("E%-","Ē"):gsub("I%-","Ī"):gsub("O%-","Ō"):gsub("U%-","Ū"):gsub("Y%-","Ȳ"):gsub("Ã%-","Ā"):gsub("Ẽ%-","Ē"):gsub("Ĩ%-","Ī"):gsub("Õ%-","Ō"):gsub("Ũ%-","Ū"):gsub("Ỹ%-","Ȳ") \
-	return text \
-end \
- \
-function clearflags(text) \
-	local flagstbl =  {[NOTFOUND]="", [AMBIG]="", [GUESS]="", [AFFIX]="", [INVALID]=""} \
-	return utf8replace(text, flagstbl) \
-end \
- \
-function clearmacs(text) \
-	local asciitbl = { ["Ã"]="A", ["ã"]="a", ["Õ"]="O", ["õ"]="o", ["Ā"]="A", ["ā"]="a", ["Ē"]="E", ["ē"]="e", ["Ĩ"]="I", ["ĩ"]="i", ["Ī"]="I", ["ī"]="i", ["Ō"]="O", ["ō"]="o", ["Ũ"]="U", ["ũ"]="u", ["Ū"]="U", ["ū"]="u", ["Ȳ"]="Y", ["ȳ"]="y", ["Ẽ"]="E", ["ẽ"]="e", ["Ỹ"]="Y", ["ỹ"]="y" } \
-	return utf8replace(text, asciitbl) \
-end \
- \
-local command, text = ... \
-if command == "macronize" then text = macronize(text) \
-elseif command == "hyphens" then text = hyphens(text) \
-elseif command == "clearflags" then text = clearflags(text) \
-elseif command == "clearmacs" then text = clearmacs(text) end \
-return text \ '
+\
+local text = ... \
+return macronize(text) \ '
 	]
 
 	window.DefaultCommands = Commands;
