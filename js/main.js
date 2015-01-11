@@ -18,6 +18,10 @@
 		},
 		button: {
 			fullscreen: false
+		},
+		autogrow: {
+			minHeight: 60,
+			maxHeight: 350
 		}
 	};
 	var editor = new EpicEditor(options).load();

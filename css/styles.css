@@ -234,26 +234,34 @@ hr {
 }
 
 table {
-  border: 1px solid #373737;
   margin-bottom: 20px;
+  width: 100%;
   text-align: left;
  }
 
 th {
   font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  padding: 10px;
+  padding: 5px;
   background: #373737;
   color: #fff;
  }
 
 td {
-  padding: 10px;
-  border: 1px solid #373737;
+  padding: 5px 5px 5px 10px;
+ }
+ 
+td:first-child {
+  padding: 5px;
  }
 
 form {
   background: #f2f2f2;
   padding: 20px;
+}
+
+mark {
+    background-color: #373737;
+    color: white;
 }
 
 /*******************************************************************************
@@ -427,7 +435,6 @@ Small Device Styles
 }
 
 #epiceditor {
-	min-height: 200px;
 	position: relative;
 	border: 1px solid #aaa;
 	padding-bottom: 30px;
@@ -451,6 +458,11 @@ Small Device Styles
 
 [data-command="clearflags"] {
 	text-decoration: line-through;
+}
+
+[data-command="email"] {
+	padding: 7px 16px 7px 16px;
+	margin: 0px 10px 0px 25px;
 }
 
 [data-command]:hover { background: #383838; }

@@ -29,45 +29,137 @@
 		<!-- MAIN CONTENT -->
 		<div id="main_content_wrap" class="outer">
 			<section id="main_content" class="inner">
+				<br>
+				<div><em>N.B. This tool is still in development. The word key is under revision, and the full offline version of the program, which can handle longer texts, is not available yet for download since I am still writing documentation.</em></div>
 				<nav id="toolbar">
-					<button type="button" data-command="macronize">MACRONIZE</button>
-					<button type="button" data-command="hyphens">a- → ā</button>
-					<button type="button" data-command="clearflags">flags</button>
-					<button type="button" data-command="clearmacs">ā → a</button>
+					<button type="button" title="insert macrons and flags" data-command="macronize">macronize</button>
+					<button type="button" title="convert hyphens to macrons" data-command="hyphens">a- → ā</button>
+					<button type="button" title="remove flags" data-command="clearflags">flags</button>
+					<button type="button" title="remove macrons" data-command="clearmacs">ō → o</button>
+					<button type="button" title="contact me or report a problem" data-command="email">✉</button>
 				</nav>
 				<div id="epiceditor"></div>
+				<div>
+					<br>
+					<table>
+					<tbody>
+					<tr>
+					<td>
+						<h2>Instructions</h2>
+						<ol>
+						<li>Paste or write plain Latin text into the box above.</li>
+						<li>Click <mark>macronize</mark>.</li>
+						<li>Insert macrons where missing (✖) or uncertain (✒, ✪, ❡) by placing a hyphen (-) after each long vowel, then click <mark>a-&nbsp;→&nbsp;ā</mark>.</li>
+						<li>Remove flags (the symbols above) by clicking <mark><strike>flags</strike><mark>.</li>
+						</ol>
+						<p><strong>To contact me:</strong> Click <mark>✉</mark>. If you have Latin text with macrons and would like to make this tool smarter, please let me know!</p>
+						<p><strong>To report a problem:</strong> Select your text, click <mark>✉</mark>, send, and I will look into it. If your problem is with anything other than <mark>macronize</mark>, please make a note of it in the email.</p>
+					</td>
+					<td width="35%">
+						<table border="1px solid #373737">
+						<thead>
+						<tr class="header">
+						<th align="left"></th>
+						<th align="left">KEY</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr class="odd">
+						<td align="left">✖</td>
+						<td align="left">unknown word.</td>
+						</tr>
+						<tr class="even">
+						<td align="left">✒</td>
+						<td align="left">ambiguous: uncertain vowels marked with a tilde (~).</td>
+						</tr>
+						<tr class="odd">
+						<td align="left">✪</td>
+						<td align="left">guessed based on frequency.</td>
+						</tr>
+						<tr class="even">
+						<td align="left">❡</td>
+						<td align="left">prefix or enclitic detected attached to a known word.</td>
+						</tr>
+						<tr class="odd">
+						<td align="left">☛</td>
+						<td align="left">invalid characters detected.</td>
+						</tr>
+						</tbody>
+						</table>
+					</td>
+					</tr>
+					</tbody>
+					</table>
+					<h1>Tips</h1>
+					<ul>
+					<li>Text can be de-macronized by clicking <mark>ō&nbsp;→&nbsp;o</mark>.</li>
+					<li>If any text is selected, commands will be applied only to the selection.</li>
+					<li>Use comments (C-style <code>//</code> or <code>/* */</code>) to exclude any words that should not be macronized (e.g. a passage in another language).</li>
+					<li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> formatting is supported. Click the preview icon in the text area to render.</li>
+					</ul>
+					<h1>Q &amp; A</h1>
+					<h3>I can’t copy text from Word without losing all the formatting!</h3>
+					<p>Web applications have trouble reading Word formatting, so here it is not supported. But most formatting can be preserved by following these steps:</p>
+					<ol>
+					<li>Plug your Word file into the <a href="http://word-to-markdown.herokuapp.com/">Word to Markdown Converter</a>.</li>
+					<li>Copy the resulting Markdown-formatted text, paste it above, and macronize it.</li>
+					<li>Generate formatting via the preview button, or for more customizability, via <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>.</li>
+					</ol>
+					<h3>This program is really slow!</h3>
+					<p>I’m not a programmer, least of all a web programmer: I did not imagine Maccer running on a webpage until late in its development, when I found out Lua scripts could be run on the web via the <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a>. I thought it would be worth a try, and here is the result. It would be faster if it were ported to pure JavaScript, but it is what it is. For best performance, download the full desktop version via one of the download links above—the .zip version if you’re not sure.</p>
+					<h3>But the program is really, <em>really</em> slow with a long text!</h3>
+					<p>The web version does not handle long texts very well, and texts of about 2000 words or more will simply fail to macronize. The offline version has no such limitation.</p>
+					<h3>How does it work?</h3>
+					<p>Maccer operates based on a list of Latin word forms generated from several digital texts already marked with macrons. Besides finding definite matches between plain- and macron-forms, Maccer can handle a few special cases:</p>
+					<ul>
+					<li>ambiguous words matched as far as possible, e.g. <em>amīcã</em>, <em>hõc</em>, <em>mãlus</em> (flagged ✒),</li>
+					<li>matches guessed based on probability—if one form is significantly more frequent in the source texts than the rest (flagged ✪),</li>
+					<li>unknown words guessed based on the presence of prefixes and/or enclitics attached to a known word (flagged ❡),</li>
+					<li>abbreviations, e.g. “a.” in “a. Kal.” will remain short but “a” not preceding a period will always become long, as in “ā Caesare”,</li>
+					</ul>
+					<h3>But these online texts with macrons are full of errors!</h3>
+					<p>Yes, the texts I have found that have vowel quantity marked range from nearly consistent to worse than nothing, and it would be impossible to correct every single mistake in them. However, with the help of a script that detects possible errors in the word key, this process becomes much less haphazard. See the documentation in the offline version.</p>
+					<p>That being said, this tool is not and does not pretend to be a substitute for the human editor, only to make this particular task less time-consuming and, I hope, less tedious.</p>
+					<p>My hope is that with the help of this tool, we can more easily mark texts with macrons and become even better readers and speakers of Latin.</p>
+					<h1>Thanks to the creators of:</h1>
+					<p><a href="www.lua.org">Lua</a> • <a href="luapower.com">luapower</a> • <a href="">Lua VM</a> • <a href="https://github.com/alexander-yakushev/awesomerc/blob/master/awesompd/utf8.lua">utf8.lua</a> • <a href="https://www.google.com/webhp?sourceid=chrome-instant&amp;ion=1&amp;espv=2&amp;es_th=1&amp;ie=UTF-8#q=epiceditor">EpicEditor</a> and <a href="EpicEditor-demos">demos</a> • <a href="">Slate theme</a> • <a href="http://www.perseus.tufts.edu/hopper/">Perseus</a>, <a href="http://logeion.uchicago.edu/">Logeion</a>, and the <em><a href="http://www.degruyter.com/databasecontent?dbid=tll&amp;dbsource=%2Fdb%2Ftll">TLL</a></em> • all the great Latin writers who are the light at the end of the long, dark tunnel that is all this fuss about macrons.</p>
+				</div>
 			</section>
 		</div>
 		
 		<!-- FOOTER  -->
 		<div id="footer_wrap" class="outer">
 		  <footer class="inner">
-			<p class="copyright">maccer maintained by <a href="https://github.com/fps-vogel">fps-vogel</a></p>
+			<p class="copyright">Copyright 2014 <a href="https://github.com/fps-vogel">Felipe Vogel</a>. Maccer is Free Software distributed under the terms of the GNU General Public License.</p>
 			<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
 		  </footer>
 		</div>
 		
-		<!-- <script src="js/commands.js"></script>
+		<script src="js/commands.js"></script>
 		<script src="js/toolbar.js"></script>
 		<script src="js/lua.vm.js"></script>
-		<script src="js/main.js"></script> -->
-		<script type="text/javascript">
+		<script src="js/main.js"></script>
+		<!-- <script type="text/javascript">
 			function loadScript(src) {
 				var element = document.createElement("script");
 				element.src = src;
 				document.body.appendChild(element);
 			}
 			function downloadJSAtOnload() {
-				loadScript("js/lua.vm.js")
-				loadScript("js/commands.js")
-				loadScript("js/toolbar.js")
-				loadScript("js/main.js")
+				loadScript("js/lua.vm.js");
+				console.log("1");
+				loadScript("js/commands.js");
+				console.log("2");
+				loadScript("js/toolbar.js");
+				console.log("3");
+				loadScript("js/main.js");
+				console.log("4");
 			}
 			if (window.addEventListener)
 			window.addEventListener("load", downloadJSAtOnload, false);
 			else if (window.attachEvent)
 			window.attachEvent("onload", downloadJSAtOnload);
 			else window.onload = downloadJSAtOnload;
-		</script>
+		</script> -->
 	</body>
 </html>

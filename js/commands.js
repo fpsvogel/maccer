@@ -1,31 +1,96 @@
 (function (window) {
 	"use strict";
+	
+	 Date.prototype.yyyymmdd = function() {
+	   var yyyy = this.getFullYear().toString();
+	   var mm = (this.getMonth()+1).toString(); // getMonth() is zero-based
+	   var dd  = this.getDate().toString();
+	   return yyyy + "-" + (mm[1]?mm:"0"+mm[0]) + "-" + (dd[1]?dd:"0"+dd[0]); // padding
+	 };
+	
+	function bugReport(text) {
+		var subject= "maccer bug report";
+		var d = new Date();
+		var body = d.yyyymmdd() + ":\r\n\r\n<<" + text + ">>";
+		var uri = "mailto:felipe.vogel" + "@" + "uky.edu?subject=";
+		uri += encodeURIComponent(subject);
+		uri += "&body=";
+		uri += encodeURIComponent(body);
+		window.open(uri);
+	};
+	
+	function replaceSelection(document, selection, newText) {
+
+		if (document === null || document === undefined) {
+			document = window.document;
+		}
+		if (selection.rangeCount === 0) {
+			return;
+		}
+		var range = selection.getRangeAt(0);
+		range.deleteContents();
+		range.collapse(false);
+		if (!newText) {
+			return;
+		}
+		var fragment = document.createDocumentFragment();
+		fragment.appendChild(document.createTextNode(newText));
+		range.insertNode(fragment.cloneNode(true));
+	}
+	
 	var Commands = Object.create(null);
 	Commands = {
 		macronize: function (editor, selection) {
+			console.log(selection.toString().length);
 			try {
-				window.alert("yo");
-				var rets = L.execute(luamac, editor.exportFile());
-				editor.importFile("mac", rets[0]);
+				if (selection.toString().length === 0) {
+					var rets = L.execute(luamac, editor.exportFile());
+					editor.importFile("mac", rets[0]);
+				} else {
+					var rets = L.execute(luamac, selection.toString());
+					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+				}
 			} catch(e) { }
 		},
 		hyphens: function (editor, selection) {
 			try {
-				var rets = L.execute(luatools, "hyphens", editor.exportFile());
-				editor.importFile("mac", rets[0]);
+				if (selection.toString().length === 0) {
+					var rets = L.execute(luatools, "hyphens", editor.exportFile());
+					editor.importFile("mac", rets[0]);
+				} else {
+					var rets = L.execute(luatools, "hyphens", selection.toString());
+					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+				}
 			} catch(e) { }
 		},
 		clearflags: function (editor, selection) {
 			try {
-				var rets = L.execute(luatools, "clearflags", editor.exportFile());
-				editor.importFile("mac", rets[0]);
+				if (selection.toString().length === 0) {
+					var rets = L.execute(luatools, "clearflags", editor.exportFile());
+					editor.importFile("mac", rets[0]);
+				} else {
+					var rets = L.execute(luatools, "clearflags", selection.toString());
+					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+				}
 			} catch(e) { }
 		},
 		clearmacs: function (editor, selection) {
 			try {
-				var rets = L.execute(luatools, "clearmacs", editor.exportFile());
-				editor.importFile("mac", rets[0]);
+				if (selection.toString().length === 0) {
+					var rets = L.execute(luatools, "clearmacs", editor.exportFile());
+					editor.importFile("mac", rets[0]);
+				} else {
+					var rets = L.execute(luatools, "clearmacs", selection.toString());
+					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+				}
 			} catch(e) { }
+		},
+		email: function (editor, selection) {
+			if (selection.toString().length > 0) {
+				bugReport(selection.toString());
+			} else {
+				bugReport(editor.exportFile());
+			}
 		}
 	};
 	
@@ -516,8 +581,13 @@ function macronize(text) \
 	return text \
 end \
 \
+function clearflags(text) \
+	local flagstbl =  {[NOTFOUND]="", [AMBIG]="", [GUESS]="", [AFFIX]="", [INVALID]=""} \
+	return utf8replace(text, flagstbl) \
+end \
+\
 local text = ... \
-return macronize(text) \ '
+return macronize(clearflags(text)) \ '
 	]
 
 	window.DefaultCommands = Commands;
