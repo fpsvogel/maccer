@@ -11,7 +11,7 @@
 		file: {
 			name: 'maccer',
 			defaultContent: text,
-			autoSave: 5000	// autosave every 5 seconds
+			// autoSave: 5000	// autosave every 5 seconds
 		},
 		theme: {
 			preview: '/themes/preview/bartik.css',
