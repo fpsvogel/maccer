@@ -97,9 +97,9 @@
 		},
 		email: function (editor, selection) {
 			if (selection.toString().length > 0) {
-				bugReport("Maccer bug report", selection.toString());
+				contactMe("Maccer bug report", selection.toString());
 			} else {
-				bugReport("Maccer: ");
+				contactMe("Maccer: ");
 			}
 		}
 	};
