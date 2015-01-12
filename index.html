@@ -6,6 +6,7 @@
 		<meta http-equiv="cleartype" content="on">
 		<meta name="description" content="maccer : A tool for macronizing Latin text.">
 		<meta name="keywords" content="Latin, macronizer">
+		<link rel="shortcut icon" href="images/favicon.ico">
 
 		<link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
 		<script src="epiceditor/js/epiceditor.js"></script>
@@ -16,7 +17,7 @@
 			<header class="inner">
 			  <a id="forkme_banner" href="https://github.com/fps-vogel/maccer">View on GitHub</a>
 
-			  <h1 id="project_title">maccer</h1>
+			  <h1 id="project_title">māccer</h1>
 			  <h2 id="project_tagline">A tool for macronizing Latin text.</h2>
 
 				<section id="downloads">
@@ -30,17 +31,17 @@
 		<div id="main_content_wrap" class="outer">
 			<section id="main_content" class="inner">
 				<br>
-				<div><em>N.B. This tool is still in development. The word key is under revision, and the full offline version of the program, which can handle longer texts, is not available yet for download since I am still writing documentation.</em></div>
+				<div><em>N.B. This tool is still in development. The word key is under revision, and the full offline version of the program, which can handle longer texts and includes all data and source code, is not available yet for download since I am still writing documentation for it.</em></div>
 				<nav id="toolbar">
-					<button type="button" title="insert macrons and flags" data-command="macronize">macronize</button>
-					<button type="button" title="convert hyphens to macrons" data-command="hyphens">a- → ā</button>
+					<button type="button" title="insert macrons and flags" data-command="macronize">māc!</button>
+					<button type="button" title="convert hyphens to macrons" data-command="hyphens">a- › ā</button>
 					<button type="button" title="remove flags" data-command="clearflags">flags</button>
-					<button type="button" title="remove macrons" data-command="clearmacs">ō → o</button>
+					<button type="button" title="remove macrons" data-command="clearmacs">ō › o</button>
+					<button type="button" title="undo/redo last command" data-command="undo">↺</button>
 					<button type="button" title="contact me or report a problem" data-command="email">✉</button>
 				</nav>
 				<div id="epiceditor"></div>
 				<div>
-					<br>
 					<table>
 					<tbody>
 					<tr>
@@ -48,41 +49,41 @@
 						<h2>Instructions</h2>
 						<ol>
 						<li>Paste or write plain Latin text into the box above.</li>
-						<li>Click <mark>macronize</mark>.</li>
-						<li>Insert macrons where missing (✖) or uncertain (✒, ✪, ❡) by placing a hyphen (-) after each long vowel, then click <mark>a-&nbsp;→&nbsp;ā</mark>.</li>
+						<li>Click <mark>māc!</mark>.</li>
+						<li>Insert macrons where missing (✖) or uncertain (✒, ✪, ❡) by placing a hyphen (-) after each long vowel, then click <mark>a-&nbsp;›&nbsp;ā</mark>.</li>
 						<li>Remove flags (the symbols above) by clicking <mark><strike>flags</strike><mark>.</li>
 						</ol>
 						<p><strong>To contact me:</strong> Click <mark>✉</mark>. If you have Latin text with macrons and would like to make this tool smarter, please let me know!</p>
 						<p><strong>To report a problem:</strong> Select your text, click <mark>✉</mark>, send, and I will look into it. If your problem is with anything other than <mark>macronize</mark>, please make a note of it in the email.</p>
 					</td>
-					<td width="35%">
-						<table border="1px solid #373737">
+					<td width="34%">
+						<table id="key">
 						<thead>
 						<tr class="header">
 						<th align="left"></th>
-						<th align="left">KEY</th>
+						<th align="left">FLAGS</th>
 						</tr>
 						</thead>
 						<tbody>
-						<tr class="odd">
-						<td align="left">✖</td>
-						<td align="left">unknown word.</td>
+						<tr id="key" class="odd">
+						<td id="key" align="left">✖</td>
+						<td id="key" align="left">unknown word.</td>
 						</tr>
-						<tr class="even">
-						<td align="left">✒</td>
-						<td align="left">ambiguous: uncertain vowels marked with a tilde (~).</td>
+						<tr id="key" class="even">
+						<td id="key" align="left">✒</td>
+						<td id="key" align="left">ambiguous: uncertain vowels marked with a tilde (~).</td>
 						</tr>
-						<tr class="odd">
-						<td align="left">✪</td>
-						<td align="left">guessed based on frequency.</td>
+						<tr id="key" class="odd">
+						<td id="key" align="left">✪</td>
+						<td id="key" align="left">guessed based on frequency.</td>
 						</tr>
-						<tr class="even">
-						<td align="left">❡</td>
-						<td align="left">prefix or enclitic detected attached to a known word.</td>
+						<tr id="key" class="even">
+						<td id="key" align="left">❡</td>
+						<td id="key" align="left">prefix or enclitic detected attached to a known word.</td>
 						</tr>
-						<tr class="odd">
-						<td align="left">☛</td>
-						<td align="left">invalid characters detected.</td>
+						<tr id="key" class="odd">
+						<td id="key" align="left">☛</td>
+						<td id="key" align="left">invalid characters detected.</td>
 						</tr>
 						</tbody>
 						</table>
@@ -92,8 +93,9 @@
 					</table>
 					<h1>Tips</h1>
 					<ul>
-					<li>Text can be de-macronized by clicking <mark>ō&nbsp;→&nbsp;o</mark>.</li>
+					<li>Text can be de-macronized by clicking <mark>ō&nbsp;›&nbsp;o</mark>.</li>
 					<li>If any text is selected, commands will be applied only to the selection.</li>
+					<li>Click <mark>↺</mark> to undo the most recent command, but this will also undo all changes since then. Click it again to redo the command and all changes after it.</li>
 					<li>Use comments (C-style <code>//</code> or <code>/* */</code>) to exclude any words that should not be macronized (e.g. a passage in another language).</li>
 					<li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> formatting is supported. Click the preview icon in the text area to render.</li>
 					</ul>
@@ -107,16 +109,10 @@
 					</ol>
 					<h3>This program is really slow!</h3>
 					<p>I’m not a programmer, least of all a web programmer: I did not imagine Maccer running on a webpage until late in its development, when I found out Lua scripts could be run on the web via the <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a>. I thought it would be worth a try, and here is the result. It would be faster if it were ported to pure JavaScript, but it is what it is. For best performance, download the full desktop version via one of the download links above—the .zip version if you’re not sure.</p>
-					<h3>But the program is really, <em>really</em> slow with a long text!</h3>
+					<h3>But the program is really, <em>really</em> slow for a long text!</h3>
 					<p>The web version does not handle long texts very well, and texts of about 2000 words or more will simply fail to macronize. The offline version has no such limitation.</p>
 					<h3>How does it work?</h3>
-					<p>Maccer operates based on a list of Latin word forms generated from several digital texts already marked with macrons. Besides finding definite matches between plain- and macron-forms, Maccer can handle a few special cases:</p>
-					<ul>
-					<li>ambiguous words matched as far as possible, e.g. <em>amīcã</em>, <em>hõc</em>, <em>mãlus</em> (flagged ✒),</li>
-					<li>matches guessed based on probability—if one form is significantly more frequent in the source texts than the rest (flagged ✪),</li>
-					<li>unknown words guessed based on the presence of prefixes and/or enclitics attached to a known word (flagged ❡),</li>
-					<li>abbreviations, e.g. “a.” in “a. Kal.” will remain short but “a” not preceding a period will always become long, as in “ā Caesare”,</li>
-					</ul>
+					<p>Maccer operates based on a list of Latin word forms generated from several digital texts already marked with macrons. Besides finding definite matches between plain- and macron-forms, Maccer can handle a few special cases: in addition to the ones denoted by flags, abbreviations are detected, e.g. “a.” in “a. Kal.” remains short but “a” not preceding a period becomes long, as in “ā Caesare”.</p>
 					<h3>But these online texts with macrons are full of errors!</h3>
 					<p>Yes, the texts I have found that have vowel quantity marked range from nearly consistent to worse than nothing, and it would be impossible to correct every single mistake in them. However, with the help of a script that detects possible errors in the word key, this process becomes much less haphazard. See the documentation in the offline version.</p>
 					<p>That being said, this tool is not and does not pretend to be a substitute for the human editor, only to make this particular task less time-consuming and, I hope, less tedious.</p>

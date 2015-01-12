@@ -10,7 +10,8 @@
 	var options = {
 		file: {
 			name: 'maccer',
-			defaultContent: text
+			defaultContent: text,
+			autoSave: 10000
 		},
 		theme: {
 			preview: '/themes/preview/bartik.css',
