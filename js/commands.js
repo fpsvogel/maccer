@@ -42,6 +42,7 @@
 	var Commands = Object.create(null);
 	Commands = {
 		macronize: function (editor, selection) {
+			editor.save();
 			undoState = editor.exportFile();
 			console.log(selection.toString().length);
 			try {
@@ -55,6 +56,7 @@
 			} catch(e) { }
 		},
 		hyphens: function (editor, selection) {
+			editor.save();
 			undoState = editor.exportFile();
 			try {
 				if (selection.toString().length === 0) {
@@ -67,6 +69,7 @@
 			} catch(e) { }
 		},
 		clearflags: function (editor, selection) {
+			editor.save();
 			undoState = editor.exportFile();
 			try {
 				if (selection.toString().length === 0) {
@@ -79,6 +82,7 @@
 			} catch(e) { }
 		},
 		clearmacs: function (editor, selection) {
+			editor.save();
 			undoState = editor.exportFile();
 			try {
 				if (selection.toString().length === 0) {
@@ -91,11 +95,13 @@
 			} catch(e) { }
 		},
 		undo: function (editor, selection) {
+			editor.save();
 			var temp = undoState;
 			undoState = editor.exportFile();
 			editor.importFile("mac", temp);
 		},
 		email: function (editor, selection) {
+			editor.save();
 			if (selection.toString().length > 0) {
 				contactMe("Maccer bug report", selection.toString());
 			} else {
