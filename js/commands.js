@@ -46,7 +46,7 @@ var test = "empty!";
 	var Commands = Object.create(null);
 	Commands = {
 		macronize: function (editor, selection) {
-			// editor.save();
+			// editor.save();	// tried this with less frequent autosaving, but recent characters were left out of macronize
 			undoState = editor.exportFile();
 			console.log(selection.toString().length);
 			try {
