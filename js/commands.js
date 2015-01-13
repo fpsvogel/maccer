@@ -1,6 +1,9 @@
-var luatools = "return 'haha'";	// given a proper value in lua.js (whose loading is deferred due to size)
-var luamac = "";
-var test = "empty!";
+var luatools = "";	// these are given proper values in lua.js and key.js (whose loading is deferred due to size)
+var luamacfirst = "";
+var luamackey = "";
+var luamaclast = "";
+var luamac = null; 	// the above three combined (taken from two different files, editability's sake)
+
 
 (function (window) {
 	"use strict";
@@ -46,6 +49,12 @@ var test = "empty!";
 	var Commands = Object.create(null);
 	Commands = {
 		macronize: function (editor, selection) {
+			if (luamac === null) {
+				luamac = luamacfirst + luamackey + luamaclast;
+				luamacfirst = null;
+				luamackey = null;
+				luamaclast = null;
+			}
 			// editor.save();	// tried this with less frequent autosaving, but recent characters were left out of macronize
 			undoState = editor.exportFile();
 			console.log(selection.toString().length);
@@ -60,7 +69,6 @@ var test = "empty!";
 			} catch(e) { }
 		},
 		hyphens: function (editor, selection) {
-			console.log(test);
 			// editor.save();
 			undoState = editor.exportFile();
 			try {
