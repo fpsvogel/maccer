@@ -50,11 +50,15 @@ function clearmacs(text) \
 	return utf8replace(text, asciitbl) \
 end \
  \
+function removetrailing(text) \
+	return text:gsub("(%S)%s\x5Cn", "%1\x5Cn") \
+end \
+ \
 local command, text = ... \
 if command == "hyphens" then text = hyphens(text) \
 elseif command == "clearflags" then text = clearflags(text) \
 elseif command == "clearmacs" then text = clearmacs(text) end \
-return text \ ';
+return removetrailing(text) \ ';
 
 
 
@@ -496,8 +500,13 @@ function clearflags(text) \
 	local flagstbl =  {[NOTFOUND]="", [AMBIG]="", [GUESS]="", [AFFIX]="", [INVALID]=""} \
 	return utf8replace(text, flagstbl) \
 end \
+ \
+function removetrailing(text) \
+	return text:gsub("(%S)%s\x5Cn", "%1\x5Cn") \
+end \
+ \
 \
 local text = ... \
-return macronize(clearflags(text)) \ ';
+return removetrailing(macronize(clearflags(text))) \ ';
 	
 }(window));

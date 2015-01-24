@@ -50,6 +50,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 		}
 		var fragment = document.createDocumentFragment();
 		lines.forEach(function (line) {
+			console.log("'" + line + "'")
 			fragment.appendChild(document.createTextNode(line));
 			fragment.appendChild(document.createElement('br'));
 		});
@@ -83,6 +84,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 			undoState = editor.exportFile();
 			try {
 				if (selection.toString().length === 0) {
+					console.log(editor.exportFile());
 					var rets = L.execute(luatools, "hyphens", editor.exportFile());
 					editor.importFile("mac", rets[0]);
 				} else {
