@@ -30,7 +30,7 @@
 		<!-- MAIN CONTENT -->
 		<div id="main_content_wrap" class="outer">
 			<section id="main_content" class="inner">
-				<div><em>N.B. This tool is still in development. The word key is under revision, and the full offline version of the program, which can handle longer texts and includes all data and source code, is not available yet for download since I am still writing documentation for it.</em></div>
+				<div><em>N.B. Maccer still in development. See the "Coming Soon" section below.</em></div>
 				<nav id="toolbar">
 					<button type="button" title="insert macrons and flags" data-command="macronize">māc!</button>
 					<button type="button" title="convert hyphens to macrons" data-command="hyphens">a- › ā</button>
@@ -97,23 +97,29 @@
 					<li>Use comments (C-style <code>//</code> or <code>/* */</code>) to exclude any words that should not be macronized, e.g. a passage in another language.</li>
 					<li><a href="http://daringfireball.net/projects/markdown/syntax">Markdown</a> formatting is supported. Click the preview icon in the text area to render.</li>
 					</ul>
+					<h1>Coming Soon</h1>
+					<ul>
+					<li>Revision of the word key.</li>
+					<li>Enlargement of the word key with a full list of inflected lexical entries, thanks to the ongoing work of Keith Alexander Woodell of <a href="http://www.latinlexicon.org/">Numen</a>.</li>
+					<li>The full offline version of the program, which can handle longer texts and includes all data and source code.</li>
+					</ul>
 					<h1>Q &amp; A</h1>
-					<h3>A lot of words get “✖” flags instead of macrons. This program is stupid!</h3>
+					<h3>1. A lot of words get “✖” flags instead of macrons. This program is stupid!</h3>
 					<p>Maccer operates based on a list of Latin word forms generated from digital texts already marked with macrons. It does <em>not</em> generate inflected forms based on principal parts. This has the advantage of not inventing forms that were not actually used, but also the disadvantage of the word list being limited by the number of its source texts, which so far is very small. This may change in the future, but for the sake of simplicity that is the method I chose to start with. That means that while individual forms can be added manually to the word key, e.g. <em>abiēgnō</em>, entire words in all their inflections cannot be added in one stroke, as in <em>abiēgnus</em>, <em>-a</em>, <em>-um</em>.</p>
-					<p>Consequently, Maccer inserts macrons were possible (i.e. for forms already in the key with no similar possibilities as in <em>hōc</em> and <em>hoc</em>), but <strong>it is up to you to take care of the word forms Maccer has guessed or does not know</strong>.</p>
+					<p>Consequently, Maccer inserts macrons were possible (i.e. for forms already in the key with no similar possibilities as in <em>hōc</em> and <em>hoc</em>), but <strong>it is up to you to take care of the words Maccer has guessed or does not know</strong>. Even for words that are not flagged as problematic, care should be taken: especially now, when the list of known forms is still short and many alternative forms are missing.</p>
 					<p>The good news is that the more Maccer is used, the smarter it will become. After you have filled in the gaps by hand, Maccer can then analyze your output and add the previously unknown word forms to the key. Ideally the online version would allow anyone to improve the word key in this way, but as I'm not a web programmer, the only way to do this is by sending me texts with macrons (whether created with the help of Maccer or not), and I'll merge them into the word key in the offline version and then update the key in the online version.</p>
-					<h3>So this word key is based on online texts? But those are full of errors!</h3>
+					<h3>2. So this word key is based on online texts? But those are full of errors!</h3>
 					<p>Yes, the texts I have found that have vowel quantity marked range from almost perfect to worse than nothing, and it would be impossible to correct every single mistake in them. However, with the help of another script that detects possible errors in the word key, and some human intervention, this automated process becomes much less haphazard: for example, hidden long vowels, non-classical orthography, and words incorrectly marked where the correct form is known (e.g. <em>amicus</em> and <em>amīcus</em>) are all detected and corrected under the supervision of the user.</p>
-					<h3>I can’t copy text from Word without losing all the formatting!</h3>
+					<h3>3. I can’t copy text from Word without losing all the formatting!</h3>
 					<p>Web applications have trouble reading Word formatting, so here it is not supported. But most formatting can be preserved by following these steps:</p>
 					<ol>
 					<li>Plug your Word file into the <a href="http://word-to-markdown.herokuapp.com/">Word to Markdown Converter</a>.</li>
 					<li>Copy the resulting Markdown-formatted text, paste it above, and macronize it.</li>
 					<li>Generate formatting via the preview button, or for more customizability, via <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>.</li>
 					</ol>
-					<h3>This program is really slow!</h3>
+					<h3>4. This program is really slow!</h3>
 					<p>I’m not a programmer, least of all a web programmer: I did not imagine Maccer running on a webpage until late in its development, when I found out <a href="http://www.lua.org/">Lua</a> scripts could be run on the web via the <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a>. I thought it would be worth a try, and here is the result. The web version would be faster if it were ported to pure JavaScript, but it is what it is.</p>
-					<h3>This program doesn't work on [insert book title here]!</h3>
+					<h3>5. This program doesn't work on [insert book title here]!</h3>
 					<p>The web version simply cannot macronize texts of about 2000 words or more. The offline version has no such limitation.</p>
 					<p>Contact me (see above) if you have any further questions.</p>
 					<h1>Thanks to the creators of:</h1>
