@@ -28,6 +28,8 @@ var luamac = null; 	// the above three combined (taken from two different files,
 	};
 	
 	function replaceSelection(document, selection, newText) {
+		console.log(selection.toString().length());
+		console.log(newText.toString().length());
 		if (document === null || document === undefined) {
 			document = window.document;
 		}
