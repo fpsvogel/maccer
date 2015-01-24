@@ -27,7 +27,15 @@ var luamac = null; 	// the above three combined (taken from two different files,
 		window.open(uri);
 	};
 	
-	function replaceSelection(document, selection, newText) {
+	function getLines(selection) {
+		var lines = selection.toString();
+		if (!lines) {
+			return [];
+		}
+		return lines.split('\n');
+	}
+	
+	function replaceLines(document, selection, lines) {
 		if (document === null || document === undefined) {
 			document = window.document;
 		}
@@ -37,11 +45,14 @@ var luamac = null; 	// the above three combined (taken from two different files,
 		var range = selection.getRangeAt(0);
 		range.deleteContents();
 		range.collapse(false);
-		if (!newText) {
+		if (!lines) {
 			return;
 		}
 		var fragment = document.createDocumentFragment();
-		fragment.appendChild(document.createTextNode(newText));
+		lines.forEach(function (line) {
+			fragment.appendChild(document.createTextNode(line));
+			fragment.appendChild(document.createElement('br'));
+		});
 		range.insertNode(fragment.cloneNode(true));
 	}
 	
@@ -63,7 +74,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 					editor.importFile("mac", rets[0]);
 				} else {
 					var rets = L.execute(luamac, selection.toString());
-					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+					replaceLines(editor.editorIframeDocument, selection, getLines(rets[0]));
 				}
 			} catch(e) { }
 		},
@@ -76,7 +87,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 					editor.importFile("mac", rets[0]);
 				} else {
 					var rets = L.execute(luatools, "hyphens", selection.toString());
-					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+					replaceLines(editor.editorIframeDocument, selection, getLines(rets[0]));
 				}
 			} catch(e) { }
 		},
@@ -89,7 +100,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 					editor.importFile("mac", rets[0]);
 				} else {
 					var rets = L.execute(luatools, "clearflags", selection.toString());
-					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+					replaceLines(editor.editorIframeDocument, selection, getLines(rets[0]));
 				}
 			} catch(e) { }
 		},
@@ -102,7 +113,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 					editor.importFile("mac", rets[0]);
 				} else {
 					var rets = L.execute(luatools, "clearmacs", selection.toString());
-					replaceSelection(editor.editorIframeDocument, selection, rets[0]);
+					replaceLines(editor.editorIframeDocument, selection, getLines(rets[0]));
 				}
 			} catch(e) { }
 		},
