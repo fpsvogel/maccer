@@ -51,7 +51,7 @@ function clearmacs(text) \
 end \
  \
 function removetrailing(text) \
-	return text:gsub("(%S)%s\x5Cn", "%1\x5Cn") \
+	return text:gsub("\x5Cr", ""):gsub("([^ ]) \x5Cn", "%1\x5Cn") \
 end \
  \
 local command, text = ... \
@@ -502,7 +502,7 @@ function clearflags(text) \
 end \
  \
 function removetrailing(text) \
-	return text:gsub("(%S)%s\x5Cn", "%1\x5Cn") \
+	return text:gsub("\x5Cr", ""):gsub("([^ ]) \x5Cn", "%1\x5Cn") \
 end \
  \
 \

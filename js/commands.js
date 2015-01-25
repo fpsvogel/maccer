@@ -18,7 +18,7 @@ var luamac = null; 	// the above three combined (taken from two different files,
 	 };
 	
 	function contactMe(subject, problemText) {
-		var uri = "mailto:felipe.vogel@uky.edu?subject=" + encodeURIComponent(subject);
+		var uri = "mailto:fps.vogel@gmail.com?subject=" + encodeURIComponent(subject);
 		if (problemText != null) {
 			var d = new Date();
 			var body = d.yyyymmdd() + ":\r\n\r\n<<" + problemText + ">>";
