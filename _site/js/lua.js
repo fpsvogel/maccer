@@ -8,7 +8,6 @@
    local charbytes \
    local newstr = "" \
    while pos <= bytes do \
-	print(pos) \
       charbytes = utf8charbytes(s, pos) \
       local c = string.sub(s, pos, pos + charbytes - 1) \
       newstr = newstr .. (mapping[c] or c) \
@@ -41,7 +40,7 @@ function hyphens(text) \
 end \
  \
 function clearflags(text) \
-	local flagstbl =  {["✖"]="", ["✒"]="", ["✪"]="", ["❡"]="", ["☛"]=""} \
+	local flagstbl =  {["✖"]="", ["✒"]="", ["✪"]="", ["❡"]="", ["❋"]=""} \
 	return utf8replace(text, flagstbl) \
 end \
  \
@@ -117,7 +116,6 @@ function utf8replace (s, mapping) \
    local charbytes \
    local newstr = "" \
    while pos <= bytes do \
-	print(pos) \
       charbytes = utf8charbytes(s, pos) \
       local c = string.sub(s, pos, pos + charbytes - 1) \
       newstr = newstr .. (mapping[c] or c) \
@@ -310,7 +308,7 @@ function throwerror(errormsg) \
 end \
  \
 local LETTERS = "[^\x5Ct\x5Cn%s%d%!%\x5C"%#%$%%%&%\x5Cx27%(%)%*%+%,%-%/%:%;%<%=%>%?%@%[%\x5C\x5C%]%^%_%`%{%|%}%~]+" \
-local NOTFOUND, AMBIG, GUESS, AFFIX, INVALID = "✖", "✒", "✪", "❡", "☛" \
+local NOTFOUND, AMBIG, GUESS, AFFIX, INVALID = "✖", "✒", "✪", "❡", "❋" \
 USER_IGNORE, NO_CHAIN, DOUBT_CHAR, LEFT_BEGIN, LEFT_CONTINUE, RIGHT_END, RIGHT_CONTINUE = "≠", "*", "~", "[", "<", "]", ">" \
 COMMENT, COMMENT_MULTI = "//([^\x5Cn]+)", "/%*(.*)%*/" \
 local GUESS_THRESHOLD, SHORT, LONG, EITHER = 0.75, 0, 1, 2';
@@ -323,7 +321,7 @@ local macrontbl = { ["i"]="ī", ["o"]="ō", ["u"]="ū", ["y"]="ȳ", ["a"]="ā", 
 local tildetbl = { ["o"]="õ", ["i"]="ĩ", ["a"]="ã", ["u"]="ũ", ["y"]="ỹ", ["e"]="ẽ" } \
 local capsinvtbl = { ["B"]="b", ["Õ"]="õ", ["Ỹ"]="ỹ", ["D"]="d", ["E"]="e", ["T"]="t", ["Ō"]="ō", ["N"]="n", ["G"]="g", ["W"]="w", ["Ā"]="ā", ["H"]="h", ["Ĩ"]="ĩ", ["I"]="i", ["F"]="f", ["Ã"]="ã", ["Ũ"]="ũ", ["V"]="v", ["K"]="k", ["J"]="j", ["Ū"]="ū", ["Ȳ"]="ȳ", ["Ī"]="ī", ["M"]="m", ["O"]="o", ["R"]="r", ["Y"]="y", ["U"]="u", ["A"]="a", ["P"]="p", ["Ē"]="ē", ["L"]="l", ["Q"]="q", ["X"]="x", ["Ẽ"]="ẽ", ["Z"]="z", ["C"]="c", ["S"]="s" } \
 local capstbl = { ["ã"]="Ã", ["c"]="C", ["b"]="B", ["ō"]="Ō", ["s"]="S", ["d"]="D", ["e"]="E", ["t"]="T", ["u"]="U", ["ỹ"]="Ỹ", ["g"]="G", ["w"]="W", ["ũ"]="Ũ", ["h"]="H", ["ā"]="Ā", ["i"]="I", ["ĩ"]="Ĩ", ["y"]="Y", ["v"]="V", ["ī"]="Ī", ["k"]="K", ["j"]="J", ["l"]="L", ["m"]="M", ["z"]="Z", ["ẽ"]="Ẽ", ["x"]="X", ["q"]="Q", ["f"]="F", ["õ"]="Õ", ["o"]="O", ["ē"]="Ē", ["ū"]="Ū", ["ȳ"]="Ȳ", ["n"]="N", ["r"]="R", ["a"]="A", ["p"]="P" } \
-local ignoretbl = { ["≠"]=true, ["•"]=true, ["›"]=true, ["»"]=true, ["✪"]=true, ["•"]=true, ["«"]=true, ["”"]=true, ["‹"]=true, ["☛"]=true, ["–"]=true, ["“"]=true, ["’"]=true, ["✒"]=true, ["‘"]=true, ["❡"]=true, ["—"]=true, ["†"]=true, ["±"]=true, ["✖"]=true } \
+local ignoretbl = { ["≠"]=true, ["•"]=true, ["›"]=true, ["»"]=true, ["✪"]=true, ["•"]=true, ["«"]=true, ["”"]=true, ["‹"]=true, ["❋"]=true, ["–"]=true, ["“"]=true, ["’"]=true, ["✒"]=true, ["‘"]=true, ["❡"]=true, ["—"]=true, ["†"]=true, ["±"]=true, ["✖"]=true } \
 local enclitictbl = { ["ve"]=true, ["ne"]=false, ["que"]=true } \
 local prefixtbl = { "abs", "ab", "ac", "ad", "aedi", "aequi", "af", "ag", "alti", "ambi", "amb", "amphi", "am", "ante", "anti", "an", "ap", "archi", "as", "at", "auri", "au", "a", "bene", "beni", "bis", "bi", "blandi", "cardio", "centi", "centu", "circum", "col", "com", "conn", "contra", "con", "co", "decem", "decu", "de", "dif", "dir", "dis", "di", "duode", "duoet", "du", "ef", "electro", "extra", "ex", "e", "inaequi", "inter", "intra", "intro", "ig", "il", "im", "in", "ir", "male", "multi", "ne", "non", "ob", "octu", "of", "omni", "op", "os", "per", "por", "praeter", "prae", "pro", "pseudo", "quadri", "quadru", "quincu", "quinqu", "quinti", "red", "re", "sed", "semi", "septem", "septu", "sesque", "sesqui", "sexqui", "ses", "sexti", "sextu", "sex", "se", "sim", "sub", "suc", "super", "supra", "superquadri", "sur", "sus", "trans", "tra", "tre", "tri", "ultra", "unde", "uni", "ve" } \
 local prefixmactbl = { ["quinqu"]="quīnqu", ["quincu"]="quīncu", ["non"]="nōn", ["pro"]="prō", ["de"]="dē", ["di"]="dī", ["uni"]="ūni", ["quinti"]="quīnti", ["a"]="ā", ["e"]="ē" } \
@@ -345,37 +343,44 @@ function macronize(text) \
 	while wstart do \
 		if hascomments then commentstbl = getcommentset(text) end \
 		if not hascomments or not commentstbl[wstart] then \
-			local w, userignore, isinvalid, periodremoved = text:sub(wstart, wend), false, false, false \
-			w, wstart, wend, userignore, isinvalid = ignorechars(w, wstart, wend, ignoretbl, false) \
+			local w, isinvalid, periodremoved = text:sub(wstart, wend), false, false \
+			w, wstart, wend, isinvalid = ignorechars(w, wstart, wend, ignoretbl, false) \
 			local finalw, flagstbl = w, {} \
 			local plainw, flags = w, nil \
-			if not userignore and w and w ~= "" then \
+			if w and w ~= "" then \
 				if isinvalid then flagstbl[INVALID] = true \
 				else \
-					local cappostbl = {} \
-					for pos = 1,utf8len(w) do \
-						local pchar = utf8sub(w, pos, pos) \
-						if capsinvtbl[pchar] then table.insert(cappostbl, pos) end \
+					local hasmacrons = false \
+					if not overwrite then \
+						for mac,_ in pairs(macroninvtbl) do \
+							if w:find(mac) then hasmacrons = true end \
+						end \
 					end \
-					local wlower = utf8replace(w, capsinvtbl) \
-					local suresubw, suresubatpostbl = subword(wlower, orthorigtbl, orthrepltbl, orthmodtbl, false) \
-					suresubw = utf8replace(suresubw, macroninvtbl) \
-					local doubtsubw, doubtsubatpostbl = nil, nil \
-					local isapplied, isnotfound, enclitic, prefix = false, false, nil, nil \
-					local wende, wstartp = nil, nil \
-					local subatpostbl = suresubatpostbl \
-					local triedenclitics, triedprefixes, triedencliticstwice, tryingabbrev, trieddoubtsub = false, false, false, false, false, false \
-					plainw = suresubw \
-					local plainwtry = plainw \
-					while not isapplied and not isnotfound do \
-						local macronw = keytbl[plainwtry] \
-						if macronw then \
+					if not hasmacrons then \
+						local cappostbl = {} \
+						for pos = 1,utf8len(w) do \
+							local pchar = utf8sub(w, pos, pos) \
+							if capsinvtbl[pchar] then table.insert(cappostbl, pos) end \
+						end \
+						local wlower = utf8replace(w, capsinvtbl) \
+						local suresubw, suresubatpostbl = subword(wlower, orthorigtbl, orthrepltbl, orthmodtbl, false, true) \
+						suresubw = utf8replace(suresubw, macroninvtbl) \
+						local doubtsubw, doubtsubatpostbl = nil, nil \
+						local isapplied, isnotfound, enclitic, prefix = false, false, nil, nil \
+						local wende, wstartp = nil, nil \
+						local subatpostbl = suresubatpostbl \
+						local triedenclitics, triedprefixes, triedencliticstwice, tryingabbrev, trieddoubtsub = false, false, false, false, false, false \
+						plainw = suresubw \
+						local plainwtry = plainw \
+						while not isapplied and not isnotfound do \
+							local macronw = keytbl[plainwtry] \
+							if macronw then \
 								local guessw, ambigw = nil, nil \
 								local partbl, parcount = getpars(plainwtry, keytbl) \
 								if parcount > 1 then \
 									local topparw, topfreq, totalfreq = nil, 0, 0 \
 									for parw,plainwkey in pairs(partbl) do \
-										local freq = freqtbl[parw] or 0 \
+										local freq = freqtbl[parw] or freqtbl[keytbl[plainwkey]] or 1 \
 										if not topparw or freq > topfreq then \
 											topparw, topfreq = parw, freq \
 										end \
@@ -411,18 +416,11 @@ function macronize(text) \
 										local origstr, replstr = orthorigtbl[subatpostbl[pos]], orthrepltbl[subatpostbl[pos]] \
 										local origlen, repllen = utf8len(origstr), utf8len(replstr) \
 										local macreplstr, macorigstr = utf8sub(finalw, pos, pos-1+repllen), nil \
-										if macreplstr ~= replstr then \
-											if not orthreplinvtbl then orthreplinvtbl = index(orthrepltbl) end \
-											local macorigindex = orthreplinvtbl[macreplstr] \
-											macorigstr = macorigindex and orthorigtbl[macorigindex] or nil \
-											if not macorigstr then \
-												throwerror("No macronized original form found for \x5C""..macreplstr.."\x5C" after the substitution \x5C""..origstr.."\x5C" -> \x5C""..replstr.."\x5C", for the word \x5C""..macs2hats(finalw).."\x5C". See \x5C"substitute.txt\x5C".") \
-												macorigstr = origstr \
-											end \
-										else macorigstr = origstr end \
+										macorigstr = origstr \
 										finalw = utf8sub(finalw, 1, pos-1)..macorigstr..utf8sub(finalw, pos+repllen) \
 									end \
 								end \
+								if prefix then finalw = finalw:gsub("ins", "īns"):gsub("inf", "īnf"):gsub("cons", "cōns"):gsub("conf", "cōnf") end \
 								for _,pos in pairs(cappostbl) do \
 									finalw = utf8sub(finalw, 1, pos-1)..capstbl[utf8sub(finalw, pos, pos)]..utf8sub(finalw, pos+1) \
 								end \
@@ -430,55 +428,56 @@ function macronize(text) \
 								if guessw then flagstbl[GUESS] = true \
 								elseif ambigw then flagstbl[AMBIG] = true end \
 								isapplied = true \
-						elseif not triedenclitics then \
-							if not enclitic then \
-								for enc,_ in pairs(enclitictbl) do \
-									if plainwtry:sub(#plainwtry-#enc+1) == enc then \
-										plainwtry = plainwtry:sub(1, #plainwtry-#enc) \
-										enclitic = enc \
+							elseif not triedenclitics then \
+								if not enclitic then \
+									for enc,_ in pairs(enclitictbl) do \
+										if plainwtry:sub(#plainwtry-#enc+1) == enc then \
+											plainwtry = plainwtry:sub(1, #plainwtry-#enc) \
+											enclitic = enc \
+											break \
+										end \
+									end \
+									triedenclitics = true \
+								else \
+									plainwtry = plainwtry:sub(1, #plainwtry-#enclitic) \
+									triedenclitics = true \
+								end \
+							elseif not triedprefixes then \
+								for _,pfplain in pairs(prefixtbl) do \
+									if plainw:sub(1, #pfplain) == pfplain then \
+										plainwtry = plainw:sub(#pfplain+1) \
+										prefix = prefixmactbl[pfplain] or pfplain \
 										break \
 									end \
 								end \
-								triedenclitics = true \
+								triedprefixes = true \
+							elseif triedprefixes and enclitic and prefix and not triedencliticstwice then \
+								triedenclitics = false \
+								triedencliticstwice = true \
 							else \
-								plainwtry = plainwtry:sub(1, #plainwtry-#enclitic) \
-								triedenclitics = true \
-							end \
-						elseif not triedprefixes then \
-							for _,pfplain in pairs(prefixtbl) do \
-								if plainw:sub(1, #pfplain) == pfplain then \
-									plainwtry = plainw:sub(#pfplain+1) \
-									prefix = prefixmactbl[pfplain] or pfplain \
-									break \
-								end \
-							end \
-							triedprefixes = true \
-						elseif triedprefixes and enclitic and prefix and not triedencliticstwice then \
-							triedenclitics = false \
-							triedencliticstwice = true \
-						else \
-							if plainw:sub(#plainw) == "." then \
-								plainw = plainw:sub(1, #plainw-1) \
-								plainwtry = plainw \
-								periodremoved = true \
-								triedenclitics, triedprefixes, triedencliticstwice = false, false, false \
-								enclitic, prefix, wende, wstartp = nil, nil, nil, nil \
-							else \
-								periodremoved = false \
-								local prevdoubtsubw = doubtsubw \
-								doubtsubw, doubtsubatpostbl = subword(wlower, orthorigtbl, orthrepltbl, orthmodtbl, true, doubtsubw, doubtsubatpostbl) \
-								doubtsubw = utf8replace(doubtsubw, macroninvtbl) \
-								if doubtsubw ~= suresubw and doubtsubw ~= prevdoubtsubw then \
-									plainw = doubtsubw \
+								if plainw:sub(#plainw) == "." then \
+									plainw = plainw:sub(1, #plainw-1) \
 									plainwtry = plainw \
-									subatpostbl = doubtsubatpostbl \
+									periodremoved = true \
 									triedenclitics, triedprefixes, triedencliticstwice = false, false, false \
 									enclitic, prefix, wende, wstartp = nil, nil, nil, nil \
-								else isnotfound = true end \
+								else \
+									periodremoved = false \
+									local prevdoubtsubw = doubtsubw \
+									doubtsubw, doubtsubatpostbl = subword(wlower, orthorigtbl, orthrepltbl, orthmodtbl, true, true, doubtsubw, doubtsubatpostbl) \
+									doubtsubw = utf8replace(doubtsubw, macroninvtbl) \
+									if doubtsubw ~= suresubw and doubtsubw ~= prevdoubtsubw then \
+										plainw = doubtsubw \
+										plainwtry = plainw \
+										subatpostbl = doubtsubatpostbl \
+										triedenclitics, triedprefixes, triedencliticstwice = false, false, false \
+										enclitic, prefix, wende, wstartp = nil, nil, nil, nil \
+									else isnotfound = true end \
+								end \
 							end \
 						end \
+						if isnotfound then flagstbl[NOTFOUND] = true end \
 					end \
-					if isnotfound then flagstbl[NOTFOUND] = true end \
 				end \
 				local flagstr = "" \
 				for flag,_ in pairs(flagstbl) do \
@@ -491,7 +490,8 @@ function macronize(text) \
 				if lendiff > 0 then wend = wend + lendiff end \
 			end \
 		end \
-		wstart, wend = text:find(LETTERS, wend+1) \
+		wend = wend + 1 \
+		wstart, wend = text:find(LETTERS, wend) \
 	end \
 	return text \
 end \

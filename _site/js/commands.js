@@ -1,6 +1,7 @@
 var luatools = "";	// these are given proper values in lua.js and key.js (whose loading is deferred due to size)
 var luamacfirst = "";
 var luamackey = "";
+var luamacfreq = "";
 var luamaclast = "";
 var luamac = null; 	// the above three combined (taken from two different files, editability's sake)
 
@@ -61,9 +62,10 @@ var luamac = null; 	// the above three combined (taken from two different files,
 	Commands = {
 		macronize: function (editor, selection) {
 			if (luamac === null) {
-				luamac = luamacfirst + luamackey + luamaclast;
+				luamac = luamacfirst + luamackey + luamacfreq + luamaclast;
 				luamacfirst = null;
 				luamackey = null;
+				luamacfreq = null;
 				luamaclast = null;
 			}
 			// editor.save();	// tried this with less frequent autosaving, but recent characters were left out of macronize
