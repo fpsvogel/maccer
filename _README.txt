@@ -1,12 +1,17 @@
 Maccer  
 by Felipe Vogel  
 fps.vogel@gmail.com  
-version 0.1 (July 19, 2015)  
+version 0.1 (July 20, 2015)  
 web version: http://fps-vogel.github.io/maccer/
 
 Copyright 2015 Felipe Vogel. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
 
 **WARNING:** Maccer has been tested very little and is probably not user-friendly, but since it is as complete I set out to make it, I do not plan on continuing active development aside from fixing bugs. Please report bugs here: https://github.com/fps-vogel/maccer/issues.
+
+News
+============
+20 July 2015: v0.1 released.
+13 Jan. 2015: Dr. Chris Francese reviews Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/). Thanks!
 
 Introduction
 ============
@@ -132,3 +137,5 @@ Thanks to the creators of:
 - [utf8.lua](https://github.com/alexander-yakushev/awesomerc/blob/master/awesompd/utf8.lua)
 - [EpicEditor](http://epiceditor.com/) and [demos](http://epiceditor-demos.herokuapp.com/)
 - [Slate theme](https://github.com/jasoncostello/slate)
+
+S. D. G.
