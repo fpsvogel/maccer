@@ -12,35 +12,35 @@ Introduction
 ============
 Maccer is a tool for macronizing Latin texts. The following are its functions, each of which can be run via an executable .bat file found in the Maccer root folder.
 
-*NOTE: These .bat files run in Windows only. Theoretically the scripts can be run under Linux/OS X by executing "luapower/luajit ../scripts/X.lua" from the Maccer root folder, where X is the script name. When in doubt about the script name, check the .bat file.*
+*NOTE: These .bat files run in Windows only. Theoretically the scripts can be run under Linux/OS X by executing `luapower/luajit ../scripts/X.lua` from the Maccer root folder, where X is the script name. When in doubt about the script name, check the .bat file.*
 
 - **Exmacronize:** The "learning" function. Builds a word key by analyzing texts with macrons already. The word key is a list of unique word forms with macrons, along with their frequencies.
 - **Analyze Key:** Detects possible errors in the word key, and saves them for user review and correction.
 - **Repair Key:** Fixes errors in the word key and its source texts, based on user-corrected output of Analyze Key.
 - **Macronize:** The primary function. Using the word key, adds macrons to plain text, or guesses where possible, flagging uncertain or unknown words for user review.
-- *utility functions ("util - [name].bat"):*
+- *utility functions (`util - [name].bat`):*
   - **Hyphens to Macrons:** Replaces vowels followed by a macron to that vowel with a macron, e.g. "a-" → "ā".
   - **Remove Flags**
   - **Remove Macrons**
-  - **Clear Key:** Removes all non-manually-entered entries (i.e. all entries from source texts) from the word key, and removes all entries in the source list ("data/sources.txt").
+  - **Clear Key:** Removes all non-manually-entered entries (i.e. all entries from source texts) from the word key, and removes all entries in the source list (`data/sources.txt`).
   - **Clear backup and logs**
 
-The three formatting functions (the first three utility functions above) apply to all texts in the "macronize/" folder.
+The three formatting functions (the first three utility functions above) apply to all texts in the `macronize/` folder.
 
 Macronizing a text
 ==================
-1. Copy plain Latin text(s) (in .txt format) into the "macronize/" folder.
-2. Run "macronize.bat". This adds macrons and flags to all texts in "macronize/". A backup file of each text is created in "backup/".
+1. Copy plain Latin text(s) (in .txt format) into the `macronize/` folder.
+2. Run `macronize.bat`. This adds macrons and flags to all texts in `macronize/`. A backup file of each text is created in `backup/`.
   - To exclude any words that should not be macronized, e.g. a passage in another language, use C-style comments: // at the beginning of a line to excludes that line, and /*...*/ excludes everything (...) in between.
 3. Manually correct the text(s). See the table below for the meaning of each flag.
   - Add missing macrons either using a special keyboard or via the following method:
-    1. Replace all hyphens following a vowel in all texts in "macronize/" with "\-". This prevents intended hyphens from becoming macrons in step 3 below.
+    1. Replace all hyphens following a vowel in all texts in `macronize/` with "\-". This prevents intended hyphens from becoming macrons in step 3 below.
 	2. Insert a hyphen after each vowel to be marked with a macron.
-	3. Run "hyphens-to-macrons.bat". Backslashes before hyphens (placed in step 1) are automatically removed.
-  - After corrections, run "remove-flags.bat".
+	3. Run `util - hyphens to macrons.bat`. Backslashes before hyphens (placed in step 1) are automatically removed.
+  - After corrections, run `util - remove flags.bat`.
 4. Help improve Maccer: send me your macronized texts, and I'll incorporate them as source texts in the next release and give you credit for your contribution. (See below for credits.)
 
-If at any time a plain version of a macronized text is desired, copy the text into "macronize/" and run "remove-macrons.bat". A backup file of each text is created in "backup/".
+If at any time a plain version of a macronized text is desired, copy the text into `macronize/` and run `util - remove macrons.bat`. A backup file of each text is created in `backup/`.
 
 |FLAG| MEANING                                               |
 |----|-------------------------------------------------------|
@@ -53,41 +53,41 @@ If at any time a plain version of a macronized text is desired, copy the text in
 ### Errors and warnings
 Note: In the console window and log files,  are displayed instead of macrons above long vowels because of font limitations.
 
-1. ERROR--INVALID SUBSTITUTION CONSTANT
+1. `ERROR--INVALID SUBSTITUTION CONSTANT`
   - Thrown by: 
-  - Example: '"*". A constant must be a non-alphanumeric ASCII character that is not a modifier.'
-  - What it means: See "data/orthography.txt" and "data/hidden.txt" for information on constants and modifiers, respectively. But if you haven't created any substitution constants, you may have an unclosed multi-line comment (i.e. /* without */) in one of the two above-mentioned files.
+  - Example: `"*". A constant must be a non-alphanumeric ASCII character that is not a modifier.`
+  - What it means: See `data/orthography.txt` and `data/hidden.txt` for information on constants and modifiers, respectively. But if you haven't created any substitution constants, you may have an unclosed multi-line comment (i.e. /* without */) in one of the two above-mentioned files.
 
-2. ERROR--UNREADABLE SUBSTITUTION LINE
-  - Example: '"act - āct[". Line could not be interpreted.'
-  - What it means: The given entry (either in "data/orthography.txt" or "data/hidden.txt") is incorrectly structured. An entry must be a line in the form "[original][modifiers] = [replace]", such as "act[ = āct".
+2. `ERROR--UNREADABLE SUBSTITUTION LINE`
+  - Example: `"act - āct[". Line could not be interpreted.`
+  - What it means: The given entry (either in `data/orthography.txt` or `data/hidden.txt`) is incorrectly structured. An entry must be a line in the form `[original][modifiers] = [replace]`, such as `act[ = āct`.
 
 Expanding the word key
 ======================
 To incorporate a macronized text into the word key, i.e. to make it a source text:
 
-1. Place the text (in a .txt file) into the "sources/" folder, or into a subfolder.
-2. Run "exmacronize.bat" to rebuild the word key. For detailed results, see the log file created in "logs/".
+1. Place the text (in a .txt file) into the `sources/` folder, or into a subfolder.
+2. Run `exmacronize.bat` to rebuild the word key. For detailed results, see the log file created in `logs/`.
 3. Most macronized texts are not perfect. To correct any errors introduced into the word key:
-  1. Run "key-analyze.bat". Possible errors are saved in "_repairs.txt" in the Maccer root folder.
-  2. Correct "_repairs.txt", according to the instructions therein.
-  3. Run "key-repair.bat". This applies the substitutions stored in "_repairs.txt" to both the key and the source texts. These substitutions are then saved in "data/repair-auto.txt" so that in the future they will appear in the "auto-replace" sections of "_repl.txt" (since they have already been confirmed as correct by the user). Likewise, possible errors that were ignored are saved in "data/repair-ok.txt" and will be ignored in the future.
+  1. Run `key - analyze.bat`. Possible errors are saved in `_repairs.txt` in the Maccer root folder.
+  2. Correct `_repairs.txt`, according to the instructions therein.
+  3. Run `key - repair.bat`. This applies the substitutions stored in `_repairs.txt` to both the key and the source texts. These substitutions are then saved in `data/repair-auto.txt` so that in the future they will appear in the "auto replace" sections of `_repairs.txt` (since they have already been confirmed as correct by the user). Likewise, possible errors that were ignored are saved in `data/repair-ok.txt` and will be ignored in the future.
 
 If you have renamed or modified a source text, the word key must be re-built: run Clear Key, then Exmacronize.
 
-To manually add words to the key, simply enter them into "data/key.txt", one per line at the end of the list. The list will be alphabetized next time Exmacronize is run.
+To manually add words to the key, simply enter them into `data/key.txt`, one per line at the end of the list. The list will be alphabetized next time Exmacronize is run.
 
-To manually correct a word in the key, change it in "key.txt" ONLY if it is a manually added word. If it is taken from a source text, enter it into "_repairs.txt" in the "Custom" section (according to that section's instructions) after running Analyze Key, then run Repair Key. This will correct the word in the key as well as in the source text(s) in which it occurs.
+To manually correct a word in the key, change it in `key.txt` ONLY if it is a manually added word. If it is taken from a source text, enter it into `_repairs.txt` in the "Custom" section (according to that section's instructions) after running Analyze Key, then run Repair Key. This will correct the word in the key as well as in the source text(s) in which it occurs.
 
 Customizing
 ===========
-The following files in the "data" folder may be expanded or changed, according to the instructions in each file. Note that text in C-style comments (// and /*...*/) is invisible to Maccer.
-- "_CONFIG.txt"
-- "enclitics.txt"
-- "hidden.txt"
-- "ignore.txt"
-- "orthography.txt"
-- "prefixes.txt"
+The following files in the `data` folder may be expanded or changed, according to the instructions in each file. Note that text in C-style comments (// and /*...*/) is invisible to Maccer.
+- `_CONFIG.txt`
+- `enclitics.txt`
+- `hidden.txt`
+- `ignore.txt`
+- `orthography.txt`
+- `prefixes.txt`
 
 Q & A
 =====
