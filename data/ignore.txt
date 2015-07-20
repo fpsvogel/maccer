@@ -1,0 +1,23 @@
+﻿// CHARACTERS IGNORED BY Macronize AND Exmacronize.
+// All Unicode characters (other than vowels with macrons) found in texts should be listed.
+
+“
+”
+‘
+’
+‹
+›
+«
+»
+–	// en dash
+—	// em dash
+†
+·
+•
+≠
+±
+✖
+✒
+✪
+❡
+❋

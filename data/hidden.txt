@@ -1,0 +1,883 @@
+﻿// HIDDEN QUANTITY SUBSTITUTION LIST
+// used by Analyze/Repair Key
+
+//*
+HOW THE LIST WORKS
+This is a string substitution (i.e. find-and-replace) list. Analyze Key checks each word in the key against each of the entries in this list. If in a word in the text it finds the string of characters on the left side of an entry, it replaces it with the string of characters on the right side. The following modifiers, placed after the original (left) string, add conditions to whether or not the word will be changed.
+
+[ = only if the string begins the word.
+] = only if the string ends the word.
+< = only if the string does not begin the word.
+> = only if the string does not end the word.
+~ = inconclusive, so mark it specially in "_repairs.txt".
+
+e.g. "unc[>" would match "unctio" but not "nunc" or "unc"
+
+String matching is case-insenstive.
+
+After the lists of general rules below, the list of strings from specific words appears in alphabetical order, except where a more specific case should override a more general case, e.g.:
+
+lictōr = līctōr
+	dēlīct = dēlict
+
+The list includes the words of Greek origin in Bennett's list, with long vowels preserved even when contradicted by LaNe (e.g. Vēstīnī from Οὐηστῖνοι). But of course many others are absent. One of these from Bennett, "Vēctis" (the name of an island), has been excluded because of its rarity as compared with "vectus".
+*//
+
+
+//*
+DOUBTFUL WORDS
+This list was originally adapted from the third chapter of Bennett's "The Latin Language – a historical outline of its sounds, inflections, and syntax" (http://web.comhem.se/alatius/latin/bennetthidden.html), but I subsequently modified it according to two more accurate sources:
+	Woordenboek Latijn/Nederlands (LaNe) at http://logeion.uchicago.edu/, and
+	the Thesaurus Linguae Latinae (TLL) at http://www.degruyter.com/db/tll (headword entries only).
+
+Following is a list of words about which these three sources disagree.
+
+Shorthand format: [word with quantities used here] ([vowel in question if it cannot be assumed]: [lexica claiming it is long] [lexica claiming it is short]), where "L" = LaNe, "T" = TLL, "B" = Bennett. (@ = "according to".)
+	Example: aprūgnus (ū: LT B)
+	--meaning that on the "ū" in question, TLL and LaNe claim it is long, while Bennett claims it is short.
+
+A mark before a word means my decision is in doubt for one of the following reasons:
+	* = TLL and LaNe disagree, while Bennett agrees with TLL. In these cases I follow TLL and Bennett.
+	^ = TLL disagrees with Bennett, and the word is absent from LaNe. Here I follow TLL.
+	` = LaNe disagrees with Bennett, but here I follow Bennett for some noted reason.
+	? = for some other reason.
+Otherwise, preference is unless otherwise noted given to LaNe, then TLL, and lastly Bennett. I prefer LaNe to TLL because it seems more consistent. For example, taking two words from just the first few on Bennett's list,
+	TLL marks "acatalēctus" with a short "e" even though it is from the Greek ἀκατάληκτος, and
+	"adēmptio" is marked with a short "e" even though elsewhere in TLL "ēmptio" is marked with a long "ē".
+Note that the list below does not include disagreements between LaNe and TLL where LaNe agrees with Bennett because I would have chosen LaNe in these cases anyways. I.e. only wherever LaNe disagrees with Bennett, I checked the word in TLL to make a decision.
+
+* abiēgnus (TB L)
+aprūgnus (ū: LT B)
+* anguīlla (ī: TB L)
+* anxius (L TB)
+aspernor (a: B LT)
+axilla (B LT)
+bardus (B LT)
+bēstia (LB T)
+^ burrus (B T)
+clandestīnus (e: B LT)
+crispus (LT B)
+crustum (LT B)
+custōs (B LT)
+dēlictus from "dēlinquō" (B LT)
+? dignus (T LB, long also @Frieze-Dennison's Vergil)
+"-exi":
+	-lēxī (although allēxī, illēxī, pellēxī short @TLL & Bennett)
+	flexī, pexī (short @LaNe, TLL, Bennett)
+	-spēxī (LT B)
+	vēxī (L B)
+favilla (B LT)
+* fēllō (TB L) [no "fēllō" entry @TLL, but "fēllebris"]
+fictus from "fingō (B LT)
+firmus (B LT)
+fluxus (either @TLL, long @LaNe & @Bennett)
+frustum (B LT)
+gryllus/grillus (B LT)
+Herculaneum (B LT)
+hirsūtus, hirtus (B LT)
+ientāculum, ientātio (B LT)
+ignis (B LT)
+iuxta (B LT)
+labrusca (u: B LT)
+Lars (B L)
+-lectus from alliciō, pelliciō, illiciō (inconsistent @TLL, short @LaNe)
+* lentīscus (TB L)
+limpidus (B LT)
+* manifēstus (TB L)
+Mānlius (B L, but long @Frieze-Dennison's Vergil)
+manupretium (B LT)
+maxilla (ā: B LT)
+* mercēnnārius (ē: TB L)
+mīnxī (LT B)
+mucrō (B LT)
+mulleus (B LT)
+Narnia (L B)
+narrō (B LT)
+orca (B LT)
+oscen (LT B) [see note on "ōsc" in inchoatives]
+ovillus (B LT)
+pactus from "pangō" (either @TLL, short @LaNe, long @Bennett)
+paxillus (B LT)
+pēlvis (LT B)
+Phoenissa (LT B)
+pictus from "pingō" (B LT)
+pigmentum (B LT) [coincides with short _gn/_gm rule]
+pistor, pistillum, pistrīnum, pistrīlla (pist: B LT)
+plānxī, plānctus (L TB [but @TLL plānctus -ūs])
+posca (LT B; note added below at "pōsc = posc" for "poscō")
+prosperus (B LT)
+^ pustula (B T)
+quippe (B L)
+relictus (B L)
+rixa (B L)
+sarculum (B L)
+segmen (B L)
+signum (short @LaNe, either @Bennett)
+spīntēr (L B)
+stēlla (L B)
+surculus (B L)
+taxilla (ā: B L)
+tractus (B L)
+trulla (B L)
+tructa (B L)
+ulna (B L)
+ulva (B L)
+` ūsquam, ūsque, ūspiam (B L, but long @Frieze-Dennison's Vergil)
+ustus (B L)
+ūsurpō (B L)
+` vāllum (B L, but long @Frieze-Dennison's Vergil)
+` vēndō (B L, but long @Frieze-Dennison's Vergil)
+` vērnus (B L, but from "vēr")
+vēscor (L B)
+vēscus (L B)
+vestibulum (B L)
+vestīgium (B L)
+vexillum (e: B L)
+vīnxī, vīnctus (L B)
+viscum (L&S LB)
+*//
+
+
+// GENERAL RULES
+
+// _ns, _nf long (Bennett 37)
+ans = āns
+ens = ēns
+ins = īns
+ons = ōns
+uns = ūns
+yns = ȳns
+anf = ānf
+enf = ēnf
+inf = īnf
+onf = ōnf
+unf = ūnf
+ynf = ȳnf
+
+
+// _nct (Bennett 46, last sentence)
+anct = ānct
+enct = ēnct
+inct = īnct // although TLL "cinct-" from "cingō" (cīnct- @LaNe)
+onct = ōnct
+unct = ūnct // LaNe not clear in "unct-" from "ungō"
+ynct = ȳnct
+
+
+// _gn, _gm normally short (Bennett 38-39)
+āgn = agn
+ēgn = egn
+īgn = ign
+ōgn = ogn
+ūgn = ugn
+āgm = agm
+ēgm = egm
+īgm = igm
+ōgm = ogm
+ūgm = ugm
+
+
+// _nt, _nd, _ss normally short (Bennett 40)
+ānt = ant
+ēnt = ent
+īnt = int
+ōnt = ont
+	cōnt = cont // con- prefix not long
+	contiō = cōntiō (if from "contio")
+	contiunc = cōntiunc (if from "contio")
+ūnt = unt
+ānd = and
+ēnd = end
+	prend = prēnd
+īnd = ind
+ōnd = ond
+ūnd = und
+// āss = ass (disabled: syncopated perfects have long vowels before "ss")
+// ēss = ess
+// īss = iss
+// ōss = oss
+// ūss = uss
+
+
+// oblique cases of fōns, mōns, pōns, frōns (-ntis), frōns (-ndis) are SHORT (Bennett 41; TLL agrees)
+
+
+// common words with intervocalic "i"; the preceding vowel is short with some exceptions (see http://web.comhem.se/alatius/latin/quantity.html)
+cūius = cuius
+cūjus = cujus
+hūius = huius
+hūjus = hujus
+ēius = eius
+ējus = ejus
+pēior = peior
+pējor = pejor
+pēiōr = peiōr
+pējōr = pejōr
+māius = maius
+mājus = majus
+māior = maior
+mājor = major
+māiōr = maiōr
+mājōr = majōr
+āiō[] = aiō
+āiunt = aiunt
+trōi[ = troi
+
+
+// overlapping with inchoative verbs below, so placed before them:
+	flosc = flōsc
+	ibisc = ibīsc	// also hibīsc-
+	lentisc = lentīsc
+	oscul[ = ōscul
+	osc[~ = ōsc (if from "ōs", not "oscillō") // n.b. "oscen" = ob + cano
+	plēbiscīt = plēbīscīt
+	prisc = prīsc
+	quiesc = quiēsc
+	rosci = rōsci
+	sescupl = sēscupl
+	vasc = vāsc
+	visc[ = vīsc (if from "vīscus", not "viscum")
+	Vopisc = Vopīsc
+
+// INCHOATIVE VERBS: _scō long, except (see below) compescō, nesciō, discō, poscō, misceo ("nēsciō" and "vescor" @Bennett, but opposites @LaNe)
+asc< = āsc (if inchoative)
+esc< = ēsc (if inchoative)
+isc< = īsc (if inchoative) // although "adipiscor" @TLL (long @LaNe)
+osc< = ōsc (if inchoative)
+ysc< = ȳsc (if inchoative)
+// usc< = ūsc (if inchoative) // disabled: no such verbs
+
+// EXCEPTIONS:
+	bōsc = bosc // boscis, ornīthoboscium, etc.
+	compēsc = compesc
+	dīsc = disc
+	drāsc[ = drasc	// drascus
+	ēpīscop = ēpiscop
+	fāsc[ = fasc	// fascis
+	fīsc[ = fisc
+	īscumque< = iscumque
+	iūrīscōnsult = iūriscōnsult
+	jūrīscōnsult = jūriscōnsult
+	iūrīsconsult = iūrisconsult
+	jūrīsconsult = jūrisconsult
+	lāscīv = lascīv
+	lemnīsc = lemnisc	// lēmniscus
+	lēmnīsc = lēmnisc
+	māscul = mascul	// masculus
+	mīsc = misc
+	nēsc[ = nesc
+	pīsc[ = pisc	// piscis
+	praēsc = praesc
+	pōsc = posc (unless from "posca -ae")
+	rēsc[ = resc
+	sēscent[ = sescent
+	vesc = vēsc
+
+// substantives in -abrum, -acrum, -atrum, derived from verbs
+abrum< = ābrum
+acrum< = ācrum
+atrum< = ātrum
+pātrum = patrum
+
+// final "o" long
+o] = ō
+
+
+
+
+// EVERYTHING ELSE
+// NOTE: Entries disabled with the comment mark // with no explanation are redundant, i.e. an entry of fewer characters exists, e.g. cīnct made unnecessary by īnct. The exception is when a disabled entry is followed by an entry the exact opposite of it: this means that another dictionary overruled Bennett. See the list at the top for details on these.)
+// ars~ = ārs (if from "ārdeō") //disabled: no such words
+abiegn = abiēgn
+act[ = āct // [ because only if from "āct-", not e.g. "iact-", "pact-", "tract-", although either "pact-" or "pāct-" from "pangō" @TLL (but short from "pacīscor", as also @Bennett)
+	abact[ = abāct
+	coact[ = coāct
+	exact[ = exāct
+Āctiac = Actiac
+adordi = adōrdi
+Afr[ = Āfr
+	subafr[ = subāfr
+Alcest = Alcēst
+alipt = alīpt
+allex> = allēx
+Amazon = Amāzon
+Amazōn = Amāzōn
+anguill = anguīll
+aprugn = aprūgn
+Aquili[~ = Aquīli (if from "Aquīlius/-a" or "aquīlīcium")
+ard[ = ārd (if from "ārdeō", not "ardea")
+ārdu[ = ardu
+ardeli = ārdeli
+Arginuss = Arginūss
+aspern = āspern
+athl = āthl
+atr[~ = ātr (if from "āter", not "atrōx", etc.)
+atrament = ātrament
+audacter = audācter
+// axill = āxill
+// bard = bārd (if from adj. "bārdus" i.e. stultus)
+Bebriac = Bēbriac
+Bedriac = Bēdriac
+bellua = bēllua
+belluā = bēlluā
+belluī = bēlluī
+belluō = bēlluō
+bellu[~ = bēllu (if from "bēllua")
+bēllum = bellum
+bēllus = bellus
+bess[~ = bēss (if from "bēs")
+besti = bēsti
+Betriac = Bētriac
+bubrest = būbrēst
+// burr[~ = būrr (if from "būrrus, -ī", not "burra", "burriō", "burrus, -a, -um")
+būrr[ = burr
+// bust = būst
+Buthrōt = Būthrōt
+catell = catēll
+catill = catīll
+cetr = cētr
+Charond = Charōnd
+chīrurg = chīrūrg
+cicatr = cicātr
+cicc = cīcc
+Cinci[ = Cīnci
+cīncinn[ = cincinn
+// cinct = cīnct
+cinx = cīnx
+// clandest = clandēst
+clandēst = clandest
+clathr = clāthr
+clatr = clātr
+Clytēmestr = Clytēmēstr
+Clytēmnestr = Clytēmnēstr
+Cnoss = Cnōss
+comes[]~ = comēs (if from comedō)
+comesse[] = comēsse
+comessem[] = comēssem
+comessetur[] = comēssētur
+comest[] = comēst
+comestis[] = comēstis
+comestur[] = comēstur
+comps = cōmps
+compt = cōmpt
+coniun = coniūn
+coroll = corōll
+cors[] = cōrs
+cort[ = cōrt (if from "cōrs", short for "cohors")
+	cōrtex[ = cortex
+	cōrtic[ = cortic
+	cōrtīn[ = cortīn
+crabr = crābr
+crastin = crāstin
+crebr = crēbr
+Cress = Crēss
+cribr = crībr
+// crisp = crīsp
+crīsp = crisp
+// crust = crūst (unless "Crustum-")
+crūst = crust
+Ctēsiphon = Ctēsiphōn
+// cucull = cucūll
+cucūll = cucull
+// cuncti = cūncti
+// custo = cūsto
+cūst = cust
+Cyclops = Cyclōps
+dēlubr = dēlūbr
+deorsus[] = deōrsus
+dextrorsus = dextrōrsus
+Diespit = Diēspit
+digladi = dīgladi
+digma = dīgma
+// dign = dīgn
+digre = dīgre
+dilex> = dilēx
+dolabr = dolābr
+dux> = dūx
+ebri[ = ēbri	// "[" because of fūnebrius, febrius, etc.
+eclips = eclīps
+empt = ēmpt
+	tēmpt = tempt
+Epamīnond = Epamīnōnd
+es[]~ = ēs (if from "edō")
+esse[]~ = ēsse (if from "edō")
+essem[]~ = ēssem (if from "edō")
+essetur[]~ = ēssētur (if from "edō")
+est[]~ = ēst (if from "edō")
+estis[]~ = ēstis (if from "edō")
+estur[]~ = ēstur (if from "edō")
+esc[ = ēsc
+Esquil = Ēsquil
+Etrusc = Etrūsc
+existim = exīstim
+exordi = exōrdi
+extraordi = extraōrdi
+fastu = fāstu
+fāstī[ = fastī
+fest = fēst
+// fict = fīct
+fīct = fict
+finx = fīnx
+// firm = fīrm
+fīrm = firm
+fix = fīx
+flabr = flābr
+// flict = flīct
+flix = flīx
+fluct = flūct
+flux = flūx
+forma = fōrma
+formā = fōrmā
+forme = fōrme
+formē = fōrmē
+formō = fōrmō
+formu = fōrmu
+fract = frāct
+// fragm = frāgm
+frāgm = fragm
+frict = frīct
+frix = frīx
+fruct = frūct
+frust = frūst
+frūstu = frustu
+// funct = fūct
+furt = fūrt
+fust = fūst
+geograph = geōgraph
+georg = geōrg
+gloss = glōss
+Gnoss = Gnōss
+// grill = grīll
+// gryll = grȳll
+grīll = grill
+grȳll = gryll
+gryp = grȳp
+hactenus = hāctenus
+Hellespont = Hellēspont
+// Herculan~ = Hērculān (if from "Hērculānum")
+Hērcul[ = Hercul
+hill[ = hīll
+// hirsūt = hīrsūt
+hīrsūt = hirsūt
+// hirt = hīrt
+hīrt = hirt
+Hispell = Hīspell
+Hispo = Hīspo
+Hispōn = Hīspōn
+Hispull = Hīspull
+horn = hōrn
+Hymett = Hymētt
+Hypermestr = Hypermēstr
+// ientāc = iēntāc
+// jentāc = jēntāc
+// ientāt = iēntāt
+// jentāt = jēntāt
+iēntāc = ientāc
+jēntāc = jentāc
+iēntāt = ientāt
+jēntāt = jentāt
+// igni = īgni // (reverts to long _gn rule)
+illex> = illēx
+illustr = illūstr
+inlustr = inlūstr
+Illyri = Īllyri
+inlustr = inlūstr
+inordi = inōrdi
+intellex> = intellēx
+involucr = involūcr
+Iolc = Iōlc
+iugl = iūgl
+jugl = jūgl
+// iunct = iūnct
+// junct = jūnct
+iunx = iūnx
+junx = jūnx
+iurg = iūrg
+jurg = jūrg
+iust = iūst
+just = jūst
+// iuxt = iūxt
+// juxt = jūxt
+iūxt = iuxt
+jūxt = juxt
+labr = lābr (if from "lūbrum", not "labrusca", etc.)
+lābrūsc = lābrusc
+lamn[ = lāmn
+laps = lāps (unless from "lapsilis", etc.)
+lard[ = lārd
+// Lars = Lārs
+// Lart = Lārt
+Lārs = Lars
+Lārt = Lart
+larv = lārv
+latrīn = lātrīn
+latr~ = lātr (if from "lātrō -āre")
+lātrō> = latrō
+lātrunc = latrunc
+latrīn = lātrīn
+lavabr = lavābr
+lavacr = lavācr
+lect = lēct (unless from "lectus" i.e. cubīle) // if from lego, but not amplector, nor allicio, deligo, flecto, illicio, oblecto, pellicio, plecto; and not supellex
+	amplēct = amplect
+	allēct = allect
+	adlēct = adlect
+	dēlēct~ = dēlect (if from "dēlectō", not "dēligō")
+	flēct = flect
+	oblēct = oblect
+	pellēct = pellect
+	plēct = plect
+illēct = illect
+inlēct = inlect
+	supellēctil = supellēctil
+lemm = lēmm
+Lemn[ = Lēmn
+lemnisc = lēmnisc
+libr~ = lībr (if not from "liber")
+// lictor = līctor
+// lictōr = līctōr
+lict = līct
+	// dēlict = dēlīct
+	dēlīct = dēlict
+	// relict = relīct
+	relīct = relict
+// limpid = līmpid
+līmpid = limpid
+// linct = līnct
+linx = līnx
+lubr[ = lūbr
+// lubric = lūbric
+luct~ = lūct (if from "lugeo")
+lustr = lūstr
+lux[] = lūx
+// lux> = lūx (if from "lūx", not "luxus")
+luxī = lūxī
+luxi = lūxi
+luxē = lūxē
+luxe = lūxe
+// luxu = lūxu
+Lycurg = Lycūrg
+// malign = malīgn
+malle[] = mālle
+mallem[] = māllem
+mallēmus[] = māllēmus
+mallent[] = māllent
+malles[] = māllēs
+mallet[] = māllet
+mallētis[] = māllētis
+// manifest = manifēst
+Manli = Mānli
+// manupreti = manūpreti
+manūpret = manupret
+Marc~ = Mārc (if from "Mārcus", not "marceō", etc.)
+Mars[] = Mārs
+Mars~ = Mārs (if from "Mārs", not "marsupium", "Marsya", etc.)
+Mart = Mārt (if from "Mārs", not "martes", etc.)
+mārtyr = martyr
+mass = māss (if from "māssa", etc.)
+	Māssȳl = Massȳl
+matr = mātr (if from "māter")
+// maxill = māxill
+māxill = maxill
+māxim> = maxim
+maz = māz (if from "māza")
+mercenn = mercēnn
+mestr< = mēstr
+Metrodōr = Mētrodōr
+metropol = mētropol
+mille[] = mīlle
+mill~ = mīll (if from "mīlle")
+	Camīll = Camill
+	simīllim = simillim
+milu = mīlu
+milv = mīlv
+minx[ = mīnx
+Mostell = Mōstell
+// mucrō = mūcrō
+mūcro = mucro
+//mull[~ = mūll (if from "mūllus")
+mūll = mull
+// munct = mūnct
+// munx = mūnx
+musce[ = mūsce
+muscerd[ = mūscerd
+musci[ = mūsci
+muscō[ = mūscō
+muscu[ = mūscu
+mustel[ = mūstel
+mustēl[ = mūstēl
+Mycaless = Mycalēss
+// Narni = Nārni
+Nārni = Narni
+// narr = nārr
+nārr = narr
+nasturc = nāsturc
+nasturt = nāsturt
+neglex> = neglēx
+nēquiquam = nēquīquam
+nēquicquam = nēquīcquam
+nēquidquam = nēquīdquam
+nix> = nīx
+nolle[] = nōlle
+nollēmus[] = nōllēmus
+nollent[] = nōllent
+nollēs[] = nōllēs
+nollet[] = nōllet
+nollētis[] = nōllētis
+nondum = nōndum
+nongent = nōngent
+// nonn = nōnn (disabled: NOT nonna, nonnus)
+nonne = nōnne
+nōnnē = nōnnē
+nonni = nōnni
+nonnū = nōnnū
+nōnnu = nōnnu
+Norb = Nōrb
+nudius> = nudiūs
+nundin = nūndin
+nunti = nūnti
+nups = nūps
+nupt = nūpt
+nusquam = nūsquam
+nutr = nūtr
+Oenotr = Oenōtr
+oll[ = ōll (unless alternative form of "ille")
+Onchest = Onchēst
+Opunt = Opūnt
+// orc[~ = ōrc (if from "ōrca")
+ōrc = orc
+orchestr = orchēstr
+orcul = ōrcul
+ordi[ = ōrdi (unless from "Gōrdius", etc.)
+ordin = ōrdin
+ornam = ōrnam
+ornāt = ōrnāt
+orsum = ōrsum	// deōrsum, dextrōrsum, etc.
+ors[~ = ōrs (if from "ōrdior")
+	mōrsum = morsum
+osti[ = ōsti
+// pact = pāct
+pāct = pact // @TLL, except for "pāctōrium", which is not included here because of its absence from other dictionaries
+palimpsest = palimpsēst
+pastor = pastōr
+pastōr = pāstōr
+pastu = pāstu
+pastū = pāstū
+past = pāst (if from "pāscō")
+// paxill = pāxill
+pāxill = paxill
+pegm = pēgm
+pellex> = pellēx
+pelvi = pēlvi
+// pens = pēns
+pericl = perīcl
+Permess = Permēss
+persoll = persōll
+Pessīnunt = Pessīnūnt
+//Phoeniss = Phoenīss
+Phoenīss = Phoeniss
+Phoenix = Phoenīx
+// pict = pīct
+pīct = pict (if from "pingō")
+Pictāv = Pīctāv	// Pīctāva (place name)
+pīctāve = pīctāve
+pinx = pīnx
+// pigment = pīgment // reverts to _gn/_gm rule above
+// pins = pīns
+// pist~ = pīst (from "pistor", etc.)
+pīst[ = pist // from "pistor" and "pistrīx" i.e. bēstia aquātica
+planx = plānx
+// planct = plānct
+// plectr = plēctr
+Plisthen = Plīsthen
+plostell = plōstell
+pluscul = plūscul
+poetr = poētr
+Polla[ = Pōlla
+Pollā[ = Pōllā
+Polliō[ = Pōlliō
+Polliōn[ = Pōlliōn
+Pollīs[ = Pōllīs
+Polymest = Polymnēst
+Polymnest = Polymnēst
+praeordi = praeōrdi
+pragma = prāgma
+Praxitel = Prāxitel
+// prens = prēns
+prīmord = prīmōrd
+princ = prīnc
+prist[ = prīst (if from "prīstinus")
+Procrust = Procrūst
+promps = prōmps
+prompt = prōmpt
+prorsus = prōrsus
+// prosper = prōsper
+prōsper = prosper
+prostib = prōstib
+publi = pūbli
+// pulvill = pulvīll
+// punct = pūnct
+pugn = pūgn
+purg = pūrg
+	spūrg = spurg // spurgia
+quart = quārt
+quinqu = quīnqu
+quint = quīnt
+quin[~ = quīn (if from "quīnque", not "inquinō", etc.)
+quippe = quīppe
+rall[ = rāll
+rastr = rāstr
+reapse = reāpse
+rect = rēct
+// rectē = rēctē
+	trēct = trect
+	virēct = virect
+regn = rēgn
+// rempt = rēmpt
+rept = rēpt
+reps = rēps
+rex> = rēx
+// rixa = rīxa
+rīxa = rixa
+rostr = rōstr
+Roxān = Rōxān
+ruct = rūct
+rursum = rūrsum
+rusc[ = rūsc
+rust[ = rūst
+// sanct = sānct
+sanx = sānx
+// sarc = sārc
+sārc = sarc
+Sarsin = Sārsin
+sceptr = scēptr
+scrips = scrīps
+script = scrīpt
+// segmen = sēgmen
+sēgmen = segmen
+segn = sēgn
+Selin = Selīn (unless "selīnas", "selīnon")
+Selīnunt = Selīnūnt
+Sesostr = Sesōstr
+sescu = sēscū
+sescū = sēscū
+sesqui = sēsqui
+Sest[ = Sēst
+sestert = sēstert
+// sign = sīgn
+// sincip = sīncip
+sinistrorsus = sinistrōrsus
+Socrat = Sōcrat
+solstic = sōlstic
+solstit = sōlstit
+Sophr = Sōphr
+sosp = sōsp
+spex> = spēx
+spintēr = spīntēr
+stagn = stāgn
+stell[ = stēll
+still = stīll
+	pistīll = pistill
+strinx = strīnx
+struct = strūct
+strux = strūx
+suct = sūct
+suill = suīll
+sumpt = sūmpt
+sumps = sūmps
+// surc = sūrc
+sūrc = surc
+sursum[] = sūrsum
+sursus[] = sūrsus
+sutr = sūtr
+sux = sūx
+sylleps = syllēps
+tact = tāct
+Tartess = Tartēss
+// taxill = taxīll
+taxīll = taxill
+Tecmess = Tecmēss
+tect = tēct
+tex>~ = tēx (if from "tegō")
+tēxt = text
+Telmess = Telmēss
+Temn[~ = Tēmn (if from "Tēmnos" sc. Τημνός)
+Termess = Termēss
+theatr = theātr
+Thress = Thrēss
+Tilli[ = Tīlli
+// tinct = tīnct
+tinx = tīnx
+// tract = trāct
+trāct = tract
+trax = trāx
+Trapezunt = Trapezūnt
+trist = trīst
+// truct = trūct
+// trūct = truct // omitted because of strūct
+// trull = trūll
+trūll = trull
+ull[ = ūll
+null = nūll (if from "nūllus")
+// uln[ = ūln
+ūln[ = uln
+// ulv[ = ūlv
+ūlv[ = ulv
+unci> = ūnci
+undec[ = ūndec // ūndecim
+undēn[ = ūndēn // ūndēnōnāgintā/ūndenī
+	ūndēne = undēne
+undēo[ = ūndēo // ūndēoctōgintā
+undēquad[ = ūndēquad // ūndēquadrāginta/quīnquāgintā
+undēsexag[ = ūndēsexāg // ūndēsexāgintā
+undēseptuag[ = ūndēseptuāg /// ūndēseptuāgintā
+undēt[ = ūndēt // ūndētrīgintā
+undēvī[ = ūndēvī // ūndēvīgintī
+unx< = ūnx
+uspiam = ūspiam
+usqu[ = ūsqu
+// ust = ūst
+ūst[ = ust
+	ambūst = ambust
+	combūst = combust
+// ūsurp = ūsūrp
+ūsūrp = ūsurp
+vallum = vāllum
+vallō = vāllō
+vall[~ = vāll (if from "vāllum", not "vallis")
+// vallā = vāllā
+vast = vāst
+// Vect[ = Vēct (if from "Vēctis", "Vēcta" sc. īnsula) // too rare
+vegrand = vēgrand
+vēlabr = velābr
+Venafr = Venāfr
+vend[ = vēnd // "[" because of gerund(ive), e.g. "cavend-"
+vēndic = vendic // i.e. vindicō
+// vestibul = vēstibul
+vēstibul = vestibul
+// vestig = vēstig
+vēstig = vestig
+Vestīn = Vēstīn
+vexī = vēxī
+vexi = vēxi
+vexē = vēxē
+vexe = vēxe
+// vexill = vēxill
+vēxill = vexill
+victū = vīctū
+vict~ = vīct (if from "vīvō", not "vincō")
+vīctor = victor
+vīctōr = victōr
+vīctr = victr
+vīctim = victim
+vill[ = vīll (unless from "villus -ī")
+	// favill = favīll
+	favīll = favill
+	// ovill = ovīll
+	ovīll = ovill
+vīnaem = vīnaēm
+// vinct = vīnct
+vinx = vīnx
+Vipsān = Vīpsān
+Vipstān = Vīpstān
+Xenophont = Xenophōnt
+zost = zōst

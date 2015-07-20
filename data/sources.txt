@@ -1,0 +1,23 @@
+﻿// SOURCE LIST
+
+// [source header]	[filename]
+// If you have manually changed a source text and would like to Exmacronize it again, delete the appropriate line in this file before Exmacronizing.
+// To Exmacronize all source texts again (i.e. re-build the key), delete this file before Exmacronizing.
+
+// [source header]	[filename]
+Catulli carmen 42	Alatii Recitationes\CatulliCarmen42.txt
+Cicero - Second Philippic	CiceroPhil2.txt
+Cornelius Nepos / Life of Hannibal	DCC\Nepos - Life of Hannibal.txt
+De Bello Gallico 6.26-28	Alatii Recitationes\CaesarisDeBelloGallicoVI26-28.txt
+IUPPITER ET CALLISTO - Metamorphoses, II...	OvidiiMetamorphosesII401-530.txt
+Julius Caesar / Selections from the Gall...	DCC\Caesar - Selections from the Gallic War.txt
+Laura Gibbs - Ictibus Felicibus	LauraGibbsIctibusFelicibus.txt
+Livii Ab Urbe Condita XXVI.40-41	Alatii Recitationes\LiviiAbUrbeConditaXXVI40-41.txt
+Ovid / Amores Book I	DCC\Ovid - Amores Book I.txt
+Ovidii Metamorphoses Liber I	Alatii Recitationes\OvidiiMetamorphosesI.txt
+Ritchie's Fabulae Faciles	RitchieFabulaeFaciles.txt
+Sulpicius Severus / The Life of Saint Ma...	DCC\Severus - The Life of Saint Martin of Tours.txt
+Tacitī Annālium Liber Prīmus	Alatii Recitationes\TacitiAnnaliumI.txt
+Vergil - Aeneid, Books 3-6, ed. Charles ...	VergilAeneid3-6.txt
+Vergil - Aeneid, Books I-II	VergilAeneid1-2.txt
+Ōrātiō in Catilīnam Prīma	Alatii Recitationes\CiceronisInCatilinamI.txt

@@ -1,0 +1,1004 @@
+// Vergil - Aeneid, Books I-II
+// Credit: Tyler Kirby (using the text from Dr. Joseph Farrell's Aeneid project at http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1)
+ 
+		arma virumque canō Trōiae quī prīmus ab ōrīs 
+		Ītaliam fātō profugus Lāvīniaque vēnit 
+		lītŏra multum ille et terrīs jactātus et altō 
+		ui superum saeuae memorem Jūnōnis ob īram 
+		multa quōque et bellō passus dum conderet urbem 
+		inferretque deōs Latiō genus unde Latīnum 
+		Albānīque patrēs atque altae moenia Rōmae 
+		Mūsa mihi causās memorā quo nūmĭne laesō 
+		quid dolēns rēgīna deum tot uoluere cāsūs 
+		insignem pietāte uirum tot adīre labōrēs 
+		impulerit tantae animīs caelestibus īrae 
+		urbs antīqua fuit Tyriī tenuere colōnī 
+		Karthāgō Ītaliam contra Tiberīnaque longē 
+		ostia diues opum studiīsque asperrima bellī 
+		quam Jūnō fertur terrīs magis omnibus ūnam 
+		posthabitā coluisse Samō hic illius arma 
+		hic currus fuit hoc regnum dea gentibus esse 
+		si quā fāta sinant iam tum tenditque fovētque 
+		prōgeniem sed enim Trōjānō a sanguine dūci 
+		audierat Tyriās ōlim quae uerteret arcēs 
+		hinc populum lātē rēgem bellōque superbum 
+		uenturum excidiō Libyae sīc uoluere Parcās 
+		id metuēns ueterisque memor Sāturnia bellī 
+		prīma quod ad Trōiam prō cārīs gesserat Argīs 
+		necdum etiam causae īrārum saevīque dolōrēs 
+		exciderant animō manēt altā mente repostum 
+		jūdicium Paridis sprētaeque injūria formae 
+		et genus invīsum et raptī Ganymēdis honōrēs 
+		hīs accensa super jactātōs aequore totō 
+		Trōas rēliquiās Danaum atqueque immītis Achilli 
+		arcēbat longē Latiō multōsque per annōs 
+		errābant actī fātīs maria omnia circum 
+		tantae mōlis erat Rōmānam condere gentem 
+		uix ē conspectū Siculae tellūris in altum 
+		vēla dābant laetī et spūmās salis aere ruēbant 
+		cum Jūnō aeternum servāns sub pectore uulnus 
+		haec sēcum mene inceptō dēsistere uictam 
+		nec posse Ītaliā Teucrōrum āvertere rēgem 
+		quippe uetor fātīs Pallasne exūrere classem 
+		Argiuum atqueque ipsōs potuit summergere ponto 
+		ūnius ob noxam et furiās Aiācis Oīlēī 
+		ipsa Iovis rapidum jaculāta ē nūbibus ignem 
+		disjēcitque ratēs ēvertitque aequora ventīs 
+		illum exspīrantem transfīxō pectore flammās 
+		turbine corripuit scopulōque infīxit acūtō 
+		ast ego quae diuum incēdō rēgīna Iouisque 
+		et soror et conjunx ūnā cum gente tot annōs 
+		bella gerō et quisquam nūmen Jūnōnis adōrāt 
+		praetereā aut supplex ārīs impōnet honōrem 
+		tālia flammātō secum dea corde volūtāns 
+		nimbōrum in pātriam loca fēta furentibus austrīs 
+		Aeoliam uenit hic vastō rēx Aeolus antrō 
+		luctantīs ventōs tempestātēsque sonōrās 
+		imperiō premit ac vinclīs et carcere frēnāt 
+		illī indignantēs magnō cum murmure montis 
+		circum claustra fremunt celsā sedēt Aeolus arce 
+		scēptra tenēns mollitque animōs et temperāt īrās 
+		ni faciāt maria ac terrās caelumque profundum 
+		quippe ferant rapidī secum verrantque per aurās 
+		sed pater omnipotēns spēluncīs abdidit ātrīs 
+		hoc metuēns mōlemque et montis insuper altōs 
+		imposuit rēgemque dedit quī foedere certō 
+		et premere et laxās scīret dāre jussus habēnās 
+		ad quem tum Jūnō supplex hīs uocibus usa est 
+		Aeole namque tibi diuum pater atqueque hominum rēx 
+		et mulcēre dedit fluctūs et tollere ventō 
+		gēns inimīca mihi Tyrrhēnum nāvigāt aequor 
+		Īlium in Ītaliam portāns victōsque penātīs 
+		incute uim ventīs submersāsque obrue puppīs 
+		aut age dīversōs et dissice corpora ponto 
+		sunt mihi bis septem praestantī corpore nymphae 
+		quārum quae formā pulcherrima Dēiopēa 
+		cōnūbiō jungam stabilī prōpriamque dicābō 
+		omnīs ut tēcum meritīs prō tālibus annōs 
+		exigāt et pulchrā faciāt tē prōle pārentem 
+		Aeolus haec contrā tuus ō rēgīna quid optēs 
+		explōrāre labor mihi jussa capessere fas est 
+		tū mihi quodcumqueque hoc regnī tū scēptra Iovemque 
+		conciliās tū dās epulīs accumbere dīvum 
+		nimbōrumque facis tempestātumque potentem 
+		haec ubī dicta cauum conversā cuspide montem 
+		impulit in latus ac ventī uelut agmine factō 
+		quā data porta ruunt et terrās turbine perflant 
+		incubuere marī tōtumque a sēdibus imīs 
+		ūnā eurusque nōtusque ruunt crēberque procellīs 
+		Africus et vastōs uoluunt ad lītŏra fluctūs 
+		insequitur clāmorque uirum strīdorque rudentum 
+		ēripiunt subitō nūbēs caelumque diemque 
+		Teucrōrum ex oculīs ponto nox incubāt ātra 
+		intonuere poli et crēbrīs micāt ignibus aether 
+		praesentemque virīs intentant omnia mortem 
+		extemplō Aenēae soluuntur frīgŏre membra 
+		ingemit et duplicis tendēns ad sīdera palmās 
+		tālia uoce refert ō terque quaterque beātī 
+		quis ante ōra patrum Trōiae sub moenibus altīs 
+		contigit oppetere ō Danaum fortissime gentis 
+		Tȳdīdē mene Īliacīs occumbere campīs 
+		nōn potuisse tuāque animam hanc effundere dextrā 
+		saeuus ubī Aeacidae tēlō jacēt Hector ubī ingēns 
+		Sarpēdōn ubī tot Simois correpta sub undīs 
+		scūta uirum galeāsque et fortia corpora uoluit 
+		tālia jactantī strīdēns Aquilōne procella 
+		vēlum aduersa ferit fluctūsque ad sīdera tollit 
+		franguntur rēmī tum prōra āvertit et undīs 
+		dāt latus insequitur cumulō praeruptus aquae mons 
+		hī summō in fluctū pendent hīs unda dēhiscēns 
+		terram inter fluctūs aperit furit aestus harēnīs 
+		trīs nōtus abreptās in saxa latentia torquēt 
+		saxa uocant Itali mediīs quae in fluctibus Aras 
+		dorsum immāne marī summō trīs eurus ab altō 
+		in breuia et syrtis urgēt miserābile vīsū 
+		inliditque vadīs atqueque aggere cingit harēnae 
+		unam quae Lyciōs fīdumque vehēbat Orontem 
+		ipsius ante oculōs ingēns a uertice pontus 
+		in puppim ferit excutitur prōnusque magister 
+		uoluitur in caput ast illam ter fluctus ibīdem 
+		torquēt agēns circum et rapidus vorāt aequore uertex 
+		apparent rārī nantēs in gurgite vastō 
+		arma uirum tabulaeque et Trōia gāza per undās 
+		iam ualidam Ilionei nāvem iam fortis Achātae 
+		et quā uectus Abas et quā grandaeuus alētēs 
+		vīcit hiems laxīs laterum compagibus omnēs 
+		accipiunt inimīcum imbrem rīmīsque fatiscunt 
+		intereā magnō miscēri murmure pontum 
+		ēmissamque hiemem sensit Neptūnus et imīs 
+		stagna refūsa vadīs grauiter commotus et altō 
+		prōspiciēns summā placidum caput extulit undā 
+		disiectam Aenēae tōtō vidēt aequore classem 
+		fluctibus oppressōs Trōas caelīque ruīnā 
+		nec latuere dolī frātrem Jūnōnis et īrae 
+		eurum ad sē Zephyrumque vocāt dehinc tālia fātur 
+		tanta vōs generis tenuit fiducia vestrī 
+		iam caelum terramque meō sine nūmĭne uenti 
+		miscēre et tantās audētis tollere mōlēs 
+		quōs ego sed mōtōs praestāt compōnere fluctūs 
+		post mihi nōn similī poenā commissa luētis 
+		mātūrāte fugam rēgīque haec dicite vestrō 
+		nōn illī imperium pelagī saevumque tridentem 
+		sed mihi sorte dātum tenēt ille immānia saxa 
+		vestrās eure domos illā sē jactēt in aulā 
+		Aeolus et clausō ventōrum carcere regnēt 
+		sīc ait et dictō citius tumida aequora plācāt 
+		collectāsque fugāt nūbēs sōlemque redūcit 
+		Cȳmothoē simul et Triton adnixus acūtō 
+		dētrūdunt nāvīs scopulō lēvāt ipse tridentī 
+		et vastās aperit syrtis et temperāt aequor 
+		atqueque rotīs summās leuibus perlābitur undās 
+		ac ueluti magnō in populō cum saepe coorta est 
+		sēditiō saevitque animīs ignōbile uulgus 
+		iamque facēs et saxa uolant furor arma ministrāt 
+		tum pietāte grauem ac meritīs si fortē uirum quem 
+		conspexere silent arrectīsque auribus astant 
+		ille regit dīctīs animōs et pectora mulcēt 
+		sīc cunctus pelagī cecidit fragor aequora postquam 
+		prōspiciēns genitor caelōque inuectus apertō 
+		flectit equōs currūque volāns dāt lōra secundō 
+		dēfessī Aeneadae quae proxima lītŏra cursū 
+		contendunt petere et Libyae uertuntur ad ōrās 
+		est in sēcessū longō locus insula portum 
+		efficit objectū laterum quibus omnis ab altō 
+		frangitur inque sinūs scindit sēsē unda redūctōs 
+		hinc atqueque hinc[] uastae rupes geminīque minantur 
+		in caelum scopulī quōrum sub uertice lātē 
+		aequora tuta silent tum silvīs scaena coruscīs 
+		desuper horrentique ātrum nemus imminēt umbrā 
+		fronte sub adversā scopulīs pendentibus antrum 
+		intus aquae dulcēs vīvōque sedīlia saxō 
+		nymphārum domus hic fessās nōn uincula nāvīs 
+		ulla tenent uncō nōn alligāt ancora morsū 
+		huc septem Aenēās collectīs nāvibus omnī 
+		ex numerō subit ac magnō tellūris amōre 
+		ēgressī optātā potiuntur Trōēs harēnā 
+		et sale tābentīs artūs in lītŏre pōnunt 
+		ac prīmum silicī scintillam excūdit Achātēs 
+		succēpitque ignem foliīs atqueque ārida circum 
+		nūtrīmenta dedit rapuitque in fōmite flammam 
+		tum Cererem corruptam undīs Cereāliaque arma 
+		expediunt fessī rērum frugēsque receptās 
+		et torrēre parant flammīs et frangere saxō 
+		Aenēās scopulum intereā conscendit et omnem 
+		prospectum lātē pelagō petit Anthea si quem 
+		jactātum ventō videāt Phrygiāsque birēmīs 
+		aut Capyn aut[] celsīs in puppibus arma Caīcī 
+		nāvem in conspectū nullam trīs lītŏre cervōs 
+		prōspicit errantīs hōs tōta armenta sequuntur 
+		a tergō et longum per vallīs pascitur agmen 
+		constitit hic arcumque manū cēlērisque sagittas 
+		corripuit fīdus quae tēla gerēbat Achātēs 
+		ductōrēsque ipsōs prīmum capīta alta ferentīs 
+		cornibus arboreīs sternit tum uulgus et omnem 
+		miscēt agēns tēlīs nemora inter frondea turbam 
+		nec prius absistit quam septem ingentia uictor 
+		corpora fundāt humi et numerum cum nāvibus aequēt 
+		hinc portum petit et sociōs partitur in omnīs 
+		vīna bonus quae deinde cadīs onerārat Acestēs 
+		lītŏre Trīnācriō dederatque abeuntibus hērōs 
+		dīvidit et dictīs maerentia pectora mulcēt 
+		ō socii nequeque enim ignārī sumus ante malorum 
+		o passī grauiora dābit deus hīs quōque fīnem 
+		vōs et Scyllaeam rabiem penitusque sonantīs 
+		accestis scopulōs vōs et Cyclopia saxa 
+		expertī revocāte animōs maestumque timōrem 
+		mittite forsan et haec ōlim meminisse juvābit 
+		per uarios cāsūs per tot discrīmĭna rērum 
+		tendimus in Latium sēdēs ubī fāta quiētās 
+		ostendunt illic fas regna resurgere Trōiae 
+		durate et uosmet rēbus seruate secundīs 
+		tālia uoce refert cūrīsque ingentibus aeger 
+		spem vultū simulāt premit altum corde dolōrem 
+		illī sē praedae accingunt dapibusque futūrīs 
+		tergora diripiunt costīs et uiscera nūdant 
+		pars in frusta secant ueribusque trementia fīgunt 
+		lītŏre aēna locant aliī flammāsque ministrant 
+		tum victū reuocant vīrīs fūsīque per herbam 
+		implentur ueteris Bacchī pinguisque ferīnae 
+		postquam exempta famēs epulīs mensaeque remōtae 
+		āmissōs longō sociōs sermōne requīrunt 
+		spemque metumque inter dubiī seu vīvere crēdant 
+		siue extrēma patī nec iam exaudīre vocātōs 
+		praecipuē pius Aenēās nunc acris Oronti 
+		nunc Amycī cāsum gemit et crūdēlia sēcum 
+		fāta Lycī fortemque Gyān fortem Cloanthum 
+		et iam fīnis erat cum Iuppiter aethere summō 
+		dēspiciēns mare vēlivolum terrāsque jacentīs 
+		lītŏraque et lātōs populōs sīc uertice caelī 
+		constitit et Libyae dēfīxit lūmĭna regnīs 
+		atqueque illum tālīs jactantem pectore cūrās 
+		tristior et lācrimīs oculōs suffūsa nitentīs 
+		adloquitur Venus ō quī rēs hominumque deumque 
+		aeternīs regis imperiīs et fulmine terrēs 
+		quid meus Aenēās in tē committere tantum 
+		quid Trōēs potuere quibus tot fūnera passīs 
+		cunctus ob Ītaliam terrārum clauditur orbis 
+		certē hinc Rōmānōs ōlim uoluentibus annīs 
+		hinc fore ductōrēs revocātō a sanguine Teucri 
+		quī mare quī terrās omnīs dicione tenērent 
+		pollicitus quae tē genitor sententia uertit 
+		hoc equidem occāsum Trōiae tristīsque ruīnās 
+		sōlābar fātīs contrāria fāta rependēns 
+		nunc eadem fortūna virōs tot cāsibus actōs 
+		insequitur quem dās fīnem rex magne labōrum 
+		Antēnor potuit mediīs ēlapsus Achīvīs 
+		Illyricōs penētrāre sinus atqueque intima tutus 
+		regna Liburnorum et fontem superare Timāvī 
+		unde per ora nouem vastō cum murmure montis 
+		it mare prōruptum et pelagō premit arva sonanti 
+		hic tamen ille urbem Patavī sēdēsque locāvit 
+		Teucrōrum et gentī nomen dedit armaque fīxit 
+		Trōia nunc placidā compostus pāce quiescit 
+		nōs tua prōgeniēs caelī quibus adnuis arcem 
+		nāvibus infandum āmissīs ūnius ob īram 
+		prōdimur atqueque Italis longē disjungimur oris 
+		hic pietatis honos sīc nōs in scēptra repōnis 
+		ollī subrīdēns hominum sator atqueque deorum 
+		vultū quo caelum tempestātēsque serenat 
+		oscula lībāvit nātae dehinc tālia fātur 
+		parce metu Cytherēa manent immōta tuōrum 
+		fāta tibi cernēs urbem et prōmissa Lāvīnī 
+		moenia sublīmemque ferēs ad sīdera caelī 
+		magnanimum Aenēān nequeque mē sententia uertit 
+		hic tibi fābor enim quando haec tē cūra remordēt 
+		longius et volvēns fātōrum arcāna movēbō 
+		bellum ingēns geret Ītaliā populōsque ferōcēs 
+		contundet moresque virīs et moenia pōnet 
+		tertia dum Latiō regnantem uiderit aestās 
+		ternaque transierint Rutulīs hiberna subactīs 
+		at puer Ascanius cui nunc cognōmen Iūlō 
+		additur Īlus erat dum rēs stetit Ilia regnō 
+		triginta magnōs uoluendis mensibus orbīs 
+		imperiō explēbit regnumque ab sēde Lāvīnī 
+		transferet et longam multā ui muniet Albam 
+		hic iam ter centum tōtōs regnābitur annōs 
+		gente sub Hectoreā donec rēgīna sacerdos 
+		Marte grauis geminam partū dābit Īlia prōlem 
+		inde lupae fulvō nūtrīcis tegmine laetus 
+		Rōmulus excipiet gentem et Māvortia condet 
+		moenia Rōmānōsque suō de nomine dīcet 
+		hīs ego nec mētās rērum nec[] tempora pōnō 
+		imperium sine fine dedī quin aspera Iuno 
+		quae mare nunc terrāsque metū caelumque fatīgāt 
+		consilia in melius referet mecumque fovēbit 
+		Rōmānōs rērum dominōs gentemque togātam 
+		sīc placītum ueniet lustrīs lābentibus aetās 
+		cum domus Assaracī Pthiam clārāsque Mycenas 
+		servitiō premet ac victīs dominābitur Argīs 
+		nascētur pulchrā Trōjānus orīgĭne Caesar 
+		imperium Ōceanō fāmam quī terminet astrīs 
+		Iulius a magnō dēmissum nōmen Iūlō 
+		hunc tū olim caelō spoliīs Orientis onustum 
+		accipiēs sēcūra vocābitur hic quōque vōtīs 
+		aspera tum positīs mītescent saecula bellīs 
+		cāna fidēs et Vesta Remō cum frātre Quirīnus 
+		iura dābunt dīrae ferrō et compagibus artis 
+		claudentur Bellī portae furor impius intus 
+		saeua sedēns super arma et centum uinctus aēnīs 
+		post tergum nōdīs fremet horridus ōre cruentō 
+		haec ait et Māiā genitum dēmittit ab altō 
+		ut terrae utque nouae pateant Karthaginis arcēs 
+		hospitiō Teucrīs ne fātī nescia Dido 
+		fīnibus arcēret volāt ille per aera magnum 
+		rēmigiō ālārum ac Libyae citus adstitit ōrīs 
+		et iam jussa facit pōnuntque ferocia Poenī 
+		corda uolente deō in prīmīs rēgīna quiētum 
+		accipit in Teucrōs animum mentemque benignam 
+		at pius Aenēās per noctem plūrima volvēns 
+		ut prīmum lux alma dāta est exīre locōsque 
+		explōrāre novōs quās ventō accesserit ōrās 
+		quī teneant nam inculta vidēt homĭnēs ferae 
+		quaerere constituit sociīsque exacta referre 
+		classem in convexō nemorum sub rupe cavātā 
+		arboribus clausam circum atqueque horrentibus umbrīs 
+		occulit ipse ūnō graditur comitātus Achātē 
+		bīna manū lātō crispāns hastīlia ferrō 
+		cui māter mediā sēsē tulit obuia silvā 
+		virginis os habitumque gerēns et virginis arma 
+		Spartānae uel quālis equōs Thrēi+ssa fatīgāt 
+		Harpalycē volūcremque fugā praeuertitur Hebrum 
+		namque umerīs de more habilem suspenderat arcum 
+		vēnātrix dederatque comam diffundere ventīs 
+		nūda genū nōdōque sinūs collecta fluentīs 
+		ac prior heus inquit juvenēs monstrāte meārum 
+		vīdistis si quam hic errantem fortē sorōrum 
+		succinctam pharētrā et maculōsae tegmine lyncis 
+		aut spūmantis aprī cursum clāmōre prementem 
+		sīc Venus et Veneris contrā sīc fīlius orsus 
+		nulla tuārum audita mihi nequeque vīsa sorōrum 
+		ō quam tē memorem uirgo namque haud tibi uoltus 
+		mortālis nec uox hominem sonāt ō dea certē 
+		an Phoebī soror an[] nymphārum sanguinis ūna 
+		sīs fēlix nostrumque levēs quaecumqueque labōrem 
+		et quo sub caelō tandem quibus orbis in ōrīs 
+		jactēmur doceās ignārī hominumque locōrumque 
+		errāmus ventō huc vastīs et fluctibus actī 
+		multa tibi ante ārās nostrā cadet hostia dextrā 
+		tum Venus haud equidem tālī mē dignor honōre 
+		virginibus Tyriīs mos est gestāre pharētram 
+		purpureōque altē sūrās vincīre cothurnō 
+		Pūnica regna vidēs Tyriōs et Agēnŏris urbem 
+		sed fīnēs Libycī genus intractābile bellō 
+		imperium Dido Tyriā regit urbe profecta 
+		germānum fugiēns longa est injūria longae 
+		ambāgēs sed summa sequar fastīgia rērum 
+		huic conjunx Sȳchaeus erat ditissimus agrī 
+		Phoenīcum et magnō miserae dīlectus amōre 
+		cui pater intactam dederat prīmīsque jugārat 
+		ōminibus sed regna Tyrī germānus habēbat 
+		Pygmaliōn scelere ante aliōs immānior omnīs 
+		quōs inter medius vēnit furor ille Sȳchaeum 
+		impius ante ārās atqueque aurī caecus amōre 
+		clam ferrō incautum superāt sēcūrus amōrum 
+		germānae factumque diū cēlāvit et aegram 
+		multa malus simulāns vānā spē lusit amantem 
+		ipsa sed in somnīs inhumātī vēnit imāgō 
+		coniugis ōra modīs attollēns pallida mīrīs 
+		crūdēlīs ārās trājectaque pectora ferrō 
+		nūdāvit caecumque domus scelus omne retexit 
+		tum celerare fugam patriaque excedere suadet 
+		auxiliumque uiae veterēs tellūre rēclūdit 
+		thēsaurōs ignōtum argentī pondus et aurī 
+		hīs commōta fugam Dido sociōsque parābat 
+		conueniunt quibus aut ōdium crūdēle tyrannī 
+		aut metus acer erat nāvīs quae fortē parātae 
+		corripiunt onerantque aurō portantur avārī 
+		Pygmaliōnis opēs pelagō dux fēmina factī 
+		dēvēnere locōs ubi nunc ingentia cernēs 
+		moenia surgentemque nouae Karthaginis arcem 
+		mercātīque solum factī de nomine Byrsam 
+		taurīnō quantum possent circumdāre tergō 
+		sed vōs quī tandem quibus aut vēnistis ab ōrīs 
+		quō tenētis iter quaerentī tālibus ille 
+		suspīrāns imōque trahēns a pectore uocem 
+		ō dea si prīmā repetēns ab orīgĭne pergam 
+		et vacēt annalis nostrōrum audīre labōrum 
+		ante diem clausō compōnet Vesper Olympō 
+		nōs Trōiā antīquā si vestrās fortē per aurīs 
+		Trōiae nōmen iit dīversa per aequora vectōs 
+		forte suā Libycīs tempestās appulit ōrīs 
+		sum pius Aenēās raptōs quī ex hoste penātīs 
+		classe vehō mecum fāmā super aethera nōtus 
+		Ītaliam quaerō pātriam et genus ab Ioue summō 
+		bis denis Phrygium conscendī nāvibus aequor 
+		mātre deā monstrante uiam data fāta secūtus 
+		uix septem conuolsae undīs eurōque supersunt 
+		ipse ignōtus egēns Libyae dēserta perāgrō 
+		Eurōpā atqueque Āsiā pulsus nec plura querentem 
+		passa Venus mediō sīc interfāta dolōre est 
+		quisquis es haud crēdō invīsus caelestibus aurās 
+		vītālīs carpis Tyriam quī advēnerīs urbem 
+		perge modo atqueque hinc tē rēgīnae ad līmĭna perfer 
+		namque tibi reduces sociōs classemque relatam 
+		nuntiō et in tūtum versīs Aquilōnibus actam 
+		nī frustrā augurium vānī docuere pārentēs 
+		aspice bis senos laetantīs agmine cycnos 
+		aetheriā quōs lapsa plāgā Iovis ales apertō 
+		turbābat caelō nunc terrās ordine longō 
+		aut capere aut[] captās iam dēspectāre uidentur 
+		ut reduces illī ludunt strīdentibus ālīs 
+		et coetū cinxere polum cantūsque dedere 
+		haud aliter puppēsque tuae pūbesque tuōrum 
+		aut portum tenēt aut[] plēnō subit ostia vēlō 
+		perge modo et quā tē dūcit uia derige gressum 
+		dixit et āvertēns roseā cervīce refulsit 
+		ambrosiaeque comae dīvīnum uertice odōrem 
+		spīrāvere pedēs uestis dēfluxit ad imōs 
+		et vēra incessū patuit dea ille ubi mātrem 
+		agnōvit tālī fugientem est uoce secūtus 
+		quid nātum totiens crūdēlis tu quōque falsīs 
+		lūdis imāgĭnibus cūr dextrae jungere dextram 
+		nōn dātur ac vērās audīre et reddere vocēs 
+		talibus incusat gressumque ad moenia tendit 
+		at Venus obscuro gradientis aere saepsit 
+		et multo nebulae circum dea fudit amictu 
+		cernere ne quis eos neu quis contingere posset 
+		moliriue moram aut ueniendi poscere causas 
+		ipsa Paphum sublimis abit sedesque reuisit 
+		laeta suas ubi templum illi centumque Sabaeo 
+		ture calent arae sertisque recentibus halant 
+		corripuere uiam interea qua semita monstrat 
+		iamque ascendebant collem qui plurimus urbi 
+		imminet aduersasque aspectat desuper arces 
+		mīrātur mōlem Aenēās magalia quondam 
+		mīrātur portās strepitumque et strata viārum 
+		instant ardentēs Tyriī pars dūcere mūrōs 
+		mōlirique arcem et manibus subuoluere saxa 
+		pars optāre locum tectō et conclūdere sulcō 
+		iura magistrātūsque legunt sanctumque senātum 
+		hic portūs aliī effodiunt hic alta theātrīs 
+		fundāmenta locant alii immānīsque columnās 
+		rupibus excidunt scaenīs decōra apta futūrīs 
+		quālis apēs aestāte novā per flōrea rura 
+		exercet sub sōle labor cum gentis adultōs 
+		ēdūcunt fētūs aut cum liquentia mella 
+		stipant et dulcī distendunt nectare cellās 
+		aut onera accipiunt uenientum aut[] agmine factō 
+		ignāvum fūcōs pecus a praesēpibus arcent 
+		fervēt opus redolentque thymo fraglantia mella 
+		ō fortunati quōrum iam moenia surgunt 
+		Aenēās ait et fastīgia suspicit urbis 
+		infert sē saeptus nebulā mīrābile dictu 
+		per mediōs miscētque virīs nequeque cernitur ūllī 
+		lūcus in urbe fuit mediā laetissimus umbrae 
+		quo prīmum jactātī undīs et turbine Poenī 
+		effōdere locō signum quod rēgia Jūnō 
+		monstrārat caput acris equī sīc nam fore bellō 
+		ēgregiam et facilem victū per saecula gentem 
+		hic templum Jūnōnī ingēns Sīdōnia Dido 
+		condēbat donīs opulentum et nūmĭne dīvae 
+		aerea cui gradibus surgēbant līmĭna nexaeque 
+		aere trabēs foribus cardō stridebat aēnīs 
+		hoc prīmum in lūcō noua rēs oblata timōrem 
+		leniit hic prīmum Aenēās spērāre salūtem 
+		ausus et adflictīs melius confīdere rēbus 
+		namque sub ingentī lustrāt dum singula templō 
+		rēgīnam opperiēns dum quae fortūna sit urbī 
+		artificumque manūs inter sē operumque labōrem 
+		mīrātur vidēt Īliacās ex ordine pugnās 
+		bellaque iam fāmā tōtum vulgāta per orbem 
+		Ātrīdās Priamumque et saeuum ambobus Achillem 
+		constitit et lācrimāns quis iam locus inquit Achātē 
+		quae regiō in terrīs nostrī nōn plēna labōris 
+		en Priamus sunt hic etiam sua praemia laudī 
+		sunt lācrimae rērum et mentem mortālia tangunt 
+		solue metūs feret haec aliquam tibi fāma salūtem 
+		sīc ait atqueque animum pictūrā pascit inānī 
+		multa gemēns largōque umectat flūmĭne uultum 
+		namque vidēbat uti bellantēs Pergama circum 
+		hac fugerent Grāī premeret Trōjāna juventus 
+		hac Phrygēs instāret currū cristātus Achillēs 
+		nec procul hinc Rhēsī niveīs tentōria vēlīs 
+		adgnoscit lācrimāns prīmō quae prōdita somnō 
+		Tȳdīdēs multā vastābat caede cruentus 
+		ardentīsque āvertit equōs in castra prius quam 
+		pābula gustassent Trōiae Xanthumque bibissent 
+		parte aliā fugiēns āmissīs Trōilus armis 
+		infēlix puer atqueque impar congressus Achillī 
+		fertur equīs curruque haerēt resupīnus inānī 
+		lōra tenens tamen huic cervixque comaeque trahuntur 
+		per terram et versā puluis inscrībitur hastā 
+		intereā ad templum nōn aequae Palladis ībant 
+		crīnibus Iliades passis pēplumque ferēbant 
+		suppliciter tristēs et tunsae pectora palmīs 
+		dīva sōlō fīxōs oculōs āversa tenēbat 
+		ter circum Iliacos raptāverat Hectora mūrōs 
+		exanimumque aurō corpus vendēbat Achillēs 
+		tum vērō ingentem gemitum dāt pectore ab imō 
+		ut spolia ut currūs utque ipsum corpus amīcī 
+		tendentemque manūs Priamum conspexit inermīs 
+		sē quōque principibus permixtum agnōvit Achīvīs 
+		Ēōāsque aciēs et nīgrī Memnonis arma 
+		dūcit Amāzonidum lūnātīs agmina peltīs 
+		Penthesilēa furēns mediīsque in milibus ardēt 
+		aurea subnectēns exsertae cingula mammae 
+		bellātrix audētque virīs concurrere virgō 
+		haec dum Dardaniō Aenēae mīranda uidentur 
+		dum stupēt obtūtūque haerēt dēfīxus in ūnō 
+		rēgīna ad templum formā pulcherrima didō 
+		incessit magnā juvenum stīpante catervā 
+		quālis in Eurōtae rīpīs aut per juga Cynthī 
+		exercēt Diāna chorōs quam mille secūtae 
+		hinc atqueque hinc glomerantur Orēădēs illa pharētram 
+		fert umerō gradiēnsque deās superēminēt omnīs 
+		Lātōnae tacitum pertemptant gaudia pectus 
+		tālis erat Dido tālem se laeta ferēbat 
+		per mediōs instāns operī regnīsque futurīs 
+		tum foribus dīvae mediā testūdĭne templī 
+		saepta armīs soliōque altē subnixa resēdit 
+		iura dābat lēgēsque virīs operumque labōrem 
+		partibus aequābat justīs aut sorte trahēbat 
+		cum subitō Aenēās concursū accēdere magnō 
+		Anthea Sergestumque vidēt fortemque Cloanthum 
+		Teucrōrumque aliōs āter quōs aequore turbō 
+		dispulerat penitusque aliās āvexerat ōrās 
+		obstipuit simul ipse simul[] percussus Achātēs 
+		laetitiāque metūque avidī conjungere dextrās 
+		ardēbant sed rēs animōs incognita turbāt 
+		dissimulant et nūbe cavā speculantur amictī 
+		quae fortūna virīs classem quo lītŏre linquant 
+		quid ueniant cunctīs nam lectī nāvibus ībant 
+		ōrantēs ueniam et templum clāmōre petēbant 
+		postquam introgressi et cōram data cōpia fandi 
+		maximus Īlioneus placidō sīc pectore coepit 
+		ō rēgīna nouam cui condere Iuppiter urbem 
+		justitiāque dedit gentīs frēnāre superbās 
+		Trōēs tē miserī ventīs maria omnia vectī 
+		ōrāmus prohibē infandōs a nāvibus ignīs 
+		parce pio generi et propius rēs aspice nostrās 
+		nōn nōs aut ferrō Libycōs populāre penātīs 
+		vēnimus aut raptās ad lītŏra uertere praedās 
+		nōn ea vīs animō nec tanta superbia victīs 
+		est locus Hesperiam Grāī cognōmine dicunt 
+		terra antīqua potēns armīs atqueque ūbere glaebae 
+		Oenōtrī coluere virī nunc fāma minorēs 
+		Ītaliam dixisse ducis de nōmine gentem 
+		hic cursus fuit 
+		cum subitō adsurgēns fluctū nimbōsus Ōrīōn 
+		in uada caeca tulit penitusque procācibus austrīs 
+		perque undās superante salō perquē inuia saxa 
+		dispulit huc paucī vestrīs adnāvimus ōrīs 
+		quod genus hoc hominum quaeue hunc tam barbara morem 
+		permittit pātria hospitiō prohibēmur harēnae 
+		bella cient prīmāque uetant consistere terrā 
+		si genus hūmānum et mortālia temnitis arma 
+		at spērāte deōs memores fandi atqueque nefandī 
+		rēx erat Aenēās nōbis quo justior alter 
+		nec pietāte fuit nec[] bellō maior et armīs 
+		quem si fāta uirum seruant si uescitur aurā 
+		aetheriā nequeque adhuc crūdēlibus occubāt umbrīs 
+		nōn metus officiō nec tē certasse priorem 
+		paeniteat sunt et Siculīs regiōnibus urbēs 
+		armaque Trōjānōque a sanguine clārus Acestēs 
+		quassātam ventīs liceāt subdūcere classem 
+		et silvīs aptāre trabēs et stringere rēmōs 
+		si dātur Ītaliam sociīs et rēge receptō 
+		tendere ut Ītaliam laetī Latiumque petāmus 
+		sin absūmpta salus et tē pater optume Teucrum 
+		pontus habēt Libyae nec spēs iam rēstāt Iūlī 
+		at freta Sīcaniae saltem sēdēsque parātās 
+		unde huc advectī rēgemque petāmus Acestēn 
+		tālibus Īlioneus cunctī simul ōre fremēbant 
+		Dardanidae 
+		tum breuiter Dido uultum dēmissa profātur 
+		soluite corde metum Teucri sēclūdite cūrās 
+		rēs dūra et regnī novitās mē tālia cōgunt 
+		mōliri et lātē fīnīs custōde tuēri 
+		quis genus Aeneadum quis[] Trōiae nesciāt urbem 
+		virtūtēsque virōsque aut tantī incendia bellī 
+		nōn obtunsa adeō gestāmus pectora Poenī 
+		nec tam āversus equōs Tyriā sōl jungit ab urbe 
+		seu vōs Hesperiam magnam Sāturniaque arva 
+		siue Erycis fīnīs rēgemque optātis Acestēn 
+		auxiliō tutos dīmittam opibusque iuuabo 
+		uoltis et hīs mecum pariter consīdere regnīs 
+		urbem quam statuō uestra est subdūcite nāvīs 
+		Trōs Tyriusque mihi nullō discrīmĭne agetur 
+		atqueque utinam rēx ipse Noto compulsus eōdem 
+		adforet Aenēās equidem per lītŏra certōs 
+		dīmittam et Libyae lustrāre extrēma jubēbō 
+		si quibus ējectus silvīs aut urbibus errāt 
+		hīs animum arrecti dictīs et fortis Achātēs 
+		et pater Aenēās jamdudum ērumpere nūbem 
+		ardēbant prior Aenēān compellāt Achātēs 
+		nāte deā quae nunc animō sententia surgit 
+		omnia tuta vidēs classem sociōsque receptōs 
+		ūnus abest mediō in fluctū quem vīdimus ipsī 
+		submersum dīctīs rēspondent cētera mātris 
+		uix ea fātus erat cum circumfūsa repentē 
+		scindit sē nūbēs et in aethera purgāt apertum 
+		rēstitit Aenēās clārāque in luce refulsit 
+		os umerōsque deō similis namque ipsa decōram 
+		caesariem nātō genetrix lūmenque juventae 
+		purpureum et laetōs oculīs adflārat honōrēs 
+		quāle manūs addunt ebori decus aut ubī flāvō 
+		argentum Parius lapis circumdātur aurō 
+		tum sīc rēgīnam adloquitur cunctīsque repentē 
+		imprōvīsus ait cōram quem quaeritis adsum 
+		Trōius Aeneas Libycīs ereptus ab undīs 
+		ō sōla infandōs Trōiae miserāta labōrēs 
+		quae nōs rēliquiās Danaum terraeque marisque 
+		omnibus exhaustōs iam cāsibus omnium egenos 
+		urbe domo socias grates persoluere dignās 
+		nōn opis est nostrae Dido nec quidquid ubīquēque est 
+		gentis Dardaniae magnum quae sparsa per orbem 
+		di tibi si qua piōs respectant nūmĭna si quid 
+		usquam justitiae est et mēns sibi conscia rectī 
+		praemia digna ferant quae tē tam laeta tulērunt 
+		saecula quī tantī tālem genuere pārentēs 
+		in freta dum fluviī current dum[] montibus umbrae 
+		lustrābunt conuexa polus dum sīdera pascet 
+		semper honos nōmenque tuum laudēsque manēbunt 
+		quae mē cumque uocant terrae sīc fātus amīcum 
+		Īlioneā petit dextrā laevāque Serestum 
+		post aliōs fortemque Gyān fortem Cloanthum 
+		obstipuit prīmō aspectū Sīdōnia Dido 
+		cāsū deinde virī tantō et sīc ōre locūta est 
+		quis tē nāte deā per tanta perīcula cāsus 
+		insequitur quae vīs immānibus applicāt ōrīs 
+		tū ille Aenēās quem Dardaniō Anchīsae 
+		alma Venus Phrygiī genuit Simoentis ad undam 
+		atqueque equidem Teucrum memini Sidona uenire 
+		fīnibus expulsum pātriīs noua regna petentem 
+		auxiliō Bēlī genitor tum Bēlus opīmam 
+		vastābat Cȳprum et uictor dicione tenēbat 
+		tempore iam ex illō cāsus mihi cognitus urbis 
+		Trōjānae nōmenque tuum rēgēsque Pelasgī 
+		ipse hostis Teucrōs insignī laude ferēbat 
+		seque ortum antīquā Teucrōrum a stirpe volēbat 
+		quārē agite ō tectīs juvenēs succēdite nostrīs 
+		mē quōque per multōs similis fortūna labōrēs 
+		jactātam hac dēmum uoluit consistere terrā 
+		nōn ignāra malī miserīs succurrere discō 
+		sīc memorāt simul Aenēān in rēgia dūcit 
+		tecta simul diuom templīs indīcit honōrem 
+		nec minus intereā sociīs ad lītŏra mittit 
+		vīginti tauros magnōrum horrentia centum 
+		terga suum pinguīs centum cum mātribus agnōs 
+		mūnera laetitiamque dii 
+		at domus interior regali splendida luxū 
+		instruitur mediīsque parant convīvia tectīs 
+		arte labōrātae vestēs ostrōque superbō 
+		ingēns argentum mensīs caelātaque in aurō 
+		fortia facta patrum series longissima rērum 
+		per tot dūcta virōs antīquā ab orīgĭne gentis 
+		Aenēās nequeque enim pātrius consistere mentem 
+		passus amor rapidum ad nāvīs praemittit Achātēn 
+		Ascaniō ferāt haec ipsumque ad moenia dūcāt 
+		omnis in Ascaniō cari stāt cūra pārentis 
+		mūnera praetereā Īliacīs ērepta ruīnīs 
+		ferre jubēt pallam signīs aurōque rigentem 
+		et circumtextum croceō uelamen acanthō 
+		ornātūs Argīvae Helenae quōs illa Mycēnīs 
+		Pergama cum peteret inconcessōsque hymenaeos 
+		extulerat mātris Lēdae mīrābile donum 
+		praetereā scēptrum Īlionē quod gesserat ōlim 
+		maxima nātārum Priamī colloque monile 
+		bācātum et duplicem gemmīs aurōque corōnam 
+		haec celerāns iter ad nauis tendēbat Achātēs 
+		at Cytherēa novās artis noua pectore versāt 
+		consilia ut faciem mūtātus et ōra Cupīdō 
+		pro dulcī Ascaniō veniāt donīsque furentem 
+		incendāt rēgīnam atqueque ossibus implicet ignem 
+		quippe domum timēt ambiguam Tyriōsque bilinguīs 
+		ūrit ātrox Jūnō et sub noctem cūra recursāt 
+		ergō hīs aligerum dictīs adfātur amōrem 
+		nāte meae vīrēs mea magna potentia sōlus 
+		nāte patris summī quī tēla Typhoea temnis 
+		ad tē confugiō et supplex tua nūmĭna poscō 
+		frāter ut Aenēās pelagō tuus omnia circum 
+		lītŏra jactētur odiīs Jūnōnis acerbae 
+		nōta tibi et nostrō doluistī saepe dolōre 
+		nunc Phoenissa tenēt Dido blandīsque morātur 
+		uocibus et uereor quō se Jūnōnia uertant 
+		hospitia haud tantō cessābit cardine rērum 
+		quocirca capere ante dolīs et cingere flammā 
+		rēgīnam meditor ne quo sē nūmĭne mūtēt 
+		sed magnō Aenēae mecum teneātur amōre 
+		quā facere id possīs nostram nunc accipe mentem 
+		rēgius accītū cārī genitōris ad urbem 
+		Sīdōniam puer īre parāt mea maxima cūra 
+		dōna ferēns pelagō et flammīs rēstantia Trōiae 
+		hunc ego sōpītum somnō super alta Cythēra 
+		aut super Īdalium sācrātā sēde recondam 
+		ne quā scīre dolōs mediusue occurrere possit 
+		tū faciem illius noctem nōn amplius ūnam 
+		falle dolō et nōtōs puerī puer indue vultūs 
+		ut cum tē gremiō accipiet laetissima Dido 
+		regalis inter mensās laticemque Lyaeum 
+		cum dābit amplexūs atqueque oscula dulcia fīget 
+		occultum inspīrēs ignem fallāsque venēnō 
+		parēt amor dictīs cārae genetrīcis et ālās 
+		exuit et gressū gaudēns incēdit Iūlī 
+		at Venus Ascaniō placidam per membra quiētem 
+		inrigāt et fōtum gremiō dea tollit in altos 
+		Īdaliae lūcōs ubī mollis amāracus illum 
+		floribus et dulcī aspirans complectitur umbrā 
+		iamque ībat dictō parēns et dōna Cupīdō 
+		rēgia portābat Tyriīs duce laetus Achātē 
+		cum uenit aulaeīs iam sē rēgīna superbīs 
+		aureā composuit spondā mediamque locāvit 
+		iam pater Aenēās et iam Trōjāna juventus 
+		conueniunt strātōque super discumbitur ostrō 
+		dant manibus famulī lymphās Cereremque canistrīs 
+		expediunt tonsīsque ferunt mantēlia villīs 
+		quinquāginta intus famulae quibus ordine longam 
+		cūra penum struere et flammīs adolēre penātīs 
+		centum aliae totidemque parēs aetāte ministrī 
+		quī dapibus mensās onerent et pōcula pōnant 
+		nec nōn et Tyriī per līmĭna laeta frequentēs 
+		convēnere torīs jussī discumbere pictīs 
+		mīrantur dōna Aenēae mīrantur Iūlum 
+		flāgrantīsque deī vultūs simulātaque uerba 
+		pallamque et pictum croceō uelamen acanthō 
+		praecipuē infēlix pestī deuota futūrae 
+		explēri mentem nequit ardescitque tuendō 
+		Phoenissa et pariter puerō donīsque movētur 
+		ille ubī complexū Aenēae colloque pependit 
+		et magnum falsī implēvit genitōris amōrem 
+		rēgīnam petit haec oculīs haec[] pectore tōtō 
+		haerēt et interdum gremio fouet inscia Dido 
+		insīdāt quantus miserae deus at memor ille 
+		mātris Acīdaliae paulātim abolēre Sȳchaeum 
+		incipit et vīvō temptat praeuertere amōre 
+		iam prīdem resides animōs dēsuētaque corda 
+		postquam prīma quies epulīs mensaeque remōtae 
+		crātērās magnōs statuunt et vīna corōnant 
+		fīt strepitus tectīs vocemque per ampla volūtant 
+		ātria dēpendent lychnī laquearibus aureīs 
+		incensī et noctem flammīs fūnālia uincunt 
+		hic rēgīna grauem gemmīs aurōque poposcit 
+		implēvitque merō pateram quam Bēlus et omnēs 
+		a Bēlō solitī tum facta silentia tectīs 
+		Iuppiter hospitibus nam tē dāre iura loquuntur 
+		hunc laetum Tyriīsque diem Trōiāque profectīs 
+		esse velīs nostrōsque huius meminisse minores 
+		adsit laetitiae Bacchus dator et bona Jūnō 
+		et vōs o coetum Tyrii celēbrāte faventēs 
+		dixit et in mensam laticum lībāvit honōrem 
+		prīmaque lībātō summō tenus attigit ōre 
+		tum Bitiae dedit increpitāns ille impiger hausit 
+		spūmantem pateram et plēnō sē proluit aurō 
+		post aliī proceres citharā crīnītus Iopas 
+		personāt aurata docuit quem maximus Atlans 
+		hic canit errantem lūnam sōlisque labōrēs 
+		unde hominum genus et pecudēs unde[] imber et ignēs 
+		arctūrum pluuiasque Hyadas geminōsque Triōnēs 
+		quid tantum Ōceanō properent sē tingere sōlēs 
+		hībernī uel quae tardīs mōra noctibus obstēt 
+		ingeminant plausu Tyriī Trōēsque sequuntur 
+		nec nōn et uario noctem sermōne trahēbat 
+		infēlix Dido longumque bibēbat amōrem 
+		multa super Priamō rogitāns super Hectore multa[] 
+		nunc quibus aurōrae uenisset fīlius armīs 
+		nunc quālēs Diomēdis equī nunc[] quantus Achillēs 
+		immo age et a prīmā dic hospes orīgĭne nōbis 
+		insidiās inquit Danaum cāsūsque tuōrum 
+		errōrēsque tuōs nam tē iam septima portāt 
+		omnibus errantem terrīs et fluctibus aestās 
+ 
+		conticuere omnēs intentique ōra tenebant 
+		inde toro pater Aenēās sīc orsus ab alto 
+		infandum rēgīna iubes renouare dolōrem 
+		Troianas ut opēs et lamentabile regnum 
+		eruerint Danai quaeque ipse miserrima uidi 
+		et quōrum pars magna fui quis tālia fando 
+		Myrmidonum Dolopum aut dūrī mīles Ulixi 
+		temperēt a lācrimīs et iam nox ūmida caelō 
+		praecipitat suādentque cadentia sīdera somnōs 
+		sed si tantus amor cāsūs cognoscere nostrōs 
+		et breuiter Trōiae supremum audīre labōrem 
+		quamquam animus meminisse horrēt luctūque refugit 
+		incipiam fractī bellō fātīsque repulsī 
+		ductōrēs Danaum tot iam lābentibus annīs 
+		instar montis equum dīvīnā Palladis arte 
+		aedificant sectāque intexunt abiēte costās 
+		vōtum pro reditū simulant ea fama vagātur 
+		huc dēlecta uirum sortītī corpŏra furtim 
+		inclūdunt caecō lateri penitusque cavernās 
+		ingentīs uterumque armātō mīlite complent 
+		est in conspectū Tenedos notissima fāmā 
+		insula dīves opum Priamī dum regna manebant 
+		nunc tantum sinūs et statio male fida carinis 
+		huc sē prōvectī dēsertō in litore condunt 
+		nōs abiisse ratī et ventō petiisse Mycēnās 
+		ergō omnis longō solvit sē Teucria luctū 
+		panduntur portae juvāt īre et Dōrica castra 
+		dēsertōsque vidēre locōs lītusque relictum 
+		hic Dolopum manus hic saeuus tendēbat Achillēs 
+		classibus hic locus hic aciē certāre solēbant 
+		pars stupēt innuptae donum exitiāle Minervae 
+		et mōlem mīrantur equī prīmusque Thymoetes 
+		dūci intra mūrōs hortātur et arce locāri 
+		siue dolō seu iam Trōiae sīc fāta ferēbant 
+		at Capys et quōrum melior sententia mentī 
+		aut pelagō Danaum insidiās suspectaque dōna 
+		praecipitāre jubent subiectisque ūrere flammīs 
+		aut terebrare cavās uterī et temptare latēbrās 
+		scinditur incertum studia in contrāria uulgus 
+		prīmus ibī ante omnīs magnā comitante catervā 
+		Lāocoon ardēns summā dēcurrit ab arce 
+		et procul ō miseri quae tanta insānia ciues 
+		crēditis āvectōs hostīs aut ulla putātis 
+		dōna carēre dolīs Danaum sīc nōtus Ulixēs 
+		aut hoc inclūsī lignō occultantur Achīvī 
+		aut haec in nostrōs fabricāta est māchina mūrōs 
+		inspectura domōs venturaque desuper urbī 
+		aut aliquis latēt error equō nē crēdite Teucri 
+		quidquid id est timeō Danaōs et dōna ferentīs 
+		sīc fātus validīs ingentem vīribus hastam 
+		in latus inque ferī curuam compagibus aluum 
+		contorsit stetit illa tremēns uterōque recussō 
+		insonuere cauae gemitumque dedere cauernae 
+		et si fāta deum si mēns nōn laeva fuisset 
+		impulerat ferrō Argolicās foedāre latēbrās 
+		Trōiaque nunc staret Priamīque arx alta maneres 
+		ecce manūs juvenem intereā post terga reuinctum 
+		pastōrēs magnō ad rēgem clāmōre trahēbant 
+		Dardanidae quī sē ignōtum venientibus ultrō 
+		hoc ipsum ut strueret Trōiamque aperiret Achīvīs 
+		obtulerat fidens animi atque in utrumque paratus 
+		seu uersare dolōs seu certae occumbere morti 
+		undique uisendi studio Troiana iuuentus 
+		circumfūsa ruit certantque inludere capto 
+		accipe nunc Danaum insidiās et crimine ab ūnō 
+		disce omnīs 
+		namque ut conspectū in mediō turbātus inermis 
+		constitit atque oculīs Phrygia agmĭna circumspexit 
+		heu quae nunc tellus inquit quae mē aequŏra possunt 
+		accipere aut quid iam miserō mihi dēniquēque rēstāt 
+		cui neque apud Danaōs usquam locus et super ipsi 
+		Dardanidae infensī poenās cum sanguine poscunt 
+		quo gemitū conversī animī compressus et omnis 
+		impetus hortāmur fāri quo sanguine cretus 
+		quid ferāt memorēt quae sit fiducia captō 
+		[Ille haec deposita tandem formidine fatur] 
+		cuncta equidem tibi rex fuerit quodcumque fatēbor 
+		vēra inquit neque mē Argolicā dē gente negābō 
+		hoc prīmum nec si miserum Fortuna Sinōnem 
+		finxit vānum etiam mendacemque improba finget 
+		fandō aliquod si fortē tuās pervenit ad aurīs 
+		Bēlīdae nōmen Palamēdis et incluta fāmā 
+		glōria quem falsā sub prōditiōne Pelasgī 
+		insontem infando indiciō quia bella vetābat 
+		dēmīsere neci nunc cassum lūmĭne lūgent 
+		illī mē comitem et consanguinitāte propinquum 
+		pauper in arma pater prīmīs huc mīsit ab annīs 
+		dum stābat regnō incolumis rēgumque vigēbat 
+		conciliīs et nōs aliquod nomenque decusque 
+		gessimus invidiā postquam pellācis Ulixī 
+		haud ignōta loquor superīs concessit ab ōrīs 
+		adflictus vītam in tenēbrīs luctūque trahēbam 
+		et cāsum insontis mēcum indignabar amīcī 
+		nec tacuī dēmēns et mē fors si qua tulisset 
+		si patrios umquam remeassem uictor ad Argos 
+		prōmīsī ultōrem et verbīs odia aspera mōvī 
+		hinc mihi prīma malī lābēs hinc semper Ulixēs 
+		crīmĭnibus terrēre novīs hinc spargere vocēs 
+		in uulgum ambiguās et quaerere conscius arma 
+		nec requieuit enim donec Calchante ministro 
+		sed quid ego haec autem nēquīquam ingrāta revolvō 
+		quid moror si omnīs ūnō ordĭne habētis Achīvōs 
+		idque audīre sat est jamdudum sumite poenās 
+		hoc Ithacus velit et magnō mercentur Ātrīdae 
+		tum vērō ardēmus scītāri et quaerere causās 
+		ignārī scelerum tantōrum artisque Pelasgae 
+		prōsequitur pavitāns et fictō pectŏre fātur 
+		saepe fugam Danaī Trōiā cupiere relictā 
+		mōliri et longō fessī discēdere bellō 
+		fēcissentque utinam saepe illōs aspera ponti 
+		interclūsit hiems et terruit auster euntīs 
+		praecipuē cum iam hic trabibus contextus acernīs 
+		stāret equus tōtō sonuērunt aethere nimbī 
+		suspensī Eurypylum scītātum ōrācula Phoebī 
+		mittimus isque adytīs haec tristia dicta reportāt 
+		sanguine placastis ventōs et virgĭne caesā 
+		cum prīmum Īliacās Danai vēnistis ad ōrās 
+		sanguine quaerendi reditūs animāque litandum 
+		Argolicā vulgī quae uox ut vēnit ad aurīs 
+		obstipuere animī gelidusque per ima cucurrit 
+		ossa tremor cui fāta parent quem poscāt Apollō 
+		hic Ithacus vātem magnō Calchanta tumultū 
+		prōtrahit in mediōs quae sint ea nūmĭna diuum 
+		flāgitāt et mihi iam multī crūdēle canēbant 
+		artificis scelus et tacitī ventura vidēbant 
+		bis quīnōs silēt ille diēs tectusque recūsāt 
+		prodere uoce sua quemquam aut opponere morti 
+		uix tandem magnīs Ithacī clāmōribus actus 
+		compositō rumpit uocem et mē dēstināt ārae 
+		adsensere omnēs et quae sibi quisque timēbat 
+		ūnius in miserī exitium conuersa tulere 
+		iamque diēs infanda aderat mihi sacra parāri 
+		et salsae frugēs et circum tempŏra uittae 
+		eripuī fateor lētō mē et uincula rupi 
+		līmōsōque lacū per noctem obscūrus in ulvā 
+		dēlituī dum vēla dārent si fortē dedissent 
+		nec mihi iam pātriam antīquam spēs ulla uidendi 
+		nec dulcīs nātōs exoptātumque pārentem 
+		quōs illī fors et poenās ob nostra reposcent 
+		effugia et culpam hanc miserōrum morte piābunt 
+		quod tē per superōs et conscia nūmĭna vērī 
+		per si quā est quae rēstēt adhuc mortālibus usquam 
+		intemerāta fidēs ōrō miserēre labōrum 
+		tantōrum miserēre animī nōn digna ferentis 
+		hīs lācrimīs vītam dāmus et miserescimus ultrō 
+		ipse uiro prīmus manicās atque arta levāri 
+		vincla jubēt Priamus dīctīsque ita fātur amīcīs 
+		quisquis es āmissōs hinc iam oblīviscere Grāiōs 
+		noster eris mihique haec ēdissere vēra rogantī 
+		quō mōlem hanc immānis equī statuere quis auctor 
+		quid petunt quae religiō aut quae machina bellī 
+		dixerat ille dolīs instructus et arte Pelasgā 
+		sustulit exūtās vinclīs ad sīdera palmās 
+		uos aeterni ignēs et nōn uiolabile vestrum 
+		testor numen ait uos ārae ensēsque nefandi 
+		quōs fūgī vittaeque deum quās hostia gessī 
+		fas mihi Grāiōrum sācrāta resoluere iura 
+		fas ōdisse virōs atque omnia ferre sub aurās 
+		si quā tegunt teneor pātriae nec lēgibus ullīs 
+		tū modo prōmissīs maneās servātaque servēs 
+		Trōia fidem si vēra feram si magna rependam 
+		omnis spēs Danaum et coeptī fīdūcia bellī 
+		Palladis auxiliīs semper stetit impius ex quo 
+		Tȳdīdēs sed enim scelerumque inventor Ulixēs 
+		fātāle adgressi sācrātō āvellere templō 
+		Palladium caesīs summae custōdibus arcis 
+		corripuere sacram effigiem manibusque cruentīs 
+		virgineās ausī dīvae contingere vittās 
+		ex illō fluere ac rētrō sublapsa referrī 
+		spēs Danaum fractae vīrēs āversa deae mēns 
+		nec dubiīs ea signa dedit Trītōnia monstrīs 
+		uix positum castrīs simulācrum arsere coruscae 
+		lūmĭnibus flammae arrectis salsusque per artūs 
+		sūdor iit terque ipsa solō mīrābile dictu 
+		ēmicuit parmamque ferens hastamque trementem 
+		extemplō temptanda fugā canit aequŏra Calchas 
+		nec posse Argolicīs exscindi Pergama tēlīs 
+		ōmĭna ni repetant Argīs nūmenque redūcant 
+		quod pelagō et curvīs secum āvexere carīnīs 
+		et nunc quod pātriās ventō petiere Mycenas 
+		arma deōsque parant comitēs pelagōque remensō 
+		imprōvīsī aderunt ita dīgerit ōmĭna Calchas 
+		hanc pro Palladiō monitī pro nūmĭne laesō 
+		effigiem statuere nefas quae triste piāret 
+		hanc tamen immensam Calchas attollere mōlem 
+		rōbŏribus textis caelōque ēdūcere jussit 
+		ne recipī portīs aut dūci in moenia posset 
+		neu populum antīquā sub religiōne tuēri 
+		nam si uestra manus uiolasset dōna Minervae 
+		tum magnum exitium quod di prius ōmen in ipsum 
+		conuertant Priamī imperiō Phrygibusque futurum 
+		sin manibus vestrīs vestram ascendisset in urbem 
+		ultrō Āsiam magnō Pelopēa ad moenia bellō 
+		venturam et nostrōs ea fāta manēre nepotēs 
+		tālibus insidiīs perjūrīque arte Sinōnis 
+		crēdita rēs captīque dolīs lācrimīsque coactīs 
+		quōs neque Tȳdīdēs nec Larisaeus Achillēs 
+		nōn annī domuere decem nōn mille carīnae 
+		hic aliud maius miserīs multōque tremendum 
+		ōbicitur magis atque imprōvida pectŏra turbāt 
+		Lāocoon dūctus Neptūnō sorte sacerdos 
+		sollemnis taurum ingentem mactābat ad ārās 
+		ecce autem geminī a Tenedō tranquilla per alta 
+		horrescō referēns immensīs orbibus anguēs 
+		incumbunt pelagō pariterque ad lītŏra tendunt 
+		pectŏra quōrum inter fluctūs arrecta jubaeque 
+		sanguineae superant undās pars cētera pontum 
+		pōne legit sinuātque immensa volūmĭne terga 
+		fīt sonitus spūmante salō iamque arva tenēbant 
+		ardentīsque oculōs suffectī sanguine et ignī 
+		sībila lambēbant linguīs vībrantibus ōra 
+		diffūgimus vīsū exsanguēs illī agmĭne certō 
+		Laocoonta petunt et prīmum parva duōrum 
+		corpŏra nātōrum serpēns amplexus uterque 
+		implicāt et miserōs morsū dēpascitur artūs 
+		post ipsum auxiliō subeuntem ac tēla ferentem 
+		corripiunt spīrīsque ligant ingentibus et iam 
+		bis medium amplexī bis collō squāmea circum 
+		terga dati superant capite et cervīcibus altis 
+		ille simul manibus tendit dīvellere nōdōs 
+		perfūsus sanie vittās ātrōque venēnō 
+		clāmōrēs simul horrendōs ad sīdera tollit 
+		quālis mūgītūs fūgit cum saucius āram 
+		taurus et incertam excussit cervīce securim 
+		at geminī lapsū dēlūbra ad summa dracōnēs 
+		effugiunt saevaeque petunt Tritonidis arcem 
+		sub pedibusque deae clipeīque sub orbe teguntur 
+		tum vērō tremefacta novus per pectŏra cunctīs 
+		insinuāt pavor et scelus expendisse merentem 
+		Laocoonta ferunt sacrum quī cuspide robur 
+		laeserit et tergo scelerātam intorserit hastam 
+		ducendum ad sēdēs simulācrum orandaque diuae 
+		nūmĭna conclāmant 
+		dīvidimus mūrōs et moenia pandimus urbis 
+		accingunt omnēs operī pedibusque rotārum 
+		sūbiciunt lapsūs et stuppea uincula collō 
+		intendunt scandit fātālis māchina mūrōs 
+		fēta armīs puerī circum innūptaeque puellae 
+		sacra canunt funemque manū contingere gaudent 
+		illa subit mediaeque mināns inlābitur urbī 
+		ō pātria ō dīvum domus Īlium et incluta bellō 
+		moenia Dardanidum quater ipsō in līmĭne portae 
+		substitit atque uterō sonitum quater arma dedere 
+		instāmus tamen immemorēs caecīque furōre 

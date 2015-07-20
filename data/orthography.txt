@@ -1,0 +1,162 @@
+﻿// ORTHOGRAPHIC SUBSTITUTIONS
+
+// NOTE: This list is very incomplete because it has not been put to much use yet. But of course feel free to add your own entries.
+
+/*
+A list of string substitutions to standard Latin orthography. By automatically changing non-standard spellings, Maccer does not need to store with non-standard spelling in order to recognize them. (E.g. coelum, caeterum, adgredior, existit, author, sequutus, quum, inuiolatus, iuuare, jam, litera, littora, etc.)
+
+Exmacronize applies these substitutions to words as they are added to they key. Source texts are left unchanged. Thus, "adgrauō" in a source text will appear as "aggravō" in the key.
+
+Macronize tries these substitutions if a word is not immediately found in the key, but the original orthography is kept in the end. E.g. "coenare" is found in the key as "cēnāre", but is changed to "coenāre". "Executus" is found as "exsecutus" but remains "executus". Etc.
+
+For info on the modifiers [, ], <, and >, see introductory comments in "hidden.txt". An additional modifier, the asterisk (*), in this list means "no chain substitutions": i.e. substitute only if no other substitution has yet been made. See note below on "oe/ae/ē". Doubtful entries (~) are not applied by Exmacronize, but only by Macronize if everything else fails.
+
+In this list, a non-alphanumeric ASCII character may be declared as a "constant" storing multiple values. For example, see the underscore (_) in the section below on "u" + vowel → "v" + vowel after certain prepositions. 
+
+NOTE: Cases of three alternate spellings such as "oe/ae/ē" (e.g. poenitentia/paenitentia/pēnitentia) remain a problem. The best I could come up with can be seen below in the "DOUBTFUL" section. Here are some examples of successes and failures of this method in Macronize:
+
+Success:
+  1. "moestitia" is not found in the key.
+  2. "oe" → "ae".
+  3. "maestitia" is found.
+     ("ae" → "oe"/"ē" is not applied because it is a "no chain" substitution (*), and a substitution has already been made.)
+Success:
+  1. "caeterum" is not found in the key.
+  2. "ae" → "ē", since no substitution has yet been made.
+  3. "cēterum" is found.
+Fail:
+  1. "caeterum" (originally "caeterŭm") is not found in the key.
+  2. A substitution has already been made, so "caeterum" will not be found as "cēterum". Surely more likely examples than this exist.
+Fail:
+  1. "cēpa" is not found in the key.
+  2. "ē" → "ae" has been disabled because of performance considerations ("ē" is very frequent), so "cēpa" will not be found as "caepa".
+
+Not to mention that Exmacronize cannot do anything about these variants: "moestitia", "caeterum", and so on will be added to the key with no changes.
+*/
+
+// diacritics that are best left out
+Ă = A
+Ĕ = E
+Ĭ = I
+Ŏ = O
+Ŭ = U
+ă = a
+ĕ = e
+ĭ = i
+ŏ = o
+ŭ = u
+// ë = ē	// not always long
+
+// intervocallic "u" -> "v" is appended to this list at run-time
+
+// "u" + vowel -> "v" + vowel after certain prepositions
+// note: fails in the case of multiple prepositions (e.g. "adinuenio")
+// because verb endings ("habui", "habueram", etc.) must be avoided
+_ = a,ā,e,ē,i,ī,o,ō,u,ū,y,ȳ
+abu_[ = abv_
+adu_[ = adv_
+circumu_[ = circumv_
+conu_[ = conv_
+disu_[ = disv_
+exu_[ = exv_
+interu_[ = interv_
+inu_[ = inv_
+//nonu_[ = nonv (not found in dictionary)_
+obu_[ = obv_
+peru_[ = perv_
+praeteru_[ = praeterv_
+septemu_[ = septemv_
+sexu_[ = sexv_
+subu_[ = subv_
+superu_[ = superv_
+transu_[ = transv_
+
+
+// PREFIXES
+// From Allen & Greenough 17. http://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0001%3Apart%3D1%3Asection%3D2
+
+adc> = acc
+adg> = agg
+adp> = app
+// ads> = as (sometimes "ass", e.g. assuesco; difficult to distinguish)
+adt> = att
+conb> = comb
+conp> = comp
+conm> = comm
+conl> = coll
+conr> = corr
+connect = cōnect
+connex = cōnex
+conniv = cōniv
+connīt = cōnīt
+connīs = cōnīs
+connīx = cōnīx
+connūbi = cōnūbi
+inp> = imp
+inb> = imb
+inm> = imm
+obc> = occ
+obf> = off
+// obg> = ogg (L&S and LaNe prefer obg-)
+obp> = opp
+subc> = succ
+subf> = suff
+subg> = sugg
+subp> = supp
+disr> = dīr
+disv> = dīv
+disf> = diff
+exf> = eff
+exv> = ēv
+
+
+// DOUBTFUL -- tried by macronize if nothing else works
+
+quu~ = cu	// e.g. sequutus
+ex>~ = exs	// xs contraction: exsequor, exsecrabilis, etc.
+as>~ = ads	// ds contraction: astans, etc.
+oe~ = ae
+oe~ = ē
+ae*~ = oe
+ae*~ = ē
+//ē*~ = ae	("e" too frequent -- would be big performance issue)
+//ē*~ = oe
+
+
+// EVERYTHING ELSE
+
+autor[] = auctor
+author[] = auctor
+autōr[> = auctōr
+authōr[> = auctōr
+coel = cael
+cōnciō = cōntiō
+faecund = fēcund
+foecund = fēcund
+foen = faen
+herus[] = erus
+// herī[ = erī	// conflation with "herī" adv.
+herō[] = erō	// conflation with "Hērō"
+herum[] = erum
+herōrum = erōrum
+herīs[] = erīs
+// herōs = erōs	// conflation with "hērōs")
+humer[ = umer
+hūmid[ = ūmid
+intellig = intelleg
+isthāc = istāc
+isthōc = istōc
+isthūc = istūc
+isthīc = istīc
+isthinc = istinc
+j = i
+	iic = ic	// iniicio -> inicio, etc.
+līter[ = litter		// must start word because of "-liter" adverb ending
+illīter[ = illitter
+inlīter[ = illitter
+littor = lītor
+mt = mpt	// sumtus, etc.
+nqu = mqu	// nunquam, tanquam, -cunque etc.
+quicqu = quidqu	// quicquid, etc.
+quum[] = cum
+solac = solat

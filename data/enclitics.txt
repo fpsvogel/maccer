@@ -1,0 +1,5 @@
+// Mark with a leading * any enclitics that are found more often as the natural ending of words than as an enclitic. Repair Key will not mark these as enclitics by default in "_repairs.txt".
+
+que
+*ne
+*ve

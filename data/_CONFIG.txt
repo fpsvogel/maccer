@@ -1,0 +1,16 @@
+﻿// CONFIGURATION OPTIONS
+
+Overwrite macrons?	Y
+	// determines the behavior of Macronize towards words with macrons
+	// if "N", words with macrons are left untouched
+	// if "Y", all macrons are removed at the beginning of Macronize
+
+Repair orthography in source texts?	N
+	// determines where substitutions in "orthography.txt" are applied
+	// if "N", by Exmacronize only in the key
+	// if "Y", by Repair Key, in the key and in sources
+
+Length of "i" in perfect subjunctive endings?	SHORT
+	// e.g. cēperīs, -īmus, -ītis VS. cēperis, -imus, itis
+	// Analyze/Repair Key changes one to the other
+	// if "LONG", beware of ambiguities ("ceperis" → "cēperĩs", etc.)
