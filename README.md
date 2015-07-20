@@ -10,8 +10,8 @@ Copyright 2015 Felipe Vogel. Distributed under the terms of the GNU General Publ
 
 News
 ============
-20 July 2015: v0.1 released.
-13 Jan. 2015: Dr. Chris Francese reviews Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/). Thanks!
+- 20 July 2015: v0.1 released.
+- 13 Jan. 2015: Dr. Chris Francese reviews Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/). Thanks!
 
 Introduction
 ============
@@ -107,7 +107,7 @@ The good news is that the more Maccer is used, the smarter it will become. After
 Yes, the texts I have found that have vowel quantity marked range from almost perfect to worse than nothing (viz. OCR scans), and it would be impossible to correct every single mistake in them. However, with the help the scripts Analyze and Repair Key that detect and fix possible errors in the word key, along with some human input, this automated process becomes much less haphazard: for example, hidden long vowels, non-classical orthography, and words incorrectly marked where the correct form is known (e.g. *amicus* and *amīcus*) are all detected and corrected under the supervision of the user.
 
 ### 3. *Offline version:* What's all this about .txt files? Can't I use Maccer in Word?
-No. See the next question for a very imperfect solution.
+No. See the answer to the next question for an imperfect solution.
 
 ### 4. *Web version:* I can't copy text from Word without losing all the formatting!
 Web applications have trouble reading Word formatting, so here it is not supported. But some formatting can be preserved by following these steps:
