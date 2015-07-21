@@ -1,4 +1,6 @@
-Maccer  
+Maccer
+------
+A tool for macronizing Latin text
 by Felipe Vogel  
 fps.vogel@gmail.com  
 version 0.1 (July 20, 2015)  
@@ -6,15 +8,15 @@ web version: http://fps-vogel.github.io/maccer/
 
 Copyright 2015 Felipe Vogel. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
 
-**WARNING:** Maccer has been tested very little and is probably not user-friendly, but since it is as complete I set out to make it, I do not plan on continuing active development aside from fixing bugs. Please report bugs here: https://github.com/fps-vogel/maccer/issues.
+**WARNING:** Maccer has been tested very little and is probably not user-friendly, but since it is as complete I set out to make it, I do not plan on continuing active development aside from fixing bugs. Please report bugs at https://github.com/fps-vogel/maccer/issues.
 
 News
-============
+----
 - 20 July 2015: v0.1 released.
-- 13 Jan. 2015: Dr. Chris Francese reviews Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/). Thanks!
+- 13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/).
 
 Introduction
-============
+------------
 Maccer is a tool for macronizing Latin texts. The following are its functions, each of which can be run via an executable .bat file found in the Maccer root folder.
 
 *NOTE: These .bat files run in Windows only. Theoretically the scripts can be run under Linux/OS X by executing `luapower/luajit ../scripts/X.lua` from the Maccer root folder, where X is the script name. When in doubt about the script name, check the .bat file.*
@@ -33,7 +35,7 @@ Maccer is a tool for macronizing Latin texts. The following are its functions, e
 The three formatting functions (the first three utility functions above) apply to all texts in the `macronize/` folder.
 
 Macronizing a text
-==================
+------------------
 1. Copy plain Latin text(s) (in .txt format) into the `macronize/` folder.
 2. Run `macronize.bat`. This adds macrons and flags to all texts in `macronize/`. A backup file of each text is created in `backup/`.
   - To exclude any words that should not be macronized, e.g. a passage in another language, use C-style comments: // at the beginning of a line to excludes that line, and /*...*/ excludes everything (...) in between.
@@ -68,7 +70,7 @@ Note: In the console window and log files,  are displayed instead of macrons abo
   - What it means: The given entry (either in `data/orthography.txt` or `data/hidden.txt`) is incorrectly structured. An entry must be a line in the form `[original][modifiers] = [replace]`, such as `act[ = āct`.
 
 Expanding the word key
-======================
+----------------------
 To incorporate a macronized text into the word key, i.e. to make it a source text:
 
 1. Place the text (in a .txt file) into the `sources/` folder, or into a subfolder.
@@ -85,7 +87,7 @@ To manually add words to the key, simply enter them into `data/key.txt`, one per
 To manually correct a word in the key, change it in `key.txt` ONLY if it is a manually added word. If it is taken from a source text, enter it into `_repairs.txt` in the "Custom" section (according to that section's instructions) after running Analyze Key, then run Repair Key. This will correct the word in the key as well as in the source text(s) in which it occurs.
 
 Customizing
-===========
+-----------
 The following files in the `data` folder may be expanded or changed, according to the instructions in each file. Note that text in C-style comments (// and /*...*/) is invisible to Maccer.
 - `_CONFIG.txt`
 - `enclitics.txt`
@@ -95,7 +97,7 @@ The following files in the `data` folder may be expanded or changed, according t
 - `prefixes.txt`
 
 Q & A
-=====
+-----
 ### 1. A lot of words get "✖" flags instead of macrons. This program is stupid!
 Maccer operates based on a list of Latin word forms, currently numbering over 35,000, generated from digital texts already marked with macrons. It does not generate inflected forms based on principal parts. The advantages of the former method are simplicity and expandability; the disadvantage is that the word list is limited by the corpus of already-macronized source texts, which so far is very small. Individual forms can be added manually to the word key, e.g. *abiēgnō*, but entire words in all their inflections cannot be added in one stroke, as in *abiēgnus*, *-a*, *-um*.
 
@@ -123,13 +125,13 @@ I'm not a programmer, least of all a web programmer, so I did not imagine Maccer
 The web version simply cannot macronize texts of about 2000 words or more. The offline version has no such limitation.
 
 Thanks to the creators of:
-==========================
+--------------------------
 - The source texts, chiefly:
-  - the [Dickinson College Commentaries](http://dcc.dickinson.edu/)
-  - Laura Gibbs' [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
-  - Johan Winge's [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
-  - Ritchie's [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
-  - texts submitted by Tyler Kirby: Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
+  - Dr. Chris Francese et al. — the [Dickinson College Commentaries](http://dcc.dickinson.edu/)
+  - Laura Gibbs — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
+  - Johan Winge — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
+  - F. Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
+  - Tyler Kirby, author of a [prose scansion project](https://github.com/TylerKirby/ScansionPublic): Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
 - [Woordenboek Latijn/Nederlands](http://www.latijnnederlands.nl/), hosted at [Logeion](http://logeion.uchicago.edu/), and the [*TLL*](http://www.degruyter.com/databasecontent?dbid=tll&dbsource=%2Fdb%2Ftll) as invaluable aids regarding hidden long vowels
 - [Lua](http://www.lua.org/)
 - [luapower](http://luapower.com/)

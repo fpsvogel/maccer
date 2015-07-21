@@ -950,6 +950,7 @@ function macra.exporttable(tbl, name, splitword, secondsplit)
 				local kquotes, vquotes, ktype, vtype = true, true, type(k), type(v)
 				if ktype == "number" or ktype == "boolean" then kquotes = false end
 				if vtype == "number" or vtype == "boolean" then vquotes = false end
+				-- note: the space after the comma IS NECESSARY for web execution under lua.vm.js
 				elements = elements..", ["..(kquotes and "\"" or "")..tostring(k)..(kquotes and "\"]=" or "]=")..(vquotes and "\"" or "")..tostring(v)..(vquotes and "\"" or "")
 			end
 		end
