@@ -3,7 +3,7 @@ Maccer
 A tool for macronizing Latin text
 by Felipe Vogel  
 fps.vogel@gmail.com  
-version 1.0 (July 20, 2015)  
+version 1.0.0 (July 20, 2015)  
 web version: http://fps-vogel.github.io/maccer/
 
 Copyright 2015 Felipe Vogel. Copyright of source texts belongs to their respective owners. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
@@ -12,7 +12,7 @@ Copyright 2015 Felipe Vogel. Copyright of source texts belongs to their respecti
 
 News
 ----
-- 20 July 2015: v1.0 released.
+- 20 July 2015: v1.0.0 released.
 - 13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing the web version of Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/).
 
 Introduction
