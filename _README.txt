@@ -3,7 +3,7 @@ Maccer
 A tool for macronizing Latin text
 by Felipe Vogel  
 fps.vogel@gmail.com  
-version 0.1 (July 20, 2015)  
+version 1.0 (July 20, 2015)  
 web version: http://fps-vogel.github.io/maccer/
 
 Copyright 2015 Felipe Vogel. Copyright of source texts belongs to their respective owners. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
@@ -12,8 +12,8 @@ Copyright 2015 Felipe Vogel. Copyright of source texts belongs to their respecti
 
 News
 ----
-- 20 July 2015: v0.1 released.
-- 13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/).
+- 20 July 2015: v1.0 released.
+- 13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing the web version of Maccer at the [Dickinson College Commentaries blog](http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/).
 
 Introduction
 ------------
@@ -130,8 +130,8 @@ Thanks to the creators of:
   - Dr. Chris Francese et al. — the [Dickinson College Commentaries](http://dcc.dickinson.edu/)
   - Laura Gibbs — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
   - Johan Winge — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
-  - F. Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
-  - Tyler Kirby, author of a [prose scansion project](https://github.com/TylerKirby/ScansionPublic): Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
+  - Francis Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
+  - Tyler Kirby, author of the [Prose Rhythm Project](https://github.com/TylerKirby/ScansionPublic): Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
 - [Woordenboek Latijn/Nederlands](http://www.latijnnederlands.nl/), hosted at [Logeion](http://logeion.uchicago.edu/), and the [*TLL*](http://www.degruyter.com/databasecontent?dbid=tll&dbsource=%2Fdb%2Ftll) as invaluable aids regarding hidden long vowels
 - [Lua](http://www.lua.org/)
 - [luapower](http://luapower.com/)
