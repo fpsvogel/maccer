@@ -6,7 +6,7 @@ fps.vogel@gmail.com
 version 0.1 (July 20, 2015)  
 web version: http://fps-vogel.github.io/maccer/
 
-Copyright 2015 Felipe Vogel. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
+Copyright 2015 Felipe Vogel. Copyright of source texts belongs to their respective owners. Distributed under the terms of the GNU General Public License. See Lua source files and COPYING.txt for license details.
 
 **WARNING:** Maccer has been tested very little and is probably not user-friendly, but since it is as complete I set out to make it, I do not plan on continuing active development aside from fixing bugs. Please report bugs at https://github.com/fps-vogel/maccer/issues.
 
