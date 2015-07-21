@@ -35,7 +35,7 @@
 					<button type="button" title="convert hyphens to macrons" data-command="hyphens">a- › ā</button>
 					<button type="button" title="remove flags" data-command="clearflags">flags</button>
 					<button type="button" title="remove macrons" data-command="clearmacs">ō › o</button>
-					<button type="button" title="undo/redo last command" data-command="undo">↺</button>
+					<button type="button" title="undo/redo previous command" data-command="undo">↺</button>
 					<button type="button" title="ask a question or report a problem" data-command="email">☹</button>
 				</nav>
 				<div id="epiceditor"></div>
@@ -51,7 +51,7 @@
 						<li>Insert macrons where missing (✖) or uncertain (✒,&nbsp;✪,&nbsp;❡) by placing a hyphen (-) after each vowel that should be marked as long, then click <mark>a-&nbsp;›&nbsp;ā</mark>.</li>
 						<li>Remove flags by clicking <mark><strike>flags</strike><mark>.</li>
 						</ol>
-						<p>The offline version, which is customizable and can process longer texts, is available for download via the folder icons at the top of this page, or via the <a href="https://github.com/fps-vogel/maccer/">GitHub project page</a>. See the README file for instructions specific to the offline version.</p>
+						<p>The offline version, which is customizable and can process longer texts, is available for download via the folder icons at the top of this page, or via the <a href="https://github.com/fps-vogel/maccer/">GitHub project page</a>, where further instructions can be found.</p>
 						<p><strong>Problems?</strong> Click <mark>☹</mark> for the "Issues" page, where you can ask a question or report a bug.</p>
 					</td>
 					<td width="37%">
@@ -99,8 +99,8 @@
 					</ul>
 					<h1 id="news">News</h1>
 					<ul>
-					<li>20 July 2015: v0.1 released.</li>
-					<li>13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing Maccer at the <a href="http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/">Dickinson College Commentaries blog</a>.</li>
+					<li>20 July 2015: v1.0 released.</li>
+					<li>13 Jan. 2015: Thanks to Dr. Chris Francese for reviewing the web version of Maccer at the <a href="http://blogs.dickinson.edu/dcc/2015/01/13/a-new-latin-macronizer/">Dickinson College Commentaries blog</a>.</li>
 					</ul>
 					<h1>Coming Soon</h1>
 					<ul>
@@ -123,7 +123,7 @@
 					<li>Generate formatting via the preview button, or for more customizability, via <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a>.</li>
 					</ol>
 					<h3 id="web-version-this-program-is-really-slow">5. <em>Web version:</em> This program is really slow!</h3>
-										<p>I’m not a programmer, least of all a web programmer, so I did not imagine Maccer running on a webpage until late in its development, when I found out <a href="http://www.lua.org/">Lua</a> scripts could be run on the web via the <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a>. I thought it would be worth a try, and here is the result. The web version would be faster if it were ported to pure JavaScript, but it is what it is.</p>
+					<p>I’m not a programmer, least of all a web programmer, so I did not imagine Maccer running on a webpage until late in its development, when I found out <a href="http://www.lua.org/">Lua</a> scripts could be run on the web via the <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a>. I thought it would be worth a try, and here is the result. The web version would be faster if it were ported to pure JavaScript, but it is what it is.</p>
 					<h3 id="web-version-this-program-doesnt-work-on-insert-book-title-here">6. <em>Web version:</em> This program doesn’t work on [insert book title here]!</h3>
 					<p>The web version simply cannot macronize texts of about 2000 words or more. The offline version has no such limitation.</p>
 					<p>Contact me (see above) if you have any further questions.</p>
@@ -134,7 +134,7 @@
 					<li>Laura Gibbs — <a href="http://ictibus.blogspot.com/"><em>Ictibus Felicibus</em></a></li>
 					<li>Johan Winge — <a href="http://web.comhem.se/alatius/latin/"><em>Alatii Recitationes</em></a></li>
 					<li>Francis Ritchie &amp; John Kirtland — <a href="http://www.gutenberg.org/ebooks/8997"><em>Fabulae Faciles</em></a></li>
-					<li>Tyler Kirby, author of a <a href="https://github.com/TylerKirby/ScansionPublic">prose scansion project</a>: Cicero’s <em>Second Philippic</em>, <em>Aeneid</em> I-II (using the text from Dr. Joseph Farrell’s <a href="http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1">Vergil project</a>)</li>
+					<li>Tyler Kirby, author of the <a href="https://github.com/TylerKirby/ScansionPublic"></a> — Cicero’s <em>Second Philippic</em>, <em>Aeneid</em> I-II (using the text from Dr. Joseph Farrell’s <a href="http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1">Vergil project</a>)</li>
 					</ul>
 					<p>✪ <a href="http://www.latijnnederlands.nl/">Woordenboek Latijn/Nederlands</a>, hosted at <a href="http://logeion.uchicago.edu/">Logeion</a>, and the <a href="http://www.degruyter.com/databasecontent?dbid=tll&amp;dbsource=%2Fdb%2Ftll"><em>TLL</em></a> as invaluable aids regarding hidden long vowels</p>
 					<p>✪ <a href="http://www.lua.org/">Lua</a> • <a href="http://luapower.com/">luapower</a> • <a href="http://kripken.github.io/lua.vm.js/lua.vm.js.html">Lua VM</a> • <a href="https://github.com/alexander-yakushev/awesomerc/blob/master/awesompd/utf8.lua">utf8.lua</a> • <a href="http://epiceditor.com/">EpicEditor</a> and <a href="http://epiceditor-demos.herokuapp.com/">demos</a> • <a href="https://github.com/jasoncostello/slate">Slate theme</a></p>
