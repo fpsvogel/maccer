@@ -127,7 +127,7 @@ The web version simply cannot macronize texts of about 2000 words or more. The o
 Thanks to the creators of:
 --------------------------
 - The source texts, chiefly:
-  - Dr. Chris Francese et al. — the [Dickinson College Commentaries](http://dcc.dickinson.edu/)
+  - Christopher Francese, William Turpin, Bret Mulligan — the [Dickinson College Commentaries](http://dcc.dickinson.edu/) (Caesar, Ovid, Nepos, and Severus)
   - [Laura Gibbs](http://bestlatin.blogspot.com/) — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
   - Johan Winge — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
   - Francis Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
