@@ -128,7 +128,7 @@ Thanks to the creators of:
 --------------------------
 - The source texts, chiefly:
   - Dr. Chris Francese et al. — the [Dickinson College Commentaries](http://dcc.dickinson.edu/)
-  - Laura Gibbs — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
+  - [Laura Gibbs](http://bestlatin.blogspot.com/) — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
   - Johan Winge — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
   - Francis Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
   - Tyler Kirby, author of the [Prose Rhythm Project](https://github.com/TylerKirby/ScansionPublic): Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
