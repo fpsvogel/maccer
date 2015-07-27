@@ -98,38 +98,38 @@ The following files in the `data` folder may be expanded or changed, according t
 
 Q & A
 -----
-### 1. A lot of words get "✖" flags instead of macrons. This program is stupid!
+#### 1. A lot of words get "✖" flags instead of macrons. This program is stupid!
 Maccer operates based on a list of Latin word forms, currently numbering over 35,000, generated from digital texts already marked with macrons. It does not generate inflected forms based on principal parts. The advantages of the former method are simplicity and expandability; the disadvantage is that the word list is limited by the corpus of already-macronized source texts, which so far is very small. Individual forms can be added manually to the word key, e.g. *abiēgnō*, but entire words in all their inflections cannot be added in one stroke, as in *abiēgnus*, *-a*, *-um*.
 
 Consequently, Maccer inserts macrons were possible (i.e. for forms already in the key with no similar possibilities such as *hōc* and *hoc*), but **it is up to you to check the words Maccer has guessed, and to macronize those it does not know.** Even of words that are not flagged as problematic, care should be taken, as the source texts are great but not perfect.
 
 The good news is that the more Maccer is used, the smarter it will become. After you have filled in the gaps by hand, Maccer can then analyze your hand-corrected text and add the previously unknown word forms to the key. Ideally the online version would allow anyone to improve the word key in this way, but as I'm not a web programmer, the only way to do this is by sending me texts with macrons (whether created with the help of Maccer or not), and I'll incorporate them into the word key.
 
-### 2. So this word key is based on online texts? But those are full of errors!
+#### 2. So this word key is based on online texts? But those are full of errors!
 Yes, the texts I have found that have vowel quantity marked range from almost perfect to worse than nothing (viz. OCR scans), and it would be impossible to correct every single mistake in them. However, with the help the scripts Analyze and Repair Key that detect and fix possible errors in the word key, along with some human input, this automated process becomes much less haphazard: for example, hidden long vowels, non-classical orthography, and words incorrectly marked where the correct form is known (e.g. *amicus* and *amīcus*) are all detected and corrected under the supervision of the user.
 
-### 3. *Offline version:* What's all this about .txt files? Can't I use Maccer in Word?
+#### 3. *Offline version:* What's all this about .txt files? Can't I use Maccer in Word?
 No. See the answer to the next question for an imperfect solution.
 
-### 4. *Web version:* I can't copy text from Word without losing all the formatting!
+###@ 4. *Web version:* I can't copy text from Word without losing all the formatting!
 Web applications have trouble reading Word formatting, so here it is not supported. But some formatting can be preserved by following these steps:
 
 1. Plug your Word file into the [Word to Markdown Converter](http://word-to-markdown.herokuapp.com/).
 2. Copy the resulting Markdown-formatted text, paste it above, and macronize it.
 3. Generate formatting via the preview button, or for more customizability, via [Pandoc](http://johnmacfarlane.net/pandoc/).
 
-### 5. *Web version:* This program is really slow!
+###@ 5. *Web version:* This program is really slow!
 I'm not a programmer, least of all a web programmer, so I did not imagine Maccer running on a webpage until late in its development, when I found out [Lua](http://www.lua.org/) scripts could be run on the web via the [Lua VM](http://kripken.github.io/lua.vm.js/lua.vm.js.html). I thought it would be worth a try, and here is the result. The web version would be faster if it were ported to pure JavaScript, but it is what it is.
 
-### 6. *Web version:* This program doesn't work on [insert book title here]!
+###@ 6. *Web version:* This program doesn't work on [insert book title here]!
 The web version simply cannot macronize texts of about 2000 words or more. The offline version has no such limitation.
 
 Thanks to the creators of:
 --------------------------
 - The source texts, chiefly:
   - Christopher Francese, William Turpin, Bret Mulligan — the [Dickinson College Commentaries](http://dcc.dickinson.edu/) (Caesar, Ovid, Nepos, and Severus)
-  - [Laura Gibbs](http://bestlatin.blogspot.com/) — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
-  - Johan Winge — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
+  - Laura Gibbs, author of the blog [Bestiaria Latina](http://bestlatin.blogspot.com/) — [*Ictibus Felicibus*](http://ictibus.blogspot.com/)
+  - Johan Winge, author of [A Latin Macronizer](http://stp.lingfil.uu.se/~jowi4905/macronizer/index.py) — [*Alatii Recitationes*](http://web.comhem.se/alatius/latin/)
   - Francis Ritchie & John Kirtland — [*Fabulae Faciles*](http://www.gutenberg.org/ebooks/8997)
   - Tyler Kirby, author of the [Prose Rhythm Project](https://github.com/TylerKirby/ScansionPublic): Cicero's Second Philippic, Aeneid I-II (using the text from Dr. Joseph Farrell's [Vergil project]( http://vergil.classics.upenn.edu/vergil/index.php/document/index/document_id/1))
 - [Woordenboek Latijn/Nederlands](http://www.latijnnederlands.nl/), hosted at [Logeion](http://logeion.uchicago.edu/), and the [*TLL*](http://www.degruyter.com/databasecontent?dbid=tll&dbsource=%2Fdb%2Ftll) as invaluable aids regarding hidden long vowels
